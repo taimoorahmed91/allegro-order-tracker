@@ -10,6 +10,7 @@ export default function Dashboard() {
   const [uploadMessage, setUploadMessage] = useState<{ type: 'success' | 'error', text: string } | null>(null);
   const [editingOrder, setEditingOrder] = useState<Order | null>(null);
   const [deleteConfirm, setDeleteConfirm] = useState<string | null>(null);
+  const [showAddModal, setShowAddModal] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
   const [searchTerm, setSearchTerm] = useState('');
   const [statusFilter, setStatusFilter] = useState('all');
@@ -209,6 +210,63 @@ export default function Dashboard() {
       });
     } finally {
       setDeleteConfirm(null);
+    }
+  };
+
+  const handleDeleteAll = async () => {
+    try {
+      const deletePromises = orders.map(order =>
+        fetch(`/api/orders/delete?id=${order.id}`, { method: 'DELETE' })
+      );
+
+      await Promise.all(deletePromises);
+
+      setUploadMessage({
+        type: 'success',
+        text: `Successfully deleted all ${orders.length} order(s)!`
+      });
+      setSelectedOrders([]);
+      fetchOrders();
+    } catch (error) {
+      console.error('Delete all error:', error);
+      setUploadMessage({
+        type: 'error',
+        text: 'Failed to delete all orders'
+      });
+    } finally {
+      setDeleteConfirm(null);
+    }
+  };
+
+  const handleAddOrder = async (newOrder: Omit<Order, 'id' | 'created_at'>) => {
+    try {
+      const response = await fetch('/api/orders/add', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(newOrder)
+      });
+
+      const text = await response.text();
+      const result = text ? JSON.parse(text) : {};
+
+      if (response.ok) {
+        setUploadMessage({
+          type: 'success',
+          text: 'Order added successfully!'
+        });
+        fetchOrders();
+        setShowAddModal(false);
+      } else {
+        throw new Error(result.error || 'Failed to add order');
+      }
+    } catch (error) {
+      console.error('Add order error:', error);
+      setUploadMessage({
+        type: 'error',
+        text: error instanceof Error ? error.message : 'Failed to add order'
+      });
     }
   };
 
@@ -470,17 +528,39 @@ export default function Dashboard() {
         <div className="bg-gray-800 rounded-lg shadow-lg p-6 border border-gray-700">
           <div className="flex items-center justify-between mb-6">
             <h2 className="text-2xl font-bold text-white">Recent Orders</h2>
-            {selectedOrders.length > 0 && (
+            <div className="flex gap-3">
               <button
-                onClick={() => setDeleteConfirm('bulk')}
-                className="flex items-center gap-2 px-4 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-colors"
+                onClick={() => setShowAddModal(true)}
+                className="flex items-center gap-2 px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors"
               >
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
                 </svg>
-                Delete {selectedOrders.length} Selected
+                Add New Order
               </button>
-            )}
+              {selectedOrders.length > 0 && (
+                <button
+                  onClick={() => setDeleteConfirm('bulk')}
+                  className="flex items-center gap-2 px-4 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-colors"
+                >
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                  </svg>
+                  Delete {selectedOrders.length} Selected
+                </button>
+              )}
+              {orders.length > 0 && (
+                <button
+                  onClick={() => setDeleteConfirm('all')}
+                  className="flex items-center gap-2 px-4 py-2 bg-red-800 text-white rounded-lg hover:bg-red-900 transition-colors"
+                >
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                  </svg>
+                  Delete All
+                </button>
+              )}
+            </div>
           </div>
 
           {/* Search and Filter */}
@@ -653,6 +733,8 @@ export default function Dashboard() {
               <p className="text-gray-300 mb-6">
                 {deleteConfirm === 'bulk'
                   ? `Are you sure you want to delete ${selectedOrders.length} selected order(s)? This action cannot be undone.`
+                  : deleteConfirm === 'all'
+                  ? `Are you sure you want to delete ALL ${orders.length} order(s)? This action cannot be undone.`
                   : 'Are you sure you want to delete this order? This action cannot be undone.'}
               </p>
               <div className="flex gap-3 justify-end">
@@ -663,10 +745,14 @@ export default function Dashboard() {
                   Cancel
                 </button>
                 <button
-                  onClick={() => deleteConfirm === 'bulk' ? handleBulkDelete() : handleDelete(deleteConfirm)}
+                  onClick={() =>
+                    deleteConfirm === 'bulk' ? handleBulkDelete() :
+                    deleteConfirm === 'all' ? handleDeleteAll() :
+                    handleDelete(deleteConfirm)
+                  }
                   className="px-4 py-2 text-white bg-red-600 rounded-lg hover:bg-red-700 transition-colors"
                 >
-                  Delete {deleteConfirm === 'bulk' ? `${selectedOrders.length}` : ''}
+                  Delete {deleteConfirm === 'bulk' ? `${selectedOrders.length}` : deleteConfirm === 'all' ? 'All' : ''}
                 </button>
               </div>
             </div>
@@ -817,6 +903,172 @@ export default function Dashboard() {
                     className="px-4 py-2 text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition-colors"
                   >
                     Save Changes
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        )}
+
+        {/* Add Order Modal */}
+        {showAddModal && (
+          <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4 overflow-y-auto" onClick={() => setShowAddModal(false)}>
+            <div className="bg-gray-800 border border-gray-700 rounded-lg p-6 max-w-2xl w-full my-8" onClick={(e) => e.stopPropagation()}>
+              <h3 className="text-xl font-bold text-white mb-4">Add New Order</h3>
+              <form onSubmit={(e) => {
+                e.preventDefault();
+                const formData = new FormData(e.currentTarget);
+                const newOrder: Omit<Order, 'id' | 'created_at'> = {
+                  seller: formData.get('seller') as string,
+                  date: formData.get('date') as string,
+                  status: formData.get('status') as string,
+                  delivery_cost: parseFloat(formData.get('delivery_cost') as string),
+                  total: parseFloat(formData.get('total') as string),
+                  items: [{
+                    product: formData.get('product') as string,
+                    quantity: parseInt(formData.get('quantity') as string),
+                    unit_price: parseFloat(formData.get('unit_price') as string),
+                    total_price: parseFloat(formData.get('item_total') as string),
+                  }]
+                };
+                handleAddOrder(newOrder);
+              }}>
+                <div className="space-y-4">
+                  <div>
+                    <label className="block text-sm font-medium text-gray-300 mb-1">Seller</label>
+                    <input
+                      type="text"
+                      name="seller"
+                      placeholder="Seller name"
+                      className="w-full px-3 py-2 bg-gray-700 border border-gray-600 text-white rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                      required
+                    />
+                  </div>
+
+                  <div>
+                    <label className="block text-sm font-medium text-gray-300 mb-1">Date</label>
+                    <input
+                      type="text"
+                      name="date"
+                      placeholder="Jan 27, 2026, 11:45 AM"
+                      defaultValue={new Date().toLocaleString('en-US', { month: 'short', day: '2-digit', year: 'numeric', hour: '2-digit', minute: '2-digit' })}
+                      className="w-full px-3 py-2 bg-gray-700 border border-gray-600 text-white rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                      required
+                    />
+                  </div>
+
+                  <div>
+                    <label className="block text-sm font-medium text-gray-300 mb-1">Status</label>
+                    <select
+                      name="status"
+                      className="w-full px-3 py-2 bg-gray-700 border border-gray-600 text-white rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                      required
+                    >
+                      <option value="In preparation">In preparation</option>
+                      <option value="In transit">In transit</option>
+                      <option value="Delivered">Delivered</option>
+                      <option value="Cancelled">Cancelled</option>
+                    </select>
+                  </div>
+
+                  <div className="border-t border-gray-700 pt-4">
+                    <h4 className="text-sm font-medium text-gray-300 mb-3">Item Details</h4>
+
+                    <div className="space-y-3">
+                      <div>
+                        <label className="block text-xs text-gray-400 mb-1">Product Name</label>
+                        <input
+                          type="text"
+                          name="product"
+                          placeholder="Product name"
+                          className="w-full px-3 py-2 bg-gray-700 border border-gray-600 text-white rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-sm"
+                          required
+                        />
+                      </div>
+
+                      <div className="grid grid-cols-3 gap-3">
+                        <div>
+                          <label className="block text-xs text-gray-400 mb-1">Quantity</label>
+                          <input
+                            type="number"
+                            name="quantity"
+                            placeholder="1"
+                            min="1"
+                            defaultValue="1"
+                            className="w-full px-3 py-2 bg-gray-700 border border-gray-600 text-white rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-sm"
+                            required
+                          />
+                        </div>
+                        <div>
+                          <label className="block text-xs text-gray-400 mb-1">Unit Price (zł)</label>
+                          <input
+                            type="number"
+                            name="unit_price"
+                            placeholder="0.00"
+                            step="0.01"
+                            min="0"
+                            className="w-full px-3 py-2 bg-gray-700 border border-gray-600 text-white rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-sm"
+                            required
+                          />
+                        </div>
+                        <div>
+                          <label className="block text-xs text-gray-400 mb-1">Item Total (zł)</label>
+                          <input
+                            type="number"
+                            name="item_total"
+                            placeholder="0.00"
+                            step="0.01"
+                            min="0"
+                            className="w-full px-3 py-2 bg-gray-700 border border-gray-600 text-white rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-sm"
+                            required
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="grid grid-cols-2 gap-4 pt-3">
+                    <div>
+                      <label className="block text-sm font-medium text-gray-300 mb-1">Delivery Cost (zł)</label>
+                      <input
+                        type="number"
+                        name="delivery_cost"
+                        placeholder="0.00"
+                        step="0.01"
+                        min="0"
+                        defaultValue="0"
+                        className="w-full px-3 py-2 bg-gray-700 border border-gray-600 text-white rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                        required
+                      />
+                    </div>
+                    <div>
+                      <label className="block text-sm font-medium text-gray-300 mb-1">Order Total (zł)</label>
+                      <input
+                        type="number"
+                        name="total"
+                        placeholder="0.00"
+                        step="0.01"
+                        min="0"
+                        className="w-full px-3 py-2 bg-gray-700 border border-gray-600 text-white rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                        required
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div className="flex gap-3 justify-end mt-6">
+                  <button
+                    type="button"
+                    onClick={() => setShowAddModal(false)}
+                    className="px-4 py-2 text-gray-300 bg-gray-700 rounded-lg hover:bg-gray-600 transition-colors"
+                  >
+                    Cancel
+                  </button>
+                  <button
+                    type="submit"
+                    className="px-4 py-2 text-white bg-green-600 rounded-lg hover:bg-green-700 transition-colors"
+                  >
+                    Add Order
                   </button>
                 </div>
               </form>
