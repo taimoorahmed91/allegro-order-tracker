@@ -3,7 +3,12 @@ import { Order } from '../types';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 import { parse, format } from 'date-fns';
 
-export default function Dashboard() {
+interface DashboardProps {
+  username: string;
+  onLogout: () => void;
+}
+
+export default function Dashboard({ username, onLogout }: DashboardProps) {
   const [orders, setOrders] = useState<Order[]>([]);
   const [loading, setLoading] = useState(true);
   const [uploading, setUploading] = useState(false);
@@ -12,8 +17,15 @@ export default function Dashboard() {
   const [deleteConfirm, setDeleteConfirm] = useState<string | null>(null);
   const [showAddModal, setShowAddModal] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
-  const [searchTerm, setSearchTerm] = useState('');
-  const [statusFilter, setStatusFilter] = useState('all');
+  const [filters, setFilters] = useState({
+    seller: '',
+    product: '',
+    status: 'all',
+    dateFrom: '',
+    dateTo: '',
+    minTotal: '',
+    maxTotal: ''
+  });
   const [selectedOrders, setSelectedOrders] = useState<string[]>([]);
   const itemsPerPage = 10;
   const [stats, setStats] = useState({
@@ -313,25 +325,58 @@ export default function Dashboard() {
       }
     });
 
-    // Filter by status
-    if (statusFilter !== 'all') {
-      filtered = filtered.filter(order => order.status === statusFilter);
+    // Filter by seller
+    if (filters.seller) {
+      filtered = filtered.filter(order =>
+        order.seller.toLowerCase().includes(filters.seller.toLowerCase())
+      );
     }
 
-    // Filter by search term
-    if (searchTerm) {
-      const term = searchTerm.toLowerCase();
-      filtered = filtered.filter(order => {
-        const searchableText = [
-          order.seller,
-          order.date,
-          order.status,
-          order.total.toString(),
-          ...order.items.map(item => item.product)
-        ].join(' ').toLowerCase();
+    // Filter by product
+    if (filters.product) {
+      filtered = filtered.filter(order =>
+        order.items.some(item =>
+          item.product.toLowerCase().includes(filters.product.toLowerCase())
+        )
+      );
+    }
 
-        return searchableText.includes(term);
+    // Filter by status
+    if (filters.status !== 'all') {
+      filtered = filtered.filter(order => order.status === filters.status);
+    }
+
+    // Filter by date range
+    if (filters.dateFrom || filters.dateTo) {
+      filtered = filtered.filter(order => {
+        try {
+          const orderDate = parse(order.date, 'MMM dd, yyyy, hh:mm a', new Date());
+
+          if (filters.dateFrom) {
+            const fromDate = new Date(filters.dateFrom);
+            fromDate.setHours(0, 0, 0, 0);
+            if (orderDate < fromDate) return false;
+          }
+
+          if (filters.dateTo) {
+            const toDate = new Date(filters.dateTo);
+            toDate.setHours(23, 59, 59, 999);
+            if (orderDate > toDate) return false;
+          }
+
+          return true;
+        } catch {
+          return true;
+        }
       });
+    }
+
+    // Filter by total amount range
+    if (filters.minTotal) {
+      filtered = filtered.filter(order => order.total >= parseFloat(filters.minTotal));
+    }
+    if (filters.maxTotal) {
+      filtered = filtered.filter(order => order.total <= parseFloat(filters.maxTotal));
     }
 
     return filtered;
@@ -426,7 +471,23 @@ export default function Dashboard() {
   return (
     <div className="min-h-screen bg-gray-900 p-8">
       <div className="max-w-7xl mx-auto">
-        <h1 className="text-4xl font-bold text-white mb-8">Order Dashboard</h1>
+        <div className="flex items-center justify-between mb-8">
+          <h1 className="text-4xl font-bold text-white">Order Dashboard</h1>
+          <div className="flex items-center gap-4">
+            <div className="text-gray-300">
+              Welcome, <span className="text-white font-semibold">{username}</span>
+            </div>
+            <button
+              onClick={onLogout}
+              className="flex items-center gap-2 px-4 py-2 bg-gray-700 text-white rounded-lg hover:bg-gray-600 transition-colors"
+            >
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
+              </svg>
+              Logout
+            </button>
+          </div>
+        </div>
 
         {/* Upload Section */}
         <div className="bg-gray-800 rounded-lg shadow-lg p-6 mb-8 border border-gray-700">
@@ -563,29 +624,141 @@ export default function Dashboard() {
             </div>
           </div>
 
-          {/* Search and Filter */}
-          <div className="flex flex-col md:flex-row gap-4 mb-6">
-            <div className="flex-1">
-              <input
-                type="text"
-                placeholder="Search by seller, product, date, status..."
-                value={searchTerm}
-                onChange={(e) => { setSearchTerm(e.target.value); setCurrentPage(1); }}
-                className="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-              />
+          {/* Filters */}
+          <div className="mb-6 space-y-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+              {/* Seller Filter */}
+              <div>
+                <label className="block text-xs text-gray-400 mb-1">Seller</label>
+                <input
+                  type="text"
+                  placeholder="Filter by seller..."
+                  value={filters.seller}
+                  onChange={(e) => {
+                    setFilters({...filters, seller: e.target.value});
+                    setCurrentPage(1);
+                  }}
+                  className="w-full px-3 py-2 bg-gray-700 border border-gray-600 rounded-lg text-white text-sm placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                />
+              </div>
+
+              {/* Product Filter */}
+              <div>
+                <label className="block text-xs text-gray-400 mb-1">Product</label>
+                <input
+                  type="text"
+                  placeholder="Filter by product..."
+                  value={filters.product}
+                  onChange={(e) => {
+                    setFilters({...filters, product: e.target.value});
+                    setCurrentPage(1);
+                  }}
+                  className="w-full px-3 py-2 bg-gray-700 border border-gray-600 rounded-lg text-white text-sm placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                />
+              </div>
+
+              {/* Status Filter */}
+              <div>
+                <label className="block text-xs text-gray-400 mb-1">Status</label>
+                <select
+                  value={filters.status}
+                  onChange={(e) => {
+                    setFilters({...filters, status: e.target.value});
+                    setCurrentPage(1);
+                  }}
+                  className="w-full px-3 py-2 bg-gray-700 border border-gray-600 rounded-lg text-white text-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                >
+                  <option value="all">All Statuses</option>
+                  <option value="In preparation">In Preparation</option>
+                  <option value="In transit">In Transit</option>
+                  <option value="Delivered">Delivered</option>
+                  <option value="Cancelled">Cancelled</option>
+                </select>
+              </div>
+
+              {/* Clear Filters Button */}
+              <div className="flex items-end">
+                <button
+                  onClick={() => {
+                    setFilters({
+                      seller: '',
+                      product: '',
+                      status: 'all',
+                      dateFrom: '',
+                      dateTo: '',
+                      minTotal: '',
+                      maxTotal: ''
+                    });
+                    setCurrentPage(1);
+                  }}
+                  className="w-full px-3 py-2 bg-gray-600 text-white rounded-lg hover:bg-gray-500 transition-colors text-sm"
+                >
+                  Clear Filters
+                </button>
+              </div>
             </div>
-            <div className="w-full md:w-48">
-              <select
-                value={statusFilter}
-                onChange={(e) => { setStatusFilter(e.target.value); setCurrentPage(1); }}
-                className="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-              >
-                <option value="all">All Statuses</option>
-                <option value="In preparation">In Preparation</option>
-                <option value="In transit">In Transit</option>
-                <option value="Delivered">Delivered</option>
-                <option value="Cancelled">Cancelled</option>
-              </select>
+
+            {/* Date Range and Amount Range */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {/* Date Range */}
+              <div className="grid grid-cols-2 gap-3">
+                <div>
+                  <label className="block text-xs text-gray-400 mb-1">Date From</label>
+                  <input
+                    type="date"
+                    value={filters.dateFrom}
+                    onChange={(e) => {
+                      setFilters({...filters, dateFrom: e.target.value});
+                      setCurrentPage(1);
+                    }}
+                    className="w-full px-3 py-2 bg-gray-700 border border-gray-600 rounded-lg text-white text-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  />
+                </div>
+                <div>
+                  <label className="block text-xs text-gray-400 mb-1">Date To</label>
+                  <input
+                    type="date"
+                    value={filters.dateTo}
+                    onChange={(e) => {
+                      setFilters({...filters, dateTo: e.target.value});
+                      setCurrentPage(1);
+                    }}
+                    className="w-full px-3 py-2 bg-gray-700 border border-gray-600 rounded-lg text-white text-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  />
+                </div>
+              </div>
+
+              {/* Amount Range */}
+              <div className="grid grid-cols-2 gap-3">
+                <div>
+                  <label className="block text-xs text-gray-400 mb-1">Min Total (zł)</label>
+                  <input
+                    type="number"
+                    step="0.01"
+                    placeholder="Min"
+                    value={filters.minTotal}
+                    onChange={(e) => {
+                      setFilters({...filters, minTotal: e.target.value});
+                      setCurrentPage(1);
+                    }}
+                    className="w-full px-3 py-2 bg-gray-700 border border-gray-600 rounded-lg text-white text-sm placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  />
+                </div>
+                <div>
+                  <label className="block text-xs text-gray-400 mb-1">Max Total (zł)</label>
+                  <input
+                    type="number"
+                    step="0.01"
+                    placeholder="Max"
+                    value={filters.maxTotal}
+                    onChange={(e) => {
+                      setFilters({...filters, maxTotal: e.target.value});
+                      setCurrentPage(1);
+                    }}
+                    className="w-full px-3 py-2 bg-gray-700 border border-gray-600 rounded-lg text-white text-sm placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  />
+                </div>
+              </div>
             </div>
           </div>
 
