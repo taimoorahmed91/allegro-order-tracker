@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Data Import Tool</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            padding: 40px;
+            max-width: 600px;
+            width: 100%;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 28px;
+            text-align: center;
+        }
+
+        .subtitle {
+            color: #666;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 14px;
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #444;
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        input[type="text"],
+        input[type="url"] {
+            width: 100%;
+            padding: 12px 15px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 14px;
+            transition: border-color 0.3s;
+        }
+
+        input[type="text"]:focus,
+        input[type="url"]:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .file-input-wrapper {
+            position: relative;
+            overflow: hidden;
+            display: inline-block;
+            width: 100%;
+        }
+
+        .file-input-wrapper input[type="file"] {
+            position: absolute;
+            left: -9999px;
+        }
+
+        .file-input-label {
+            display: block;
+            padding: 12px 15px;
+            background: #f5f5f5;
+            border: 2px dashed #d0d0d0;
+            border-radius: 8px;
+            cursor: pointer;
+            text-align: center;
+            color: #666;
+            transition: all 0.3s;
+        }
+
+        .file-input-label:hover {
+            background: #ebebeb;
+            border-color: #667eea;
+        }
+
+        .file-input-label.has-file {
+            background: #e7f3ff;
+            border-color: #667eea;
+            color: #667eea;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 15px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+            margin-top: 10px;
+        }
+
+        .btn:hover:not(:disabled) {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+        }
+
+        .btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+
+        .progress-container {
+            display: none;
+            margin-top: 20px;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 8px;
+            background: #e0e0e0;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 10px;
+        }
+
+        .progress-bar-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+            transition: width 0.3s ease;
+            animation: pulse 1.5s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+
+        .progress-text {
+            text-align: center;
+            color: #666;
+            font-size: 14px;
+        }
+
+        .message {
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 8px;
+            display: none;
+            animation: slideIn 0.3s ease;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .message.success {
+            background: #d4edda;
+            border: 2px solid #c3e6cb;
+            color: #155724;
+        }
+
+        .message.error {
+            background: #f8d7da;
+            border: 2px solid #f5c6cb;
+            color: #721c24;
+        }
+
+        .message-title {
+            font-weight: 600;
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+
+        .message-content {
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .stats {
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 1px solid rgba(0, 0, 0, 0.1);
+        }
+
+        .stats-item {
+            display: flex;
+            justify-content: space-between;
+            margin: 5px 0;
+            font-size: 14px;
+        }
+
+        .stats-label {
+            font-weight: 600;
+        }
+
+        .helper-text {
+            font-size: 12px;
+            color: #888;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📦 Order Data Import Tool</h1>
+        <p class="subtitle">Import your Allegro purchases to your Vercel app</p>
+
+        <form id="importForm">
+            <div class="form-group">
+                <label for="vercelUrl">Vercel App URL</label>
+                <input
+                    type="url"
+                    id="vercelUrl"
+                    placeholder="https://my-app.vercel.app"
+                    required
+                >
+                <p class="helper-text">Enter your deployed Vercel app URL (without trailing slash)</p>
+            </div>
+
+            <div class="form-group">
+                <label for="fileInput">Select JSON File</label>
+                <div class="file-input-wrapper">
+                    <input
+                        type="file"
+                        id="fileInput"
+                        accept=".json"
+                        required
+                    >
+                    <label for="fileInput" class="file-input-label" id="fileLabel">
+                        📁 Click to select allegro_purchases.json
+                    </label>
+                </div>
+                <p class="helper-text">Choose your JSON file containing order data</p>
+            </div>
+
+            <button type="submit" class="btn" id="importBtn">
+                🚀 Import Orders
+            </button>
+        </form>
+
+        <div class="progress-container" id="progressContainer">
+            <div class="progress-bar">
+                <div class="progress-bar-fill" id="progressFill" style="width: 0%"></div>
+            </div>
+            <p class="progress-text" id="progressText">Uploading...</p>
+        </div>
+
+        <div class="message" id="message">
+            <div class="message-title" id="messageTitle"></div>
+            <div class="message-content" id="messageContent"></div>
+        </div>
+    </div>
+
+    <script>
+        const form = document.getElementById('importForm');
+        const fileInput = document.getElementById('fileInput');
+        const fileLabel = document.getElementById('fileLabel');
+        const importBtn = document.getElementById('importBtn');
+        const progressContainer = document.getElementById('progressContainer');
+        const progressFill = document.getElementById('progressFill');
+        const progressText = document.getElementById('progressText');
+        const message = document.getElementById('message');
+        const messageTitle = document.getElementById('messageTitle');
+        const messageContent = document.getElementById('messageContent');
+
+        // Update file label when file is selected
+        fileInput.addEventListener('change', (e) => {
+            const file = e.target.files[0];
+            if (file) {
+                fileLabel.textContent = `✅ ${file.name}`;
+                fileLabel.classList.add('has-file');
+            } else {
+                fileLabel.textContent = '📁 Click to select allegro_purchases.json';
+                fileLabel.classList.remove('has-file');
+            }
+        });
+
+        // Handle form submission
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            const vercelUrl = document.getElementById('vercelUrl').value.trim();
+            const file = fileInput.files[0];
+
+            if (!file) {
+                showMessage('error', 'No File Selected', 'Please select a JSON file to import.');
+                return;
+            }
+
+            // Validate URL
+            let apiUrl = vercelUrl;
+            if (!apiUrl.startsWith('http://') && !apiUrl.startsWith('https://')) {
+                apiUrl = 'https://' + apiUrl;
+            }
+            // Remove trailing slash
+            apiUrl = apiUrl.replace(/\/$/, '');
+
+            // Show progress
+            importBtn.disabled = true;
+            progressContainer.style.display = 'block';
+            message.style.display = 'none';
+            progressFill.style.width = '30%';
+            progressText.textContent = 'Reading file...';
+
+            try {
+                // Read file
+                const fileContent = await readFileAsText(file);
+                const jsonData = JSON.parse(fileContent);
+
+                // Validate JSON structure
+                if (!Array.isArray(jsonData)) {
+                    throw new Error('Invalid JSON format. Expected an array of orders.');
+                }
+
+                progressFill.style.width = '50%';
+                progressText.textContent = `Uploading ${jsonData.length} orders...`;
+
+                // Send to API
+                const response = await fetch(`${apiUrl}/api/orders/bulk-import`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(jsonData)
+                });
+
+                progressFill.style.width = '90%';
+                progressText.textContent = 'Processing response...';
+
+                const result = await response.json();
+
+                progressFill.style.width = '100%';
+
+                if (response.ok || response.status === 207) {
+                    // Success or partial success
+                    const statsHtml = `
+                        <div class="stats">
+                            <div class="stats-item">
+                                <span class="stats-label">Total Orders:</span>
+                                <span>${result.totalOrders || jsonData.length}</span>
+                            </div>
+                            <div class="stats-item">
+                                <span class="stats-label">Successfully Imported:</span>
+                                <span style="color: #28a745; font-weight: bold;">${result.inserted}</span>
+                            </div>
+                            ${result.failed ? `
+                                <div class="stats-item">
+                                    <span class="stats-label">Failed:</span>
+                                    <span style="color: #dc3545; font-weight: bold;">${result.failed}</span>
+                                </div>
+                            ` : ''}
+                        </div>
+                    `;
+
+                    if (result.success) {
+                        showMessage('success', '✅ Import Completed!',
+                            `All orders have been successfully imported to your database.${statsHtml}`);
+                    } else {
+                        showMessage('success', '⚠️ Import Partially Completed',
+                            `${result.message || 'Some orders were imported successfully.'}${statsHtml}`);
+                    }
+                } else {
+                    throw new Error(result.error || 'Import failed');
+                }
+
+            } catch (error) {
+                console.error('Import error:', error);
+                showMessage('error', '❌ Import Failed',
+                    `Error: ${error.message}<br><br>Please check:<br>
+                    • Your Vercel URL is correct<br>
+                    • The JSON file is valid<br>
+                    • Your app is deployed and running<br>
+                    • Supabase is configured correctly`);
+            } finally {
+                importBtn.disabled = false;
+                setTimeout(() => {
+                    progressContainer.style.display = 'none';
+                    progressFill.style.width = '0%';
+                }, 1000);
+            }
+        });
+
+        function readFileAsText(file) {
+            return new Promise((resolve, reject) => {
+                const reader = new FileReader();
+                reader.onload = (e) => resolve(e.target.result);
+                reader.onerror = (e) => reject(new Error('Failed to read file'));
+                reader.readAsText(file);
+            });
+        }
+
+        function showMessage(type, title, content) {
+            message.className = `message ${type}`;
+            messageTitle.textContent = title;
+            messageContent.innerHTML = content;
+            message.style.display = 'block';
+            message.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+    </script>
+</body>
+</html>
