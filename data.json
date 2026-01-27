@@ -1,0 +1,5732 @@
+[
+    {
+      "date": "Jan 27, 2026, 11:45 AM",
+      "seller": "Duet_Dwa",
+      "items": [
+        {
+          "product": "Cinnamon sticks 50 g Targroch",
+          "quantity": 1,
+          "unit_price": 7.5,
+          "total_price": 7.5
+        },
+        {
+          "product": "KFD Creatine Monohydrate taste Strawberry-Level 500g",
+          "quantity": 1,
+          "unit_price": 44.97,
+          "total_price": 44.97
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 52.47,
+      "status": "In preparation"
+    },
+    {
+      "date": "Jan 26, 2026, 12:30 PM",
+      "seller": "zdrowydyskont_pl",
+      "items": [
+        {
+          "product": "Vicks BabyRub Relaxing Ointment for Children 25 ml comfort for babies",
+          "quantity": 2,
+          "unit_price": 39.99,
+          "total_price": 79.98
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 79.98,
+      "status": "In transit"
+    },
+    {
+      "date": "Jan 25, 2026, 12:57 PM",
+      "seller": "MikroKlimat_pl",
+      "items": [
+        {
+          "product": "Alocasia Allocasia Jacklyn unique beauty DØ6cm unique leaf shape",
+          "quantity": 1,
+          "unit_price": 26.99,
+          "total_price": 26.99
+        }
+      ],
+      "delivery_cost": 10.49,
+      "total": 37.48,
+      "status": "Ready for pickup"
+    },
+    {
+      "date": "Jan 25, 2026, 12:57 PM",
+      "seller": "FabricaPlants",
+      "items": [
+        {
+          "product": "Monster MINIMA VARIEGATA - beautifully colored + winter protection",
+          "quantity": 1,
+          "unit_price": 59.0,
+          "total_price": 59.0
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 59.0,
+      "status": "Ready for pickup"
+    },
+    {
+      "date": "Jan 23, 2026, 02:04 PM",
+      "seller": null,
+      "items": [
+        {
+          "product": "Unicorn Toy Set, Plush Toys, 22-Piece",
+          "quantity": 1,
+          "unit_price": 79.99,
+          "total_price": 79.99
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 79.99,
+      "status": "Picked up"
+    },
+    {
+      "date": "Jan 23, 2026, 11:41 AM",
+      "seller": "SwiatNiskichCen_",
+      "items": [
+        {
+          "product": "3x Men's wool socks MERINO WOOL pressure-free highlander winter 39-42",
+          "quantity": 3,
+          "unit_price": 18.98,
+          "total_price": 56.94
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 56.94,
+      "status": "Picked up"
+    },
+    {
+      "date": "Jan 22, 2026, 06:48 PM",
+      "seller": "MarketJasmin",
+      "items": [
+        {
+          "product": "Black Dried Lemons 150g Zine",
+          "quantity": 1,
+          "unit_price": 12.0,
+          "total_price": 12.0
+        },
+        {
+          "product": "Hot sauce with peppers 100ml WOUND",
+          "quantity": 1,
+          "unit_price": 5.0,
+          "total_price": 5.0
+        }
+      ],
+      "delivery_cost": 14.99,
+      "total": 31.99,
+      "status": "Picked up"
+    },
+    {
+      "date": "Jan 19, 2026, 02:20 PM",
+      "seller": "avans__pl",
+      "items": [
+        {
+          "product": "SANDISK Ultra Dual Go 128GB",
+          "quantity": 1,
+          "unit_price": 69.99,
+          "total_price": 69.99
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 69.99,
+      "status": "Picked up"
+    },
+    {
+      "date": "Jan 17, 2026, 12:07 AM",
+      "seller": "homeandgardening",
+      "items": [
+        {
+          "product": "BIOVITA COCO CHIPS COCONUT CHIPS 5L SUBSTRATE WOOD CHIPS FIBER LOOSENED",
+          "quantity": 1,
+          "unit_price": 14.99,
+          "total_price": 14.99
+        },
+        {
+          "product": "Earth",
+          "quantity": 1,
+          "unit_price": 11.86,
+          "total_price": 11.86
+        },
+        {
+          "product": "KERAMZYT 5L 8-16MM GARDENING NATURAL DRAINAGE HYDROPONICS POT SUBSTRATE",
+          "quantity": 1,
+          "unit_price": 10.59,
+          "total_price": 10.59
+        },
+        {
+          "product": "PALLET OF PRODUCTION POTS MULTIPLATTS SEEDLINGS SOWING POT SEEDLINGS",
+          "quantity": 1,
+          "unit_price": 13.99,
+          "total_price": 13.99
+        },
+        {
+          "product": "UNIVERSAL SOIL 10L FOR PLANT FLOWERS BIOVITA MULTICOMPONENT SUBSTRATE",
+          "quantity": 1,
+          "unit_price": 5.99,
+          "total_price": 5.99
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 57.42,
+      "status": "Picked up"
+    },
+    {
+      "date": "Jan 16, 2026, 06:14 AM",
+      "seller": "SMA-OLIMP_SPORT",
+      "items": [
+        {
+          "product": "OLIMP WHEY PROTEIN COMPLEX 700g PROTEIN SUPPLEMENT WPC ISOLATE",
+          "quantity": 1,
+          "unit_price": 85.0,
+          "total_price": 85.0
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 85.0,
+      "status": "Picked up"
+    },
+    {
+      "date": "Jan 14, 2026, 11:17 PM",
+      "seller": "JUSTSPORT_",
+      "items": [
+        {
+          "product": "18x PROTEIN BOMB protein shake 35g protein low fat drink",
+          "quantity": 1,
+          "unit_price": 122.9,
+          "total_price": 122.9
+        },
+        {
+          "product": "PROTEIN BOMB protein shake 35g protein high protein gluten free",
+          "quantity": 2,
+          "unit_price": 6.99,
+          "total_price": 13.98
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 136.88,
+      "status": "Picked up"
+    },
+    {
+      "date": "Jan 14, 2026, 01:36 AM",
+      "seller": "Big-Box_",
+      "items": [
+        {
+          "product": "NIGHT LIGHT LED TOUCH 3 COLORS WIRELESS LIGHT FOR FURNITURE CABINET",
+          "quantity": 4,
+          "unit_price": 16.9,
+          "total_price": 67.6
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 67.6,
+      "status": "Picked up"
+    },
+    {
+      "date": "Jan 12, 2026, 11:52 PM",
+      "seller": "Drukant_pl",
+      "items": [
+        {
+          "product": "STICKERS boy label set 14 February wife VALENTINE'S DAY gift 5 cm",
+          "quantity": 1,
+          "unit_price": 9.8,
+          "total_price": 9.8
+        },
+        {
+          "product": "LABELS husband girl VALENTINE'S DAY gift wine chocolate 5 cm",
+          "quantity": 1,
+          "unit_price": 9.79,
+          "total_price": 9.79
+        },
+        {
+          "product": "STICKERS set of labels husband 14 February girls VALENTINE'S DAY gift 5 cm",
+          "quantity": 1,
+          "unit_price": 9.79,
+          "total_price": 9.79
+        },
+        {
+          "product": "STICKERS sticker sheet set labels wife VALENTINE'S DAY gift wine 5cm",
+          "quantity": 1,
+          "unit_price": 9.79,
+          "total_price": 9.79
+        },
+        {
+          "product": "LABELS boyfriend husband wife VALENTINE'S DAY gift wine chocolate 5 cm",
+          "quantity": 1,
+          "unit_price": 9.79,
+          "total_price": 9.79
+        },
+        {
+          "product": "LABELS husband girl VALENTINE'S DAY gift wine chocolate 5 cm",
+          "quantity": 1,
+          "unit_price": 9.97,
+          "total_price": 9.97
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 58.93,
+      "status": "Picked up"
+    },
+    {
+      "date": "Jan 10, 2026, 07:32 AM",
+      "seller": "Kaiser_Detailing",
+      "items": [
+        {
+          "product": "Autoglym Rapid Detailer 500ml GIVES GLOSS AND PROTECTS ALL SURFACES",
+          "quantity": 1,
+          "unit_price": 53.49,
+          "total_price": 53.49
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 53.49,
+      "status": "Picked up"
+    },
+    {
+      "date": "Jan 9, 2026, 12:57 AM",
+      "seller": "alle-granie",
+      "items": [
+        {
+          "product": "DADA PANTS 7 XXL 18+ DIAPERS EXTRA CARE PAMPERS 34 pcs NEW!!!!",
+          "quantity": 1,
+          "unit_price": 52.99,
+          "total_price": 52.99
+        },
+        {
+          "product": "DIAPERS DADA EXTRA CARE 6 XL PAMPERS 16+kg 3x34 102 pieces",
+          "quantity": 1,
+          "unit_price": 83.97,
+          "total_price": 83.97
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 136.96,
+      "status": "Picked up"
+    },
+    {
+      "date": "Jan 9, 2026, 12:57 AM",
+      "seller": "sklep_MOTOMY_pl",
+      "items": [
+        {
+          "product": "ADBL MAGIC MIST VANILLA TOUCH 200ml + PERFUME PENDANT",
+          "quantity": 1,
+          "unit_price": 29.89,
+          "total_price": 29.89
+        },
+        {
+          "product": "ADBL THER LEATHER UPHOLSTERY CLEANING BRUSH DELICATE",
+          "quantity": 2,
+          "unit_price": 16.99,
+          "total_price": 33.98
+        },
+        {
+          "product": "WORK STUFF SET OF 3 BOTTLES 1L + CANYON TRIGGERS",
+          "quantity": 1,
+          "unit_price": 48.9,
+          "total_price": 48.9
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 112.77,
+      "status": "Picked up"
+    },
+    {
+      "date": "Jan 9, 2026, 12:57 AM",
+      "seller": "Unia_Tytan",
+      "items": [
+        {
+          "product": "2 x Electronics Wood Furniture Cleaner and Care Agent 500g",
+          "quantity": 1,
+          "unit_price": 15.69,
+          "total_price": 15.69
+        },
+        {
+          "product": "2 x washing machine cleaner Tytan 250ml mega effective for washing machines",
+          "quantity": 2,
+          "unit_price": 14.99,
+          "total_price": 29.98
+        },
+        {
+          "product": "WINDOW CLEANING LIQUID NANOTECHNOLOGY SPRAY 750g",
+          "quantity": 1,
+          "unit_price": 6.99,
+          "total_price": 6.99
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 52.66,
+      "status": "Picked up"
+    },
+    {
+      "date": "Jan 7, 2026, 12:46 AM",
+      "seller": "asena1",
+      "items": [
+        {
+          "product": "THE BODY SHOP TEA TREE SKIN CLEARING FACIAL WASH Face Wash Gel 250 ml",
+          "quantity": 1,
+          "unit_price": 68.5,
+          "total_price": 68.5
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 68.5,
+      "status": "Picked up"
+    },
+    {
+      "date": "Jan 6, 2026, 09:54 PM",
+      "seller": "MeliDeli",
+      "items": [
+        {
+          "product": "Classic Greek Pita 17cm Pack of 10 Frozen",
+          "quantity": 3,
+          "unit_price": 29.9,
+          "total_price": 89.69999999999999
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 89.7,
+      "status": "Picked up"
+    },
+    {
+      "date": "Jan 5, 2026, 10:34 AM",
+      "seller": "automotive_care",
+      "items": [
+        {
+          "product": "Autoglym Fast Glass - streak-free glass cleaner 500ml",
+          "quantity": 1,
+          "unit_price": 45.0,
+          "total_price": 45.0
+        },
+        {
+          "product": "Work Stuff Work Bottle empty spray bottle",
+          "quantity": 1,
+          "unit_price": 18.9,
+          "total_price": 18.9
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 63.9,
+      "status": "Picked up"
+    },
+    {
+      "date": "Jan 3, 2026, 03:42 PM",
+      "seller": "Euro-Drogeria",
+      "items": [
+        {
+          "product": "Bref Hygiene Toilet Gel Mix Set Purity 700ml x4",
+          "quantity": 1,
+          "unit_price": 53.29,
+          "total_price": 53.29
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 53.29,
+      "status": "Picked up"
+    },
+    {
+      "date": "Jan 3, 2026, 03:42 PM",
+      "seller": "MatLine_",
+      "items": [
+        {
+          "product": "Professional Line Interior Cleaner 5L",
+          "quantity": 1,
+          "unit_price": 89.9,
+          "total_price": 89.9
+        }
+      ],
+      "delivery_cost": 16.9,
+      "total": 106.8,
+      "status": "Picked up"
+    },
+    {
+      "date": "Jan 3, 2026, 03:42 PM",
+      "seller": "sklepkawa",
+      "items": [
+        {
+          "product": "LAVAZZA QUALITA ORO ARABICA ground coffee 0.25 kg + FREEBIE videobook",
+          "quantity": 4,
+          "unit_price": 28.9,
+          "total_price": 115.6
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 115.6,
+      "status": "Picked up"
+    },
+    {
+      "date": "Jan 3, 2026, 03:42 PM",
+      "seller": "rafalzakupy24",
+      "items": [
+        {
+          "product": "Ariel Scented Mountain Spring Washing Powder up to 4kg",
+          "quantity": 2,
+          "unit_price": 36.39,
+          "total_price": 72.78
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 72.78,
+      "status": "Picked up"
+    },
+    {
+      "date": "Jan 3, 2026, 03:42 PM",
+      "seller": "SmA-Baseus",
+      "items": [
+        {
+          "product": "GRAVITATIONAL CAR HOLDER BASEUS FOR CAR AIR VENT",
+          "quantity": 1,
+          "unit_price": 49.99,
+          "total_price": 49.99
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 49.99,
+      "status": "Picked up"
+    },
+    {
+      "date": "Jan 3, 2026, 03:42 PM",
+      "seller": "Atoni_pl",
+      "items": [
+        {
+          "product": "ELECTRIC GRINDER FOR GRINDING MEAT VEGETABLE MACHINE MIXER 2L 250W STEEL",
+          "quantity": 1,
+          "unit_price": 64.99,
+          "total_price": 64.99
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 64.99,
+      "status": "Picked up"
+    },
+    {
+      "date": "Jan 3, 2026, 03:42 PM",
+      "seller": "BLOW_Electronic",
+      "items": [
+        {
+          "product": "ADAPTER MICRO CARPLAY ANDROID AUTO WIRELESS WIFI BLUETOOTH MODULE",
+          "quantity": 1,
+          "unit_price": 78.88,
+          "total_price": 78.88
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 78.88,
+      "status": "Picked up"
+    },
+    {
+      "date": "Jan 3, 2026, 03:42 PM",
+      "seller": "SmA-Unilever2",
+      "items": [
+        {
+          "product": "Cif Infinite Clean Cleaning Spray Lime + Lemongrass 280 ml",
+          "quantity": 2,
+          "unit_price": 16.92,
+          "total_price": 33.84
+        },
+        {
+          "product": "Coccolino Sensitive&Soft Fabric Softener 2x1,7L (136 Washes)",
+          "quantity": 1,
+          "unit_price": 32.41,
+          "total_price": 32.41
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 66.25,
+      "status": "Picked up"
+    },
+    {
+      "date": "Jan 3, 2026, 03:42 PM",
+      "seller": "www_mirapol_pl",
+      "items": [
+        {
+          "product": "WOODEN KITCHEN FOR CHILDREN XXL SET ACCESSORIES FOR PLAY GIFT",
+          "quantity": 1,
+          "unit_price": 249.0,
+          "total_price": 249.0
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 249.0,
+      "status": "Picked up"
+    },
+    {
+      "date": "Dec 19, 2025, 01:25 PM",
+      "seller": "apteczka24",
+      "items": [
+        {
+          "product": "PERSONAL STEAM SINUS INHALER VICKS VH200 SINUS INHALER",
+          "quantity": 1,
+          "unit_price": 127.79,
+          "total_price": 127.79
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 127.79,
+      "status": "Picked up"
+    },
+    {
+      "date": "Dec 19, 2025, 02:19 AM",
+      "seller": "sklep_jachting",
+      "items": [
+        {
+          "product": "Dec 19, 2025, 02:19 AM",
+          "quantity": 1,
+          "unit_price": 49.0,
+          "total_price": 49.0
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 49.0,
+      "status": "Picked up"
+    },
+    {
+      "date": "Dec 17, 2025, 01:51 AM",
+      "seller": "beautyshopsk",
+      "items": [
+        {
+          "product": "Shower Bidet Electric Portable 2.3L Rechargeable Travel Camping",
+          "quantity": 1,
+          "unit_price": 160.0,
+          "total_price": 160.0
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 160.0,
+      "status": "Canceled"
+    },
+    {
+      "date": "Dec 16, 2025, 01:07 AM",
+      "seller": "SmA-Nutricia",
+      "items": [
+        {
+          "product": "Bebilon 3 Advance Pronutra Junior after 1 year 1000 g + FREEBIE !",
+          "quantity": 1,
+          "unit_price": 80.99,
+          "total_price": 80.99
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 80.99,
+      "status": "Picked up"
+    },
+    {
+      "date": "Dec 16, 2025, 01:05 AM",
+      "seller": "alle-granie",
+      "items": [
+        {
+          "product": "DIAPERS DADA EXTRA CARE 6 XL PAMPERS 16+kg 3x34 102 pieces",
+          "quantity": 1,
+          "unit_price": 78.93,
+          "total_price": 78.93
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 78.93,
+      "status": "Picked up"
+    },
+    {
+      "date": "Dec 8, 2025, 09:34 PM",
+      "seller": "GoodwillBrands",
+      "items": [
+        {
+          "product": "WIRELESS Massager for Back Shoulder Neck for Herz BATTERY",
+          "quantity": 1,
+          "unit_price": 239.0,
+          "total_price": 239.0
+        },
+        {
+          "product": "Water Foot Massager HYDROMASSAGE HerzMedical PILOT, HEATING, Touch SCREEN",
+          "quantity": 1,
+          "unit_price": 319.0,
+          "total_price": 319.0
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 558.0,
+      "status": "Picked up"
+    },
+    {
+      "date": "Dec 7, 2025, 01:37 AM",
+      "seller": "Finish_RB_Sklep",
+      "items": [
+        {
+          "product": "Finish Set Cleaner Salt Shiner Cleaner Mix x3",
+          "quantity": 2,
+          "unit_price": 37.69,
+          "total_price": 75.38
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 75.38,
+      "status": "Picked up"
+    },
+    {
+      "date": "Dec 6, 2025, 11:49 AM",
+      "seller": "MILWAR_POLSKA",
+      "items": [
+        {
+          "product": "M3x8 STAINLESS STEEL CONICAL CROSS SCREW A2 965 (50)",
+          "quantity": 2,
+          "unit_price": 2.95,
+          "total_price": 5.9
+        }
+      ],
+      "delivery_cost": 9.99,
+      "total": 15.89,
+      "status": "Picked up"
+    },
+    {
+      "date": "Dec 4, 2025, 04:19 PM",
+      "seller": "MILWAR_POLSKA",
+      "items": [
+        {
+          "product": "M4x8 CONICAL SCREW ALLEN AMPUL ACID RESISTANT stainless steel A4 7991 (50",
+          "quantity": 1,
+          "unit_price": 4.95,
+          "total_price": 4.95
+        },
+        {
+          "product": "M4x8 STAINLESS STEEL SPHERICAL SCREW A2 inox SCREW 7380 (50)",
+          "quantity": 1,
+          "unit_price": 3.95,
+          "total_price": 3.95
+        }
+      ],
+      "delivery_cost": 9.99,
+      "total": 18.89,
+      "status": "Picked up"
+    },
+    {
+      "date": "Dec 3, 2025, 11:41 PM",
+      "seller": "sheibak",
+      "items": [
+        {
+          "product": "Alkaline battery ENERGIZER Industrial AA LR6 large finger 1.5V 10pcs.",
+          "quantity": 4,
+          "unit_price": 12.79,
+          "total_price": 51.16
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 51.16,
+      "status": "Picked up"
+    },
+    {
+      "date": "Nov 30, 2025, 07:42 AM",
+      "seller": "RB_Hygiene_Home",
+      "items": [
+        {
+          "product": "Cillit Bang Spray Cleaning Liquids Kitchen and Bathroom 6x750ml",
+          "quantity": 1,
+          "unit_price": 89.3,
+          "total_price": 89.3
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 89.3,
+      "status": "Picked up"
+    },
+    {
+      "date": "Nov 30, 2025, 07:42 AM",
+      "seller": "e-sklepbudowlany",
+      "items": [
+        {
+          "product": "Liquid HG 0,5l cleaning cookers and plates",
+          "quantity": 2,
+          "unit_price": 22.13,
+          "total_price": 44.26
+        },
+        {
+          "product": "Preparation Tenzi Clean Upholstery 600 ml",
+          "quantity": 1,
+          "unit_price": 9.87,
+          "total_price": 9.87
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 54.13,
+      "status": "Picked up"
+    },
+    {
+      "date": "Nov 30, 2025, 07:16 AM",
+      "seller": "Baby-Sklep",
+      "items": [
+        {
+          "product": "ANGELCARE REFILL FOR BASKET CONTAINER FOR USED DIAPERS BAGS x1",
+          "quantity": 2,
+          "unit_price": 22.82,
+          "total_price": 45.64
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 45.64,
+      "status": "Picked up"
+    },
+    {
+      "date": "Nov 30, 2025, 07:13 AM",
+      "seller": "sklepkawa",
+      "items": [
+        {
+          "product": "LAVAZZA QUALITA ORO ARABICA ground coffee 0.25 kg + FREEBIE videobook",
+          "quantity": 2,
+          "unit_price": 29.9,
+          "total_price": 59.8
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 59.8,
+      "status": "Picked up"
+    },
+    {
+      "date": "Nov 30, 2025, 07:11 AM",
+      "seller": "KlinikaAGD_pl",
+      "items": [
+        {
+          "product": "Dishwasher Rinse Aid 500ml Lemon",
+          "quantity": 1,
+          "unit_price": 28.9,
+          "total_price": 28.9
+        },
+        {
+          "product": "Screw for coffee maker DeLonghi Dedica EC685M EC155 original M4x8",
+          "quantity": 3,
+          "unit_price": 5.9,
+          "total_price": 17.700000000000003
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 46.6,
+      "status": "Delayed delivery"
+    },
+    {
+      "date": "Nov 20, 2025, 12:58 PM",
+      "seller": "alle-granie",
+      "items": [
+        {
+          "product": "DIAPERS DADA EXTRA CARE 6 XL PAMPERS 16+kg 3x34 102 pieces",
+          "quantity": 1,
+          "unit_price": 75.57,
+          "total_price": 75.57
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 75.57,
+      "status": "Picked up"
+    },
+    {
+      "date": "Nov 12, 2025, 06:45 AM",
+      "seller": "SuplioVivo",
+      "items": [
+        {
+          "product": "VICKS VapoPads Rosemary with Lavender Pediatric Fragrance Inserts Pack of 7",
+          "quantity": 1,
+          "unit_price": 49.9,
+          "total_price": 49.9
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 49.9,
+      "status": "Picked up"
+    },
+    {
+      "date": "Nov 12, 2025, 02:31 AM",
+      "seller": "MEDPAK_PL",
+      "items": [
+        {
+          "product": "Now Foods Daily Vits Multivitamin 100 tablets",
+          "quantity": 1,
+          "unit_price": 55.76,
+          "total_price": 55.76
+        },
+        {
+          "product": "Protego Active+ 100% Energy Caffeine Ashwagandha Taurine Guarana 20 tablets",
+          "quantity": 1,
+          "unit_price": 10.75,
+          "total_price": 10.75
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 66.51,
+      "status": "Picked up"
+    },
+    {
+      "date": "Nov 9, 2025, 11:05 PM",
+      "seller": "SmA-Nutricia",
+      "items": [
+        {
+          "product": "Bebilon 3 Advance Pronutra Junior after 1 year 1000 g + FREEBIE !",
+          "quantity": 1,
+          "unit_price": 80.99,
+          "total_price": 80.99
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 80.99,
+      "status": "Picked up"
+    },
+    {
+      "date": "Nov 9, 2025, 11:05 PM",
+      "seller": "nasdaq999",
+      "items": [
+        {
+          "product": "Strainer filter 2 coffee for DeLonghi EC850M EC680M EC685M Original",
+          "quantity": 3,
+          "unit_price": 27.44,
+          "total_price": 82.32000000000001
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 82.32,
+      "status": "Picked up"
+    },
+    {
+      "date": "Nov 9, 2025, 11:05 PM",
+      "seller": "Baby-Sklep",
+      "items": [
+        {
+          "product": "AKUKU SCENTED POUCHES FOR WORN DIAPERS 2 PACK",
+          "quantity": 4,
+          "unit_price": 17.98,
+          "total_price": 71.92
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 71.92,
+      "status": "Picked up"
+    },
+    {
+      "date": "Nov 5, 2025, 01:13 AM",
+      "seller": "BMB1409",
+      "items": [
+        {
+          "product": "Bissell | Cleaning and protection agent Pro | 1500 ml",
+          "quantity": 1,
+          "unit_price": 88.42,
+          "total_price": 88.42
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 88.42,
+      "status": "Picked up"
+    },
+    {
+      "date": "Nov 2, 2025, 09:37 PM",
+      "seller": "drogeriaolmed",
+      "items": [
+        {
+          "product": "Bebilon 3 with Pronutra Advance powder - 1000g",
+          "quantity": 1,
+          "unit_price": 74.9,
+          "total_price": 74.9
+        },
+        {
+          "product": "TYTAN Multifunctional for kitchens Zero grease and grime, 500 g",
+          "quantity": 1,
+          "unit_price": 7.13,
+          "total_price": 7.13
+        },
+        {
+          "product": "TYTAN Window and mirror cleaner nanotechnology 750ml",
+          "quantity": 1,
+          "unit_price": 5.68,
+          "total_price": 5.68
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 87.71,
+      "status": "Picked up"
+    },
+    {
+      "date": "Nov 2, 2025, 09:37 PM",
+      "seller": "sklepkawa",
+      "items": [
+        {
+          "product": "LAVAZZA QUALITA ORO ARABICA ground coffee 0.25 kg + FREEBIE videobook",
+          "quantity": 2,
+          "unit_price": 29.9,
+          "total_price": 59.8
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 59.8,
+      "status": "Picked up"
+    },
+    {
+      "date": "Oct 26, 2025, 11:57 PM",
+      "seller": "alle-granie",
+      "items": [
+        {
+          "product": "DIAPERS DADA EXTRA CARE 6 XL PAMPERS 16+kg 3x34 102 pieces",
+          "quantity": 1,
+          "unit_price": 78.93,
+          "total_price": 78.93
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 78.93,
+      "status": "Picked up"
+    },
+    {
+      "date": "Oct 24, 2025, 04:05 PM",
+      "seller": "Grupa_PPM_SA",
+      "items": [
+        {
+          "product": "3M 17047 Command Universal hook for images",
+          "quantity": 2,
+          "unit_price": 13.0,
+          "total_price": 26.0
+        },
+        {
+          "product": "3M COMMAND SELF-ADHESIVE UNIVERSAL HOOK FOR LARGE PICTURES 3.6KG _ 17048",
+          "quantity": 1,
+          "unit_price": 16.02,
+          "total_price": 16.02
+        },
+        {
+          "product": "COMMAND SELF-ADHESIVE HOOK FOR PICTURE FRAMES WITH HANDLE 1,8KG",
+          "quantity": 2,
+          "unit_price": 11.26,
+          "total_price": 22.52
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 64.54,
+      "status": "Picked up"
+    },
+    {
+      "date": "Oct 23, 2025, 06:53 PM",
+      "seller": "KOL-POL_Sklep",
+      "items": [
+        {
+          "product": "DRIED TOMATOES 100g Natural sun-dried high quality Kol-Pol",
+          "quantity": 1,
+          "unit_price": 7.9,
+          "total_price": 7.9
+        },
+        {
+          "product": "MEXICAN SEASONING 100g Aromatic blend natural quality Kol-Pol",
+          "quantity": 1,
+          "unit_price": 5.9,
+          "total_price": 5.9
+        }
+      ],
+      "delivery_cost": 10.99,
+      "total": 24.79,
+      "status": "Picked up"
+    },
+    {
+      "date": "Oct 16, 2025, 11:29 PM",
+      "seller": "Allegro",
+      "items": [
+        {
+          "product": "Fairy Platinum Dishwasher Capsules 5x28=140 Pack",
+          "quantity": 1,
+          "unit_price": 99.99,
+          "total_price": 99.99
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 99.99,
+      "status": "Picked up"
+    },
+    {
+      "date": "Oct 6, 2025, 09:41 AM",
+      "seller": "wkierunkunatury",
+      "items": [
+        {
+          "product": "GROUND COFFEE Lavazza Qualita ORO 250g roasted coffee100% Arabica beans",
+          "quantity": 2,
+          "unit_price": 26.85,
+          "total_price": 53.7
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 53.7,
+      "status": "Picked up"
+    },
+    {
+      "date": "Oct 3, 2025, 03:37 AM",
+      "seller": "Vertexeuropa",
+      "items": [
+        {
+          "product": "Aashirvaad Atta Classic Whole Wheat Flour 5Kg",
+          "quantity": 1,
+          "unit_price": 55.98,
+          "total_price": 55.98
+        },
+        {
+          "product": "Annam Phool Makhana lotus seeds 200g",
+          "quantity": 1,
+          "unit_price": 36.99,
+          "total_price": 36.99
+        },
+        {
+          "product": "Vatika Argan oil multivitamin shiny hair 200ml",
+          "quantity": 1,
+          "unit_price": 29.99,
+          "total_price": 29.99
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 122.96,
+      "status": "Picked up"
+    },
+    {
+      "date": "Sep 28, 2025, 10:19 PM",
+      "seller": "drogeriaolmed",
+      "items": [
+        {
+          "product": "Bebilon 3 with Pronutra Advance powder - 1000g",
+          "quantity": 1,
+          "unit_price": 74.9,
+          "total_price": 74.9
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 74.9,
+      "status": "Picked up"
+    },
+    {
+      "date": "Sep 28, 2025, 10:19 PM",
+      "seller": "SmA-Unilever2",
+      "items": [
+        {
+          "product": "CIF Spray Ultrafast Power&Shine Descaler 500 ml",
+          "quantity": 1,
+          "unit_price": 16.79,
+          "total_price": 16.79
+        },
+        {
+          "product": "Coccolino Sensitive&Soft Fabric softener 2x1,7L (136 washes) +bear",
+          "quantity": 1,
+          "unit_price": 31.58,
+          "total_price": 31.58
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 48.37,
+      "status": "Picked up"
+    },
+    {
+      "date": "Sep 28, 2025, 10:18 PM",
+      "seller": "alle-granie",
+      "items": [
+        {
+          "product": "DADA PANTS DIAPERS 6 XL EXTRA CARE PAMPERS 38 pcs NEW!!!!!!!!!",
+          "quantity": 1,
+          "unit_price": 49.99,
+          "total_price": 49.99
+        },
+        {
+          "product": "DIAPERS DADA EXTRA CARE 6 XL PAMPERS 16+kg 3x34 102 pcs!!!! NEW!!!",
+          "quantity": 1,
+          "unit_price": 83.97,
+          "total_price": 83.97
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 133.96,
+      "status": "Picked up"
+    },
+    {
+      "date": "Sep 28, 2025, 10:07 PM",
+      "seller": "rafalzakupy24",
+      "items": [
+        {
+          "product": "Ariel Aqua Powder Mountain Spring Colour Washing Powder 5 kg",
+          "quantity": 2,
+          "unit_price": 49.99,
+          "total_price": 99.98
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 99.98,
+      "status": "Picked up"
+    },
+    {
+      "date": "Sep 28, 2025, 04:01 PM",
+      "seller": "nasdaq999",
+      "items": [
+        {
+          "product": "DeLonghi Dedica espresso machine flask seal",
+          "quantity": 2,
+          "unit_price": 10.99,
+          "total_price": 21.98
+        },
+        {
+          "product": "Strainer filter 2 coffee for DeLonghi EC850M EC680M EC685M Original",
+          "quantity": 2,
+          "unit_price": 27.44,
+          "total_price": 54.88
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 76.86,
+      "status": "Picked up"
+    },
+    {
+      "date": "Sep 17, 2025, 09:56 AM",
+      "seller": "Geshjoymi",
+      "items": [
+        {
+          "product": "47IN1 ELECTRIC SCREWDRIVER FOLDING CORDLESS LED SCREWDRIVER 3.6V 1300MAH",
+          "quantity": 1,
+          "unit_price": 69.99,
+          "total_price": 69.99
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 69.99,
+      "status": "Picked up"
+    },
+    {
+      "date": "Sep 14, 2025, 09:59 PM",
+      "seller": "wkierunkunatury",
+      "items": [
+        {
+          "product": "GROUND COFFEE Lavazza Qualita ORO 250g roasted coffee100% Arabica beans",
+          "quantity": 3,
+          "unit_price": 26.85,
+          "total_price": 80.55000000000001
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 80.55,
+      "status": "Picked up"
+    },
+    {
+      "date": "Sep 14, 2025, 09:59 PM",
+      "seller": "KlinikaAGD_pl",
+      "items": [
+        {
+          "product": "LIQUID ELECTROLUX FOR INDUCTION HOBS + SCRAPER",
+          "quantity": 1,
+          "unit_price": 45.0,
+          "total_price": 45.0
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 45.0,
+      "status": "Picked up"
+    },
+    {
+      "date": "Sep 14, 2025, 09:59 PM",
+      "seller": "SmA-Nutricia",
+      "items": [
+        {
+          "product": "Bebilon 3 Advance Pronutra Junior 1 year 1000 g",
+          "quantity": 1,
+          "unit_price": 80.99,
+          "total_price": 80.99
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 80.99,
+      "status": "Picked up"
+    },
+    {
+      "date": "Sep 3, 2025, 10:12 PM",
+      "seller": "MeliDeli",
+      "items": [
+        {
+          "product": "Classic Greek Pita 17cm Pack of 10 Frozen",
+          "quantity": 3,
+          "unit_price": 29.9,
+          "total_price": 89.69999999999999
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 89.7,
+      "status": "Picked up"
+    },
+    {
+      "date": "Sep 2, 2025, 04:45 AM",
+      "seller": "TOYS_4U",
+      "items": [
+        {
+          "product": "PROJECTOR STORY TELLER DISNEY NIGHT LIGHT CHILD GIFT CLEMENTONI",
+          "quantity": 1,
+          "unit_price": 115.0,
+          "total_price": 115.0
+        }
+      ],
+      "delivery_cost": 18.9,
+      "total": 133.9,
+      "status": "Picked up"
+    },
+    {
+      "date": "Sep 2, 2025, 04:45 AM",
+      "seller": "Symeo_Toys",
+      "items": [
+        {
+          "product": "CREATIVE SET ART MARKER FACTORY CREATOR HIGHLIGHTER GIFT CLEMENTON",
+          "quantity": 1,
+          "unit_price": 99.9,
+          "total_price": 99.9
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 99.9,
+      "status": "Picked up"
+    },
+    {
+      "date": "Sep 2, 2025, 04:45 AM",
+      "seller": "MAT_Group",
+      "items": [
+        {
+          "product": "SHOP ICE CREAM SHOP CONFECTIONERY SOUND LED 39 ELEMENTS FOR CHILDREN",
+          "quantity": 1,
+          "unit_price": 54.99,
+          "total_price": 54.99
+        },
+        {
+          "product": "Set of small doctor stroller ekg interactive for children XXL 26 el.",
+          "quantity": 1,
+          "unit_price": 99.0,
+          "total_price": 99.0
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 153.99,
+      "status": "Picked up"
+    },
+    {
+      "date": "Aug 31, 2025, 03:28 PM",
+      "seller": "KRUMAD",
+      "items": [
+        {
+          "product": "GARDEN LIGHT GARLAND 15 m Bulbs 15 LED Outdoor Garden Lights",
+          "quantity": 1,
+          "unit_price": 59.9,
+          "total_price": 59.9
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 59.9,
+      "status": "Picked up"
+    },
+    {
+      "date": "Aug 28, 2025, 06:56 AM",
+      "seller": "Karen_pl",
+      "items": [
+        {
+          "product": "Liquid Bona for mopping equipment 1 1L concentrate for wooden floors",
+          "quantity": 1,
+          "unit_price": 125.9,
+          "total_price": 125.9
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 125.9,
+      "status": "Picked up"
+    },
+    {
+      "date": "Aug 28, 2025, 06:56 AM",
+      "seller": "Baby-Sklep",
+      "items": [
+        {
+          "product": "ANGELCARE REFILL FOR DIAPER CONTAINER BAGS x1",
+          "quantity": 3,
+          "unit_price": 26.87,
+          "total_price": 80.61
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 80.61,
+      "status": "Picked up"
+    },
+    {
+      "date": "Aug 28, 2025, 06:56 AM",
+      "seller": "dots4home",
+      "items": [
+        {
+          "product": "Tineco Deodorizing & Cleaning Solution 1l + FREEBIE",
+          "quantity": 1,
+          "unit_price": 114.0,
+          "total_price": 114.0
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 114.0,
+      "status": "Picked up"
+    },
+    {
+      "date": "Aug 28, 2025, 06:56 AM",
+      "seller": "alle-granie",
+      "items": [
+        {
+          "product": "DIAPERS DADA EXTRA CARE 6 XL PAMPERS 16+kg 3x34 102 pcs!!!! NEW!!!",
+          "quantity": 1,
+          "unit_price": 83.97,
+          "total_price": 83.97
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 83.97,
+      "status": "Picked up"
+    },
+    {
+      "date": "Aug 28, 2025, 06:56 AM",
+      "seller": "UsaMaxx",
+      "items": [
+        {
+          "product": "Liquid Milk for Cleaning Glass Kitchens Weiman Glass Cook Top 425g",
+          "quantity": 1,
+          "unit_price": 62.23,
+          "total_price": 62.23
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 62.23,
+      "status": "Picked up"
+    },
+    {
+      "date": "Aug 28, 2025, 06:56 AM",
+      "seller": "PasjonaciZabawek",
+      "items": [
+        {
+          "product": "Fru Blu Soap Bubbles Bubble Launcher -0.5L Liquid",
+          "quantity": 1,
+          "unit_price": 59.9,
+          "total_price": 59.9
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 59.9,
+      "status": "Picked up"
+    },
+    {
+      "date": "Aug 28, 2025, 06:56 AM",
+      "seller": "SmA-Nutricia",
+      "items": [
+        {
+          "product": "Bebilon 3 Advance Pronutra Junior 1 year 1000 g",
+          "quantity": 1,
+          "unit_price": 80.99,
+          "total_price": 80.99
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 80.99,
+      "status": "Picked up"
+    },
+    {
+      "date": "Aug 24, 2025, 03:24 PM",
+      "seller": "ikawy_pl",
+      "items": [
+        {
+          "product": "Coffee syrup MONIN CHOCOLATE - chocolate 700 ml",
+          "quantity": 1,
+          "unit_price": 44.9,
+          "total_price": 44.9
+        },
+        {
+          "product": "Coffee syrup MONIN FRENCH VANILLA-vanilla 700ml",
+          "quantity": 1,
+          "unit_price": 44.9,
+          "total_price": 44.9
+        },
+        {
+          "product": "Descaler for Delonghi EcoDecalk 500ml",
+          "quantity": 1,
+          "unit_price": 42.25,
+          "total_price": 42.25
+        },
+        {
+          "product": "Glass sugar bowl with lid Altom Selena 210 ml",
+          "quantity": 1,
+          "unit_price": 8.9,
+          "total_price": 8.9
+        },
+        {
+          "product": "MONIN HAZELNUT coffee syrup - hazelnut 250 ml",
+          "quantity": 1,
+          "unit_price": 21.98,
+          "total_price": 21.98
+        },
+        {
+          "product": "MONIN MANGO coffee syrup 700ml",
+          "quantity": 1,
+          "unit_price": 41.38,
+          "total_price": 41.38
+        },
+        {
+          "product": "MONIN TIRAMISU coffee syrup 700ml",
+          "quantity": 1,
+          "unit_price": 41.38,
+          "total_price": 41.38
+        },
+        {
+          "product": "MONIN WHITE CHOCOLATE coffee syrup 250 ml",
+          "quantity": 1,
+          "unit_price": 23.29,
+          "total_price": 23.29
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 268.98,
+      "status": "Picked up"
+    },
+    {
+      "date": "Aug 24, 2025, 03:24 PM",
+      "seller": "wkierunkunatury",
+      "items": [
+        {
+          "product": "GROUND COFFEE Lavazza Qualita ORO 250g roasted coffee100% Arabica beans",
+          "quantity": 3,
+          "unit_price": 26.85,
+          "total_price": 80.55000000000001
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 80.55,
+      "status": "Picked up"
+    },
+    {
+      "date": "Aug 24, 2025, 03:24 PM",
+      "seller": "ikeameble_pl",
+      "items": [
+        {
+          "product": "IKEA LATT Kids table and 2 chairs WOOD",
+          "quantity": 1,
+          "unit_price": 155.99,
+          "total_price": 155.99
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 155.99,
+      "status": "Picked up"
+    },
+    {
+      "date": "Aug 24, 2025, 03:24 PM",
+      "seller": "alle-granie",
+      "items": [
+        {
+          "product": "DADA PANTS DIAPERS 6 XL EXTRA CARE PAMPERS 38 pcs NEW!!!!!!!!!",
+          "quantity": 1,
+          "unit_price": 49.99,
+          "total_price": 49.99
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 49.99,
+      "status": "Picked up"
+    },
+    {
+      "date": "Aug 10, 2025, 08:12 PM",
+      "seller": "SmA-Nutricia",
+      "items": [
+        {
+          "product": "Bebilon 3 Advance Pronutra Junior 1 year 1000 g",
+          "quantity": 1,
+          "unit_price": 80.99,
+          "total_price": 80.99
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 80.99,
+      "status": "Picked up"
+    },
+    {
+      "date": "Aug 10, 2025, 08:12 PM",
+      "seller": "Karen_pl",
+      "items": [
+        {
+          "product": "Liquid Bona for mopping equipment 1 1L concentrate for wooden floors",
+          "quantity": 1,
+          "unit_price": 125.9,
+          "total_price": 125.9
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 125.9,
+      "status": "Picked up"
+    },
+    {
+      "date": "Aug 3, 2025, 08:37 PM",
+      "seller": "NUTNTEX",
+      "items": [
+        {
+          "product": "TERRY BATH TOWEL PREMIUM 50x100 CM 580 GSM",
+          "quantity": 6,
+          "unit_price": 12.99,
+          "total_price": 77.94
+        },
+        {
+          "product": "TERRY BATH TOWEL PREMIUM 70x140 CM 600 GSM",
+          "quantity": 1,
+          "unit_price": 24.9,
+          "total_price": 24.9
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 102.84,
+      "status": "Picked up"
+    },
+    {
+      "date": "Aug 3, 2025, 02:25 PM",
+      "seller": "wkierunkunatury",
+      "items": [
+        {
+          "product": "GROUND COFFEE Lavazza Qualita ORO 250g roasted coffee100% Arabica beans",
+          "quantity": 3,
+          "unit_price": 26.85,
+          "total_price": 80.55000000000001
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 80.55,
+      "status": "Picked up"
+    },
+    {
+      "date": "Aug 3, 2025, 02:25 PM",
+      "seller": "SmA_Xiaomi2",
+      "items": [
+        {
+          "product": "Filter for vacuum cleaner Xiaomi Vacuum Cleaner G20 Lite Filter Kit",
+          "quantity": 1,
+          "unit_price": 79.0,
+          "total_price": 79.0
+        },
+        {
+          "product": "Magnetic Lamp Xiaomi Magnetic Reading Light Bar",
+          "quantity": 1,
+          "unit_price": 69.0,
+          "total_price": 69.0
+        },
+        {
+          "product": "Xiaomi Mi Vacuum Cleaner G20 Lite vertical vacuum cleaner",
+          "quantity": 1,
+          "unit_price": 329.0,
+          "total_price": 329.0
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 477.0,
+      "status": "Picked up"
+    },
+    {
+      "date": "Jul 28, 2025, 12:41 PM",
+      "seller": "SmA-Nutricia",
+      "items": [
+        {
+          "product": "Bebilon 3 Advance Pronutra Junior 1 year 1000 g",
+          "quantity": 1,
+          "unit_price": 80.99,
+          "total_price": 80.99
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 80.99,
+      "status": "Picked up"
+    },
+    {
+      "date": "Jul 21, 2025, 03:06 AM",
+      "seller": "M-Centrum-3",
+      "items": [
+        {
+          "product": "BEADS HAIR CLIPS BRAIDS FOR BRAIDS HAIR ORNAMENTS 50 PCS",
+          "quantity": 1,
+          "unit_price": 5.9,
+          "total_price": 5.9
+        },
+        {
+          "product": "GRAPHIC TABLET FOR DRAWING MAGIC DRAWING BOARD GIFT BOARD FOR A CHILD",
+          "quantity": 1,
+          "unit_price": 6.8,
+          "total_price": 6.8
+        },
+        {
+          "product": "MAGNETIC CHALKBOARD DRY ERASE DRAWING DOUBLE-SIDED ACCESSORIES",
+          "quantity": 1,
+          "unit_price": 26.99,
+          "total_price": 26.99
+        }
+      ],
+      "delivery_cost": 10.99,
+      "total": 50.68,
+      "status": "Picked up"
+    },
+    {
+      "date": "Jul 21, 2025, 03:06 AM",
+      "seller": "beefam",
+      "items": [
+        {
+          "product": "PAINTS FOR FACE AND BODY PAINTING 15 COLORS. WASHABLE CHILDREN",
+          "quantity": 1,
+          "unit_price": 40.0,
+          "total_price": 40.0
+        }
+      ],
+      "delivery_cost": 10.99,
+      "total": 50.99,
+      "status": "Picked up"
+    },
+    {
+      "date": "Jul 19, 2025, 11:49 PM",
+      "seller": "wkierunkunatury",
+      "items": [
+        {
+          "product": "Ground coffee Lavazza Qualita ORO 250g roasted coffee100% Arabica beans",
+          "quantity": 3,
+          "unit_price": 25.8,
+          "total_price": 77.4
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 77.4,
+      "status": "Picked up"
+    },
+    {
+      "date": "Jul 19, 2025, 03:13 AM",
+      "seller": "manima-pl",
+      "items": [
+        {
+          "product": "FINGER PUPPIES FOR CHILDREN 10 PIECES ANIMAL",
+          "quantity": 1,
+          "unit_price": 23.95,
+          "total_price": 23.95
+        },
+        {
+          "product": "SET OF STAMPS SEA ANIMALS 12 EL",
+          "quantity": 1,
+          "unit_price": 13.57,
+          "total_price": 13.57
+        }
+      ],
+      "delivery_cost": 16.99,
+      "total": 54.51,
+      "status": "Picked up"
+    },
+    {
+      "date": "Jul 19, 2025, 03:13 AM",
+      "seller": "Kids-Area",
+      "items": [
+        {
+          "product": "Foil Balloon Blue number two 2 100 cm XXL Birthday",
+          "quantity": 1,
+          "unit_price": 11.49,
+          "total_price": 11.49
+        }
+      ],
+      "delivery_cost": 10.99,
+      "total": 22.48,
+      "status": "Picked up"
+    },
+    {
+      "date": "Jul 19, 2025, 03:13 AM",
+      "seller": "del-sol_pl",
+      "items": [
+        {
+          "product": "BALLOON STAND DECORATIONS WEDDING FRAME WEDDING BIRTHDAY PARTY",
+          "quantity": 1,
+          "unit_price": 6.99,
+          "total_price": 6.99
+        },
+        {
+          "product": "BALLOONS BLUE BEIGE CONFETTI GOLD retro METALLIC boho PASTEL 24pcs.",
+          "quantity": 1,
+          "unit_price": 11.99,
+          "total_price": 11.99
+        },
+        {
+          "product": "Cups Paper plates Set BOHO FLOWERS Birthday 20 pcs.",
+          "quantity": 1,
+          "unit_price": 12.99,
+          "total_price": 12.99
+        },
+        {
+          "product": "PARTY CURTAIN METALLIC PEARL BACKGROUND PHOTO",
+          "quantity": 1,
+          "unit_price": 12.99,
+          "total_price": 12.99
+        },
+        {
+          "product": "Set of garland balloons INSTRATION Pink BANNER HAPPY BIRTHDAY confetti BIRTHDAY",
+          "quantity": 1,
+          "unit_price": 8.69,
+          "total_price": 8.69
+        },
+        {
+          "product": "WHITE BALLOONS CONFETTI BEIGE GOLDEN cream DECORATION WEDDING 25pcs.",
+          "quantity": 1,
+          "unit_price": 19.99,
+          "total_price": 19.99
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 73.64,
+      "status": "Picked up"
+    },
+    {
+      "date": "Jul 19, 2025, 03:13 AM",
+      "seller": "Novadooo",
+      "items": [
+        {
+          "product": "CURTAIN LIGHT LED CHRISTMAS TREE LIGHTS GARLAND BELLS REINDEER WHITE WARM",
+          "quantity": 1,
+          "unit_price": 19.88,
+          "total_price": 19.88
+        }
+      ],
+      "delivery_cost": 10.99,
+      "total": 30.87,
+      "status": "Picked up"
+    },
+    {
+      "date": "Jul 19, 2025, 03:13 AM",
+      "seller": "alphadan",
+      "items": [
+        {
+          "product": "Crayons Castle- Wawel, Faber-Castell 12kol+3 freebie 201480",
+          "quantity": 4,
+          "unit_price": 7.9,
+          "total_price": 31.6
+        },
+        {
+          "product": "Tattoos for children, butterfly tattoo Avery 56742",
+          "quantity": 1,
+          "unit_price": 2.71,
+          "total_price": 2.71
+        },
+        {
+          "product": "Tattoos for children, tattoo Cars Avery 56685",
+          "quantity": 3,
+          "unit_price": 2.71,
+          "total_price": 8.129999999999999
+        },
+        {
+          "product": "Tattoos for children, tattoo Flowers Avery 56691",
+          "quantity": 2,
+          "unit_price": 2.71,
+          "total_price": 5.42
+        },
+        {
+          "product": "Tattoos for children, tattoo Mermaids Avery 56763",
+          "quantity": 1,
+          "unit_price": 2.71,
+          "total_price": 2.71
+        },
+        {
+          "product": "Tattoos for children, tattoo Space Avery 56940",
+          "quantity": 1,
+          "unit_price": 2.71,
+          "total_price": 2.71
+        },
+        {
+          "product": "Triangular pencils 12 col.+3 crayons in skin tones Faber Castell 511514",
+          "quantity": 3,
+          "unit_price": 13.38,
+          "total_price": 40.14
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 93.42,
+      "status": "Picked up"
+    },
+    {
+      "date": "Jul 19, 2025, 03:13 AM",
+      "seller": "Radosne_Smyki_pl",
+      "items": [
+        {
+          "product": "GIFT FOR BOY TOY RUBBER DUCK FOR BATH DEVELOPS IMAGINATION",
+          "quantity": 4,
+          "unit_price": 16.81,
+          "total_price": 67.24
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 67.24,
+      "status": "Picked up"
+    },
+    {
+      "date": "Jul 19, 2025, 03:13 AM",
+      "seller": "mixpartypl",
+      "items": [
+        {
+          "product": "LATEX BALLOONS PASTEL MIX OF COLORS 26 CM 100 PCS",
+          "quantity": 1,
+          "unit_price": 25.65,
+          "total_price": 25.65
+        },
+        {
+          "product": "PAPER CAPS BABY SHARK BIRTHDAY 6 PCS",
+          "quantity": 2,
+          "unit_price": 9.08,
+          "total_price": 18.16
+        },
+        {
+          "product": "PAPER CAPS ROSE GOLD 6 PCS. 16 CM",
+          "quantity": 1,
+          "unit_price": 4.74,
+          "total_price": 4.74
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 48.55,
+      "status": "Picked up"
+    },
+    {
+      "date": "Jul 14, 2025, 04:17 PM",
+      "seller": "sklep_SOTBE",
+      "items": [
+        {
+          "product": "LONG Shower hose DURABLE twistless 2m LARK-SOHO-2.200",
+          "quantity": 1,
+          "unit_price": 69.0,
+          "total_price": 69.0
+        },
+        {
+          "product": "Perlator with G1/2 Switch Adapter for Bidet Faucet Water Headphones",
+          "quantity": 1,
+          "unit_price": 48.0,
+          "total_price": 48.0
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 117.0,
+      "status": "Picked up"
+    },
+    {
+      "date": "Jul 14, 2025, 01:54 AM",
+      "seller": "globalus",
+      "items": [
+        {
+          "product": "Bebilon Powdered Milk Advance Pronutra 3 Junior Next After Year 800g",
+          "quantity": 1,
+          "unit_price": 68.9,
+          "total_price": 68.9
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 68.9,
+      "status": "Picked up"
+    },
+    {
+      "date": "Jul 11, 2025, 05:15 PM",
+      "seller": "POL-LINE",
+      "items": [
+        {
+          "product": "CANDLE NUMBER GOLD NO.2",
+          "quantity": 1,
+          "unit_price": 1.99,
+          "total_price": 1.99
+        },
+        {
+          "product": "Powerful automatic electric balloon pump 2 nozzles +10 balloons",
+          "quantity": 1,
+          "unit_price": 48.95,
+          "total_price": 48.95
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 50.94,
+      "status": "Picked up"
+    },
+    {
+      "date": "Jul 9, 2025, 05:10 PM",
+      "seller": "AJKA_BIS",
+      "items": [
+        {
+          "product": "CABLE TIES 300mm x 4.8mm BLACK Cable STRONG DURABLE 4.8x300mm",
+          "quantity": 2,
+          "unit_price": 7.73,
+          "total_price": 15.46
+        },
+        {
+          "product": "Container Flexible Bucket Basket 27l BLACK strong",
+          "quantity": 1,
+          "unit_price": 21.63,
+          "total_price": 21.63
+        },
+        {
+          "product": "Metal TRAPEZOIDAL BLADE Knife for Carton Wallpaper Lightweight Precision PROFI",
+          "quantity": 1,
+          "unit_price": 9.26,
+          "total_price": 9.26
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 46.35,
+      "status": "Picked up"
+    },
+    {
+      "date": "Jul 7, 2025, 10:02 PM",
+      "seller": "KRUMAD",
+      "items": [
+        {
+          "product": "Outdoor Garden Light Garland 20m Garden Light Bulbs 20 LED",
+          "quantity": 1,
+          "unit_price": 63.84,
+          "total_price": 63.84
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 63.84,
+      "status": "Picked up"
+    },
+    {
+      "date": "Jul 7, 2025, 07:17 PM",
+      "seller": "twogu4",
+      "items": [
+        {
+          "product": "KITCHEN TABLE 80x60 cm for living room dining room + 2 PADS TABLE MATS FREEBIE",
+          "quantity": 1,
+          "unit_price": 175.0,
+          "total_price": 175.0
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 175.0,
+      "status": "Picked up"
+    },
+    {
+      "date": "Jul 3, 2025, 06:44 PM",
+      "seller": "BlendyGo",
+      "items": [
+        {
+          "product": "Case for Original Blender Wireless BlendyGo 3 Portable",
+          "quantity": 1,
+          "unit_price": 59.0,
+          "total_price": 59.0
+        },
+        {
+          "product": "Original Blender BlendyGo 3 - Wireless USB + FREEBIE MOUTHPIECE | GIFT",
+          "quantity": 1,
+          "unit_price": 219.0,
+          "total_price": 219.0
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 278.0,
+      "status": "Picked up"
+    },
+    {
+      "date": "Jul 1, 2025, 08:57 PM",
+      "seller": "ikawy_pl",
+      "items": [
+        {
+          "product": "MONIN WHITE CHOCOLATE coffee syrup 250 ml",
+          "quantity": 1,
+          "unit_price": 23.29,
+          "total_price": 23.29
+        },
+        {
+          "product": "Set of coffee syrups MONIN 3x250ml",
+          "quantity": 1,
+          "unit_price": 60.49,
+          "total_price": 60.49
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 83.78,
+      "status": "Picked up"
+    },
+    {
+      "date": "Jun 29, 2025, 11:22 AM",
+      "seller": "TwojEkspres_pl",
+      "items": [
+        {
+          "product": "Delonghi DLSC319 Thermal Glass 490ml 2pcs",
+          "quantity": 1,
+          "unit_price": 67.67,
+          "total_price": 67.67
+        },
+        {
+          "product": "Delonghi Thermal espresso cups / glasses 2 pcs. 90ml DLSC310",
+          "quantity": 1,
+          "unit_price": 42.42,
+          "total_price": 42.42
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 110.09,
+      "status": "Picked up"
+    },
+    {
+      "date": "Jun 28, 2025, 02:29 AM",
+      "seller": "globalus",
+      "items": [
+        {
+          "product": "Bebilon Powdered Milk Advance Pronutra 3 Junior Next After Year 800g",
+          "quantity": 1,
+          "unit_price": 68.9,
+          "total_price": 68.9
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 68.9,
+      "status": "Picked up"
+    },
+    {
+      "date": "Jun 28, 2025, 02:29 AM",
+      "seller": "Jakub134_D",
+      "items": [
+        {
+          "product": "A brush for cleaning the portafilter",
+          "quantity": 1,
+          "unit_price": 19.99,
+          "total_price": 19.99
+        },
+        {
+          "product": "Agitator needle for coffee distribution in flask WDT Tool",
+          "quantity": 1,
+          "unit_price": 39.99,
+          "total_price": 39.99
+        },
+        {
+          "product": "Coffee funnel dispensing ring with magnet 51mm",
+          "quantity": 1,
+          "unit_price": 39.99,
+          "total_price": 39.99
+        },
+        {
+          "product": "Spring tamper for coffee 51mm",
+          "quantity": 1,
+          "unit_price": 79.99,
+          "total_price": 79.99
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 179.96,
+      "status": "Picked up"
+    },
+    {
+      "date": "Jun 23, 2025, 03:49 PM",
+      "seller": "HService24",
+      "items": [
+        {
+          "product": "THE BODY SHOP TEA TREE SKIN CLEARING FACIAL WASH Face Wash Gel 250 ml",
+          "quantity": 1,
+          "unit_price": 69.0,
+          "total_price": 69.0
+        },
+        {
+          "product": "THE BODY SHOP Tea Tree Skin Clearing Daily Scrub Facial peeling",
+          "quantity": 1,
+          "unit_price": 59.0,
+          "total_price": 59.0
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 128.0,
+      "status": "Picked up"
+    },
+    {
+      "date": "Jun 23, 2025, 03:49 PM",
+      "seller": "vigor4u",
+      "items": [
+        {
+          "product": "NOW Foods Daily Vits Daily Multi Vitamins and Minerals Rich Composition 100t",
+          "quantity": 1,
+          "unit_price": 52.93,
+          "total_price": 52.93
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 52.93,
+      "status": "Picked up"
+    },
+    {
+      "date": "Jun 21, 2025, 06:17 PM",
+      "seller": "kowalskiarsklep",
+      "items": [
+        {
+          "product": "VALIO PROFEEL PROTEIN CHOCOLATE PUDDING 180 G",
+          "quantity": 10,
+          "unit_price": 6.99,
+          "total_price": 69.9
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 69.9,
+      "status": "Partially returned"
+    },
+    {
+      "date": "Jun 19, 2025, 11:03 PM",
+      "seller": "BLOW_Electronic",
+      "items": [
+        {
+          "product": "FAN STANDING FAN ADJUSTMENT OSCILLATION QUIET STRONG 55W 40CM HIGH",
+          "quantity": 2,
+          "unit_price": 61.88,
+          "total_price": 123.76
+        },
+        {
+          "product": "FLOOR STANDING FAN 40CM FAN MIST HUMIDIFIER REMOTE CONTROL",
+          "quantity": 1,
+          "unit_price": 298.0,
+          "total_price": 298.0
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 421.76,
+      "status": "Picked up"
+    },
+    {
+      "date": "Jun 19, 2025, 08:27 PM",
+      "seller": "mmgastro",
+      "items": [
+        {
+          "product": "FORGAST STEEL JUG FOR FROTHING MILK MUG 0.35 L FG11020",
+          "quantity": 1,
+          "unit_price": 25.0,
+          "total_price": 25.0
+        },
+        {
+          "product": "POLYPROPYLENE MEASURING JUG 3L FORGAST FG11558",
+          "quantity": 1,
+          "unit_price": 24.0,
+          "total_price": 24.0
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 49.0,
+      "status": "Picked up"
+    },
+    {
+      "date": "Jun 19, 2025, 08:27 PM",
+      "seller": "aldar_com_pl",
+      "items": [
+        {
+          "product": "Ground Lavazza Qualita Oro 250g",
+          "quantity": 2,
+          "unit_price": 23.58,
+          "total_price": 47.16
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 47.16,
+      "status": "Picked up"
+    },
+    {
+      "date": "Jun 19, 2025, 08:27 PM",
+      "seller": "InfinityPC",
+      "items": [
+        {
+          "product": "De'Longhi Dedica EC685.BK 1350 W Black",
+          "quantity": 1,
+          "unit_price": 655.9,
+          "total_price": 655.9
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 655.9,
+      "status": "Picked up"
+    },
+    {
+      "date": "Jun 16, 2025, 01:39 PM",
+      "seller": "PasjonaciZabawek",
+      "items": [
+        {
+          "product": "Fru Blu Soap Bubbles Bubble Launcher -0.5L Liquid",
+          "quantity": 1,
+          "unit_price": 52.99,
+          "total_price": 52.99
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 52.99,
+      "status": "Picked up"
+    },
+    {
+      "date": "Jun 16, 2025, 01:37 PM",
+      "seller": "Mbtoys",
+      "items": [
+        {
+          "product": "Liquid for Soap Bubbles and Color 10L - SET - EN - MBTOYS",
+          "quantity": 1,
+          "unit_price": 49.9,
+          "total_price": 49.9
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 49.9,
+      "status": "Picked up"
+    },
+    {
+      "date": "Jun 16, 2025, 01:37 PM",
+      "seller": "Baby-Sklep",
+      "items": [
+        {
+          "product": "10 X CLEANIC TODAY KINDII BABY FLAKES",
+          "quantity": 1,
+          "unit_price": 49.98,
+          "total_price": 49.98
+        },
+        {
+          "product": "AKUKU FRAGRANT BAGS FOR USED NAPPIES 2 PACK",
+          "quantity": 2,
+          "unit_price": 17.98,
+          "total_price": 35.96
+        },
+        {
+          "product": "ANGELCARE REFILL FOR DIAPER CONTAINER BAGS x1",
+          "quantity": 3,
+          "unit_price": 26.87,
+          "total_price": 80.61
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 166.55,
+      "status": "Picked up"
+    },
+    {
+      "date": "Jun 16, 2025, 01:37 PM",
+      "seller": "farmacjaiuroda",
+      "items": [
+        {
+          "product": "Bebilon 3 Pronutra Advance milk 1000g",
+          "quantity": 1,
+          "unit_price": 77.85,
+          "total_price": 77.85
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 77.85,
+      "status": "Picked up"
+    },
+    {
+      "date": "Jun 16, 2025, 01:37 PM",
+      "seller": "zDDRu",
+      "items": [
+        {
+          "product": "Diapers Dada 6 Extra Care 16+kg 170 pcs",
+          "quantity": 1,
+          "unit_price": 149.0,
+          "total_price": 149.0
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 149.0,
+      "status": "Picked up"
+    },
+    {
+      "date": "Apr 9, 2025, 10:01 PM",
+      "seller": "markan-agdrtv_pl",
+      "items": [
+        {
+          "product": "Kitchen Scale Electronic Precision LCD 1g to 10kg Digital Battery Operated",
+          "quantity": 1,
+          "unit_price": 15.99,
+          "total_price": 15.99
+        }
+      ],
+      "delivery_cost": 14.99,
+      "total": 30.98,
+      "status": "Picked up"
+    },
+    {
+      "date": "Apr 7, 2025, 01:28 PM",
+      "seller": "PlanetaAgd_pl",
+      "items": [
+        {
+          "product": "Large Motivational Glass Bottle for water drinks Wessper 1l + Burgundy Case",
+          "quantity": 2,
+          "unit_price": 69.9,
+          "total_price": 139.8
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 139.8,
+      "status": "Picked up"
+    },
+    {
+      "date": "Apr 7, 2025, 01:28 PM",
+      "seller": "MagiaBiura",
+      "items": [
+        {
+          "product": "Dada Extra Care pants 5 junior 35 pcs",
+          "quantity": 2,
+          "unit_price": 46.48,
+          "total_price": 92.96
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 92.96,
+      "status": "Picked up"
+    },
+    {
+      "date": "Apr 7, 2025, 01:28 PM",
+      "seller": "alle-granie",
+      "items": [
+        {
+          "product": "DADA DIAPERS PAMPERS EXTRA CARE 5 JUNIOR 68 pcs",
+          "quantity": 2,
+          "unit_price": 46.5,
+          "total_price": 93.0
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 93.0,
+      "status": "Picked up"
+    },
+    {
+      "date": "Mar 28, 2025, 09:44 AM",
+      "seller": "farmacjaiuroda",
+      "items": [
+        {
+          "product": "Bebilon 3 Pronutra Advance milk 1000g",
+          "quantity": 1,
+          "unit_price": 69.95,
+          "total_price": 69.95
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 69.95,
+      "status": "Picked up"
+    },
+    {
+      "date": "Mar 28, 2025, 09:42 AM",
+      "seller": "globalus",
+      "items": [
+        {
+          "product": "Bebilon Modified Milk Advance Pronutra 3 Junior Next After a Year 800g",
+          "quantity": 1,
+          "unit_price": 59.0,
+          "total_price": 59.0
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 59.0,
+      "status": "Picked up"
+    },
+    {
+      "date": "Mar 25, 2025, 06:40 AM",
+      "seller": "Akademia-Piekna",
+      "items": [
+        {
+          "product": "EVELINE Revitalum Foot Exfoliating Cream 30%",
+          "quantity": 1,
+          "unit_price": 11.49,
+          "total_price": 11.49
+        }
+      ],
+      "delivery_cost": 7.99,
+      "total": 19.48,
+      "status": "Picked up"
+    },
+    {
+      "date": "Mar 25, 2025, 06:35 AM",
+      "seller": "FHU_ZAEL",
+      "items": [
+        {
+          "product": "Bambino Olive 150ml",
+          "quantity": 1,
+          "unit_price": 12.99,
+          "total_price": 12.99
+        },
+        {
+          "product": "Bref wc blue aktiv basket 3x50g eucalyptus coloring",
+          "quantity": 1,
+          "unit_price": 13.99,
+          "total_price": 13.99
+        },
+        {
+          "product": "Kitchen dishwasher profiled Vileda 5 pcs.",
+          "quantity": 1,
+          "unit_price": 4.49,
+          "total_price": 4.49
+        },
+        {
+          "product": "NIVEA BABY Moisturizing milk gentle care 500 ml",
+          "quantity": 1,
+          "unit_price": 22.99,
+          "total_price": 22.99
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 54.46,
+      "status": "Picked up"
+    },
+    {
+      "date": "Mar 19, 2025, 05:14 PM",
+      "seller": "SliwkaDelikatesy",
+      "items": [
+        {
+          "product": "TABASCO Red Pepper Original Sauce 350 ml",
+          "quantity": 2,
+          "unit_price": 46.18,
+          "total_price": 92.36
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 92.36,
+      "status": "Picked up"
+    },
+    {
+      "date": "Mar 18, 2025, 11:03 PM",
+      "seller": "stokrotka_radom",
+      "items": [
+        {
+          "product": "CAKE DECORATOR CREAM CAKE PARCEL PICKET CONFECTIONARY PIN FOR DECORATION",
+          "quantity": 2,
+          "unit_price": 9.99,
+          "total_price": 19.98
+        },
+        {
+          "product": "HYDROGEL BALLS FOR FLOWERS MOISTURIZING DECORATIVE GEL 10000 PIECES",
+          "quantity": 1,
+          "unit_price": 8.95,
+          "total_price": 8.95
+        },
+        {
+          "product": "KITCHEN TONGES PASTA HOLDERS SERVER TURNING MEAT GRILL",
+          "quantity": 1,
+          "unit_price": 4.48,
+          "total_price": 4.48
+        },
+        {
+          "product": "MAGICZNA KOLOROWANKA WODNA Z PISAKIEM ZESTAW KSIAŻECZKI WODNE 2szt",
+          "quantity": 1,
+          "unit_price": 15.49,
+          "total_price": 15.49
+        },
+        {
+          "product": "SILICONE BACK WASHER LONG SILICONE BELT FOR NECK WASHING MASSAGER",
+          "quantity": 1,
+          "unit_price": 5.68,
+          "total_price": 5.68
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 54.58,
+      "status": "Picked up"
+    },
+    {
+      "date": "Mar 18, 2025, 11:03 PM",
+      "seller": "InsideNet",
+      "items": [
+        {
+          "product": "SET OF 4 CERAMIC CONTAINERS PEPPER SALT OLIVE OIL VINEGAR MAGGI + STAND MAESTRO",
+          "quantity": 2,
+          "unit_price": 55.89,
+          "total_price": 111.78
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 111.78,
+      "status": "Picked up"
+    },
+    {
+      "date": "Mar 18, 2025, 06:32 PM",
+      "seller": "indianbasket",
+      "items": [
+        {
+          "product": "Hamdard Rooh Afza (RoohAfza) Sharbat 800ml",
+          "quantity": 3,
+          "unit_price": 19.99,
+          "total_price": 59.97
+        }
+      ],
+      "delivery_cost": 12.99,
+      "total": 72.96,
+      "status": "Picked up"
+    },
+    {
+      "date": "Mar 12, 2025, 05:10 AM",
+      "seller": "KNOR_Gliwice",
+      "items": [
+        {
+          "product": "The black and white picture is framed on the wall for the Venice living room",
+          "quantity": 1,
+          "unit_price": 29.99,
+          "total_price": 29.99
+        },
+        {
+          "product": "The black and white picture is framed on the wall for the living room",
+          "quantity": 1,
+          "unit_price": 29.99,
+          "total_price": 29.99
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 59.98,
+      "status": "Picked up"
+    },
+    {
+      "date": "Mar 12, 2025, 05:10 AM",
+      "seller": "Grupa_PPM_SA",
+      "items": [
+        {
+          "product": "3M 17047 Command Universal Picture Hook",
+          "quantity": 5,
+          "unit_price": 12.42,
+          "total_price": 62.1
+        },
+        {
+          "product": "3M VHB Surface cleaner cleaning wipes",
+          "quantity": 4,
+          "unit_price": 1.7,
+          "total_price": 6.8
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 68.9,
+      "status": "Picked up"
+    },
+    {
+      "date": "Mar 12, 2025, 05:10 AM",
+      "seller": "partyhyc_pl",
+      "items": [
+        {
+          "product": "WALL CLOCK LARGE 3D BLACK RETRO WALLS MODERN ROMAN VINTAGE 40cm",
+          "quantity": 1,
+          "unit_price": 55.0,
+          "total_price": 55.0
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 55.0,
+      "status": "Picked up"
+    },
+    {
+      "date": "Mar 9, 2025, 01:57 PM",
+      "seller": "Allegro",
+      "items": [
+        {
+          "product": "Fairy Original All In One Dishwasher Capsules Lemon 6x 22 pcs. = 132 pcs.",
+          "quantity": 1,
+          "unit_price": 84.99,
+          "total_price": 84.99
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 84.99,
+      "status": "Picked up"
+    },
+    {
+      "date": "Mar 9, 2025, 01:57 PM",
+      "seller": "westtrading",
+      "items": [
+        {
+          "product": "Costa Columbian Roast 5*10 Capsule Set",
+          "quantity": 1,
+          "unit_price": 54.99,
+          "total_price": 54.99
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 54.99,
+      "status": "Picked up"
+    },
+    {
+      "date": "Mar 9, 2025, 01:57 PM",
+      "seller": "master_home",
+      "items": [
+        {
+          "product": "CUTLERY SET OF STEEL CUTLERY 24 EL SET 6 people RONNER Austria",
+          "quantity": 2,
+          "unit_price": 43.9,
+          "total_price": 87.8
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 87.8,
+      "status": "Picked up"
+    },
+    {
+      "date": "Mar 3, 2025, 03:03 AM",
+      "seller": "SmA-Nutricia",
+      "items": [
+        {
+          "product": "Bebilon 3 Advance Pronutra Junior after 1 year 1000 g",
+          "quantity": 1,
+          "unit_price": 74.99,
+          "total_price": 74.99
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 74.99,
+      "status": "Picked up"
+    },
+    {
+      "date": "Mar 3, 2025, 02:40 AM",
+      "seller": "asena1",
+      "items": [
+        {
+          "product": "THE BODY SHOP TEA TREE SKIN CLEARING FACIAL WASH Facial cleansing gel 250 ml",
+          "quantity": 1,
+          "unit_price": 69.9,
+          "total_price": 69.9
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 69.9,
+      "status": "Picked up"
+    },
+    {
+      "date": "Mar 3, 2025, 02:37 AM",
+      "seller": "asena1",
+      "items": [
+        {
+          "product": "THE BODY SHOP TEA TREE SKIN CLEARING FACIAL WASH Facial cleansing gel 250 ml",
+          "quantity": 1,
+          "unit_price": 69.9,
+          "total_price": 69.9
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 69.9,
+      "status": "Canceled"
+    },
+    {
+      "date": "Mar 1, 2025, 11:07 PM",
+      "seller": "Vertexeuropa",
+      "items": [
+        {
+          "product": "Hamdard Rooh Afza Sharbat 800ml",
+          "quantity": 2,
+          "unit_price": 20.99,
+          "total_price": 41.98
+        },
+        {
+          "product": "Wagh Bakri Premium Leaf Tea 225g",
+          "quantity": 1,
+          "unit_price": 24.99,
+          "total_price": 24.99
+        }
+      ],
+      "delivery_cost": 13.99,
+      "total": 80.96,
+      "status": "Picked up"
+    },
+    {
+      "date": "Feb 27, 2025, 09:34 PM",
+      "seller": "INNMARK",
+      "items": [
+        {
+          "product": "COMMAND 3M HOOK FOR PICTURE FRAME 1.8 Kg 17040",
+          "quantity": 5,
+          "unit_price": 11.39,
+          "total_price": 56.95
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 56.95,
+      "status": "Picked up"
+    },
+    {
+      "date": "Feb 27, 2025, 09:34 PM",
+      "seller": "MikroKlimat_pl",
+      "items": [
+        {
+          "product": "Chamedora Chamaeodorea coral palm baby D6cm",
+          "quantity": 1,
+          "unit_price": 14.99,
+          "total_price": 14.99
+        },
+        {
+          "product": "Peperomia Hope Fast Growing D6cm Easy Growing GIFT FOR WOMEN'S DAY",
+          "quantity": 1,
+          "unit_price": 18.99,
+          "total_price": 18.99
+        },
+        {
+          "product": "UNIVERSAL soil with OSMOWIT BIOVITA 5L fertilizer.",
+          "quantity": 1,
+          "unit_price": 10.99,
+          "total_price": 10.99
+        },
+        {
+          "product": "Wingflower spathiphyllum wallisii CUPIDO white flowers dØ6cm.",
+          "quantity": 1,
+          "unit_price": 14.99,
+          "total_price": 14.99
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 59.96,
+      "status": "Picked up"
+    },
+    {
+      "date": "Feb 23, 2025, 06:00 PM",
+      "seller": "Baby-Sklep",
+      "items": [
+        {
+          "product": "ANGELCARE CARTRIDGE FOR NAPPIES BAGS x1",
+          "quantity": 3,
+          "unit_price": 26.87,
+          "total_price": 80.61
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 80.61,
+      "status": "Picked up"
+    },
+    {
+      "date": "Feb 23, 2025, 06:00 PM",
+      "seller": "dots4home",
+      "items": [
+        {
+          "product": "Tineco Deodorizing & Cleaning Solution 1l + FREEBIE",
+          "quantity": 1,
+          "unit_price": 132.0,
+          "total_price": 132.0
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 132.0,
+      "status": "Picked up"
+    },
+    {
+      "date": "Feb 23, 2025, 06:00 PM",
+      "seller": "alle-granie",
+      "items": [
+        {
+          "product": "DADA DIAPERS PAMPERS EXTRA CARE 5 JUNIOR 68 pcs",
+          "quantity": 1,
+          "unit_price": 46.88,
+          "total_price": 46.88
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 46.88,
+      "status": "Picked up"
+    },
+    {
+      "date": "Feb 22, 2025, 02:04 PM",
+      "seller": "MagiaBiura",
+      "items": [
+        {
+          "product": "Dada Extra Care pants 5 junior 35 pcs",
+          "quantity": 2,
+          "unit_price": 46.48,
+          "total_price": 92.96
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 92.96,
+      "status": "Picked up"
+    },
+    {
+      "date": "Feb 16, 2025, 11:52 PM",
+      "seller": "szybka-sprzedaz",
+      "items": [
+        {
+          "product": "Amazone production pot 17cm transparent orchid",
+          "quantity": 1,
+          "unit_price": 5.53,
+          "total_price": 5.53
+        },
+        {
+          "product": "Amazone production pot for orchids 21 cm",
+          "quantity": 3,
+          "unit_price": 10.0,
+          "total_price": 30.0
+        },
+        {
+          "product": "Decorative pot with stand black with flowers 18 cm",
+          "quantity": 1,
+          "unit_price": 21.9,
+          "total_price": 21.9
+        },
+        {
+          "product": "Fertilizer in sticks for flowering plants 30 pieces",
+          "quantity": 1,
+          "unit_price": 4.57,
+          "total_price": 4.57
+        },
+        {
+          "product": "Flower pot cover with stand Prosperplast Tubo P 18cm anthracite matt",
+          "quantity": 1,
+          "unit_price": 16.2,
+          "total_price": 16.2
+        },
+        {
+          "product": "Lightweight 28 cm fiberglass garden spatula",
+          "quantity": 1,
+          "unit_price": 9.86,
+          "total_price": 9.86
+        },
+        {
+          "product": "Universal fertilizer Biohumus Extra liquid 1,2 L",
+          "quantity": 1,
+          "unit_price": 16.58,
+          "total_price": 16.58
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 104.64,
+      "status": "Picked up"
+    },
+    {
+      "date": "Feb 13, 2025, 12:23 PM",
+      "seller": "sma-sense7",
+      "items": [
+        {
+          "product": "Electric Adjustable Desk 120x60cm Height Adjustable 72-118cm SENSE7",
+          "quantity": 1,
+          "unit_price": 599.0,
+          "total_price": 599.0
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 599.0,
+      "status": "Picked up"
+    },
+    {
+      "date": "Feb 11, 2025, 12:08 AM",
+      "seller": "Delia077",
+      "items": [
+        {
+          "product": "5 FRucht Cocktail Gut& Gunstig blend from Germany",
+          "quantity": 1,
+          "unit_price": 10.0,
+          "total_price": 10.0
+        }
+      ],
+      "delivery_cost": 10.95,
+      "total": 20.95,
+      "status": "Picked up"
+    },
+    {
+      "date": "Feb 11, 2025, 12:08 AM",
+      "seller": "little_india",
+      "items": [
+        {
+          "product": "Banno traditional basmati rice 5kg",
+          "quantity": 1,
+          "unit_price": 69.99,
+          "total_price": 69.99
+        },
+        {
+          "product": "Black cardamom Black Cardamom TRS 50g",
+          "quantity": 1,
+          "unit_price": 11.04,
+          "total_price": 11.04
+        },
+        {
+          "product": "Chilli pepper hot broken TRS 100g",
+          "quantity": 2,
+          "unit_price": 6.78,
+          "total_price": 13.56
+        },
+        {
+          "product": "Fennel Seeds Soonf TRS 100g",
+          "quantity": 1,
+          "unit_price": 7.64,
+          "total_price": 7.64
+        },
+        {
+          "product": "Gram Flour TRS chickpea flour 2kg",
+          "quantity": 1,
+          "unit_price": 25.3,
+          "total_price": 25.3
+        },
+        {
+          "product": "Green cardamom, dried fruit, TRS seeds 50g",
+          "quantity": 1,
+          "unit_price": 18.0,
+          "total_price": 18.0
+        },
+        {
+          "product": "Ground black pepper Black Pepper Powder TRS 100g",
+          "quantity": 1,
+          "unit_price": 7.47,
+          "total_price": 7.47
+        },
+        {
+          "product": "Ground cumin Ground Cumin Jeera Powder TRS 100g",
+          "quantity": 1,
+          "unit_price": 8.28,
+          "total_price": 8.28
+        },
+        {
+          "product": "Ground turmeric Tumeric Powder Haldi TRS 100g",
+          "quantity": 1,
+          "unit_price": 4.6,
+          "total_price": 4.6
+        },
+        {
+          "product": "Lentils Moong Dhall Udhaiyam 1kg",
+          "quantity": 1,
+          "unit_price": 12.65,
+          "total_price": 12.65
+        },
+        {
+          "product": "Oat flakes QUAKER White Oats 500g",
+          "quantity": 1,
+          "unit_price": 17.97,
+          "total_price": 17.97
+        },
+        {
+          "product": "Red lentils TRS 500g",
+          "quantity": 1,
+          "unit_price": 9.2,
+          "total_price": 9.2
+        },
+        {
+          "product": "Sweetened Condensed Milk Nestle 397g",
+          "quantity": 1,
+          "unit_price": 14.95,
+          "total_price": 14.95
+        },
+        {
+          "product": "Tiger Foods vanilla essence aroma 20ml",
+          "quantity": 1,
+          "unit_price": 6.9,
+          "total_price": 6.9
+        },
+        {
+          "product": "Whole Wheat Flour Aashirvaad 5kg",
+          "quantity": 1,
+          "unit_price": 56.86,
+          "total_price": 56.86
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 284.41,
+      "status": "Picked up"
+    },
+    {
+      "date": "Feb 8, 2025, 02:21 AM",
+      "seller": "cover-it_pl",
+      "items": [
+        {
+          "product": "BALCONY COVER 1X5m BALCONY COVER + UV 98% TERRACE FENCE + Freebie",
+          "quantity": 2,
+          "unit_price": 57.94,
+          "total_price": 115.88
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 115.88,
+      "status": "Picked up"
+    },
+    {
+      "date": "Feb 8, 2025, 02:21 AM",
+      "seller": "eshoping_pl",
+      "items": [
+        {
+          "product": "TOY SHELF CHEST ORGANIZER CONTAINER BOX Lama 3",
+          "quantity": 1,
+          "unit_price": 78.0,
+          "total_price": 78.0
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 78.0,
+      "status": "Picked up"
+    },
+    {
+      "date": "Feb 8, 2025, 02:21 AM",
+      "seller": "Kite-store",
+      "items": [
+        {
+          "product": "TOY BASKET PLUSH CONTAINER ORGANIZER FOR TRINKETS RABBIT L KITE",
+          "quantity": 1,
+          "unit_price": 46.0,
+          "total_price": 46.0
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 46.0,
+      "status": "Picked up"
+    },
+    {
+      "date": "Feb 3, 2025, 01:53 AM",
+      "seller": "spkecocommerce",
+      "items": [
+        {
+          "product": "COMB FOR REMOVING LICE AND NITS TERMINATOR COMB FOR LICE AND FLEA NITS",
+          "quantity": 1,
+          "unit_price": 24.9,
+          "total_price": 24.9
+        }
+      ],
+      "delivery_cost": 4.49,
+      "total": 29.39,
+      "status": "Picked up"
+    },
+    {
+      "date": "Feb 1, 2025, 11:44 PM",
+      "seller": "MINTISHOP",
+      "items": [
+        {
+          "product": "The Pink Stuff Floor cleaning liquid 1l",
+          "quantity": 2,
+          "unit_price": 12.61,
+          "total_price": 25.22
+        },
+        {
+          "product": "The Pink Stuff Stardrops Bathroom cleaner 850ml",
+          "quantity": 1,
+          "unit_price": 13.19,
+          "total_price": 13.19
+        },
+        {
+          "product": "The Pink Stuff Window & Glass Cleaner Liquid for cleaning windows and mirrors 850",
+          "quantity": 1,
+          "unit_price": 12.78,
+          "total_price": 12.78
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 51.19,
+      "status": "Picked up"
+    },
+    {
+      "date": "Feb 1, 2025, 11:44 PM",
+      "seller": "E_VENA",
+      "items": [
+        {
+          "product": "XXL BATHROOM MAT NON-SLIP QUICK-DRYING ABSORBENT RUG 50 x 80",
+          "quantity": 1,
+          "unit_price": 45.0,
+          "total_price": 45.0
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 45.0,
+      "status": "Picked up"
+    },
+    {
+      "date": "Feb 1, 2025, 11:44 PM",
+      "seller": "politrader",
+      "items": [
+        {
+          "product": "PET Spice Jars 200 ml 24pcs Containers and Labels Stickers 108pcs",
+          "quantity": 1,
+          "unit_price": 77.0,
+          "total_price": 77.0
+        },
+        {
+          "product": "blank STICKERS spice labels 3.5cm 30pcs + white permanent MARKER",
+          "quantity": 1,
+          "unit_price": 16.5,
+          "total_price": 16.5
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 93.5,
+      "status": "Picked up"
+    },
+    {
+      "date": "Feb 1, 2025, 11:44 PM",
+      "seller": "SEL_03",
+      "items": [
+        {
+          "product": "CONSOLE gold metal glass table",
+          "quantity": 1,
+          "unit_price": 198.0,
+          "total_price": 198.0
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 198.0,
+      "status": "Picked up"
+    },
+    {
+      "date": "Feb 1, 2025, 11:44 PM",
+      "seller": "shopplus",
+      "items": [
+        {
+          "product": "BAMBOO BASKET FOR LAUNDRY LINGERIE TOYS WITH COVER LARGE CONTAINER 72L TRANSIT",
+          "quantity": 1,
+          "unit_price": 45.0,
+          "total_price": 45.0
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 45.0,
+      "status": "Picked up"
+    },
+    {
+      "date": "Feb 1, 2025, 11:44 PM",
+      "seller": "FSMED",
+      "items": [
+        {
+          "product": "Sudocrem cream 400g",
+          "quantity": 1,
+          "unit_price": 59.98,
+          "total_price": 59.98
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 59.98,
+      "status": "Picked up"
+    },
+    {
+      "date": "Feb 1, 2025, 11:44 PM",
+      "seller": "alle-granie",
+      "items": [
+        {
+          "product": "DADA DIAPERS PAMPERS EXTRA CARE 5 JUNIOR 68 pcs",
+          "quantity": 1,
+          "unit_price": 59.99,
+          "total_price": 59.99
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 59.99,
+      "status": "Picked up"
+    },
+    {
+      "date": "Feb 1, 2025, 11:44 PM",
+      "seller": "skyhome",
+      "items": [
+        {
+          "product": "KITCHEN DRAWER ORGANIZER CUTLERY INSERT CONTAINER SPOON TRAY",
+          "quantity": 1,
+          "unit_price": 48.99,
+          "total_price": 48.99
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 48.99,
+      "status": "Picked up"
+    },
+    {
+      "date": "Feb 1, 2025, 11:44 PM",
+      "seller": "JUST-DEAL",
+      "items": [
+        {
+          "product": "BATHROOM MAT QUICK-DRYING ABSORBENT RUG NON-SLIP Sidewalk",
+          "quantity": 1,
+          "unit_price": 45.0,
+          "total_price": 45.0
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 45.0,
+      "status": "Picked up"
+    },
+    {
+      "date": "Feb 1, 2025, 11:44 PM",
+      "seller": "MagiaBiura",
+      "items": [
+        {
+          "product": "Dada Extra Care pants 5 junior 35 pcs",
+          "quantity": 1,
+          "unit_price": 51.13,
+          "total_price": 51.13
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 51.13,
+      "status": "Picked up"
+    },
+    {
+      "date": "Feb 1, 2025, 11:44 PM",
+      "seller": "easy-commerce",
+      "items": [
+        {
+          "product": "TOILET OVERLAY + PEDESTAL FOOT REST",
+          "quantity": 1,
+          "unit_price": 48.99,
+          "total_price": 48.99
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 48.99,
+      "status": "Picked up"
+    },
+    {
+      "date": "Jan 22, 2025, 01:01 PM",
+      "seller": "westtrading",
+      "items": [
+        {
+          "product": "Costa Signature Blend Lungo 5*10 Capsule Set",
+          "quantity": 1,
+          "unit_price": 54.95,
+          "total_price": 54.95
+        },
+        {
+          "product": "Softener Coccolino Core Sensitive 2x1,7l",
+          "quantity": 1,
+          "unit_price": 35.79,
+          "total_price": 35.79
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 90.74,
+      "status": "Picked up"
+    },
+    {
+      "date": "Jan 18, 2025, 08:20 PM",
+      "seller": "GT_PRESTIGE",
+      "items": [
+        {
+          "product": "BUBBLE FILM 30cm BUBBLE PROTECTIVE STRONG",
+          "quantity": 1,
+          "unit_price": 18.94,
+          "total_price": 18.94
+        },
+        {
+          "product": "CARTONS LARGE BOX CARTON WITH HANDLE 600x400x400 5W STRONG 10pcs",
+          "quantity": 1,
+          "unit_price": 69.6,
+          "total_price": 69.6
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 88.54,
+      "status": "Picked up"
+    },
+    {
+      "date": "Jan 14, 2025, 09:14 PM",
+      "seller": "KADAX_",
+      "items": [
+        {
+          "product": "GARBAGE BIN 25L WASTE SEGREGATION CONTAINER GARBAGE BUCKET",
+          "quantity": 1,
+          "unit_price": 54.95,
+          "total_price": 54.95
+        },
+        {
+          "product": "HANGING GARBAGE BIN FOR SEGREGATION 12L ASH WITH HANDLE",
+          "quantity": 1,
+          "unit_price": 29.95,
+          "total_price": 29.95
+        },
+        {
+          "product": "HANGING GARBAGE BIN FOR SEGREGATION 12L ASH WITH HANDLE",
+          "quantity": 1,
+          "unit_price": 25.45,
+          "total_price": 25.45
+        },
+        {
+          "product": "1/27/26, 9:35 PM Allegro | My Allegro",
+          "quantity": 1,
+          "unit_price": 34.47,
+          "total_price": 34.47
+        },
+        {
+          "product": "IRONING BOARD 120x38cm WIDE TOP FOLDABLE IRON HOLDER",
+          "quantity": 1,
+          "unit_price": 118.88,
+          "total_price": 118.88
+        },
+        {
+          "product": "STANDING STABLE LAUNDRY DRYER 18m FOR CLOTHES FOLDABLE FOR UNDERWEAR LARGE",
+          "quantity": 1,
+          "unit_price": 64.99,
+          "total_price": 64.99
+        },
+        {
+          "product": "WASHING HOLES, LINGERIE RIPS, COLORFUL FROGS, STRONG, 20 pcs.",
+          "quantity": 1,
+          "unit_price": 3.99,
+          "total_price": 3.99
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 332.68,
+      "status": "Picked up"
+    },
+    {
+      "date": "Jan 14, 2025, 09:14 PM",
+      "seller": "master_home",
+      "items": [
+        {
+          "product": "CUTLERY SET OF STEEL CUTLERY 24 EL SET 6 people RONNER Austria",
+          "quantity": 2,
+          "unit_price": 46.9,
+          "total_price": 93.8
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 93.8,
+      "status": "Picked up"
+    },
+    {
+      "date": "Jan 14, 2025, 12:51 AM",
+      "seller": "inbook_pl",
+      "items": [
+        {
+          "product": "Led Watch With Minnie Calendar Mn4369",
+          "quantity": 1,
+          "unit_price": 45.89,
+          "total_price": 45.89
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 45.89,
+      "status": "Picked up"
+    },
+    {
+      "date": "Jan 14, 2025, 12:51 AM",
+      "seller": "smykus-hurt",
+      "items": [
+        {
+          "product": "ICE CREAM SHOP CONFECTIONERY SHOP ICE CREAM BOOTH ice cream set for kids",
+          "quantity": 1,
+          "unit_price": 74.99,
+          "total_price": 74.99
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 74.99,
+      "status": "Picked up"
+    },
+    {
+      "date": "Jan 13, 2025, 05:54 PM",
+      "seller": "GT_PRESTIGE",
+      "items": [
+        {
+          "product": "BROWN PACKING TAPE 48/66y Adhesive Strong Pakova",
+          "quantity": 1,
+          "unit_price": 2.47,
+          "total_price": 2.47
+        },
+        {
+          "product": "BUBBLE FILM 30cm BUBBLE PROTECTIVE STRONG",
+          "quantity": 1,
+          "unit_price": 18.94,
+          "total_price": 18.94
+        },
+        {
+          "product": "CARTONS LARGE BOX CARTON WITH HANDLE 600x400x400 5W STRONG 10pcs",
+          "quantity": 2,
+          "unit_price": 69.6,
+          "total_price": 139.2
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 160.61,
+      "status": "Picked up"
+    },
+    {
+      "date": "Jan 13, 2025, 02:30 AM",
+      "seller": "alle-granie",
+      "items": [
+        {
+          "product": "DADA DIAPERS PAMPERS EXTRA CARE 5 JUNIOR 68 pcs",
+          "quantity": 1,
+          "unit_price": 59.99,
+          "total_price": 59.99
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 59.99,
+      "status": "Picked up"
+    },
+    {
+      "date": "Jan 13, 2025, 02:30 AM",
+      "seller": "BestHomeParts",
+      "items": [
+        {
+          "product": "Ariel Aqua Powder Mountain Spring Color Washing Powder 5kg",
+          "quantity": 2,
+          "unit_price": 54.99,
+          "total_price": 109.98
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 109.98,
+      "status": "Picked up"
+    },
+    {
+      "date": "Jan 13, 2025, 02:30 AM",
+      "seller": "dots4home",
+      "items": [
+        {
+          "product": "Tineco Deodorizing & Cleaning Solution 1l + FREEBIE",
+          "quantity": 1,
+          "unit_price": 109.0,
+          "total_price": 109.0
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 109.0,
+      "status": "Picked up"
+    },
+    {
+      "date": "Jan 13, 2025, 02:30 AM",
+      "seller": "WWW_SPARDOS_PL",
+      "items": [
+        {
+          "product": "PHILIPS BHD272/00 HAIR DRYER 2100 W AC IONIZATION",
+          "quantity": 1,
+          "unit_price": 154.99,
+          "total_price": 154.99
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 154.99,
+      "status": "Picked up"
+    },
+    {
+      "date": "Jan 13, 2025, 02:30 AM",
+      "seller": "myjki_com",
+      "items": [
+        {
+          "product": "KARCHER SC 1 MANUAL STEAMER PRESSURE WASHER STEAM WINDOW SET",
+          "quantity": 1,
+          "unit_price": 379.0,
+          "total_price": 379.0
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 379.0,
+      "status": "Picked up"
+    },
+    {
+      "date": "Jan 13, 2025, 02:30 AM",
+      "seller": "Firma_Karwil",
+      "items": [
+        {
+          "product": "10x SOFT MICROFIBER CLOTH 30x30cm FOR GLASS QUALITY 220g/m2",
+          "quantity": 2,
+          "unit_price": 11.99,
+          "total_price": 23.98
+        },
+        {
+          "product": "BRUSH FOR CLEANING GROUT CREVICES WASHING KITCHEN NARROW CREVICE LONG",
+          "quantity": 2,
+          "unit_price": 1.99,
+          "total_price": 3.98
+        },
+        {
+          "product": "CONTAINER EGG ORGANIZER FOR REFRIGERATOR SHELF EGG FEEDER SEPARATOR",
+          "quantity": 1,
+          "unit_price": 6.99,
+          "total_price": 6.99
+        },
+        {
+          "product": "INCISOR SLICER VEGETABLE SHREDDER GARLIC ONION STRING HAND LARGE",
+          "quantity": 1,
+          "unit_price": 10.99,
+          "total_price": 10.99
+        },
+        {
+          "product": "KITCHEN SCRAP SPONGE DISHWASHING SCRAPERS WASHER SET 10 pcs PL",
+          "quantity": 2,
+          "unit_price": 2.99,
+          "total_price": 5.98
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 51.92,
+      "status": "Picked up"
+    },
+    {
+      "date": "Jan 7, 2025, 11:18 PM",
+      "seller": "Cefarm24",
+      "items": [
+        {
+          "product": "Bebilon 3 with Pronutra Advance next milk 1000 g",
+          "quantity": 1,
+          "unit_price": 88.99,
+          "total_price": 88.99
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 88.99,
+      "status": "Picked up"
+    },
+    {
+      "date": "Jan 2, 2025, 04:08 PM",
+      "seller": "emelissa",
+      "items": [
+        {
+          "product": "CENTRUM Silver 50+ Multieffect Formula, 100 tablets.",
+          "quantity": 2,
+          "unit_price": 57.85,
+          "total_price": 115.7
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 115.7,
+      "status": "Picked up"
+    },
+    {
+      "date": "Jan 2, 2025, 04:08 PM",
+      "seller": "TagomagoDrogeria",
+      "items": [
+        {
+          "product": "CENTER Silver Woman 50+ multivitamins for women 30 tablets",
+          "quantity": 2,
+          "unit_price": 35.67,
+          "total_price": 71.34
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 71.34,
+      "status": "Picked up"
+    },
+    {
+      "date": "Dec 30, 2024, 02:50 AM",
+      "seller": "nana-shop",
+      "items": [
+        {
+          "product": "Waterproof Tourist Mattress Folding 200 x 60 x 10 Polish Manufacturer",
+          "quantity": 1,
+          "unit_price": 149.0,
+          "total_price": 149.0
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 149.0,
+      "status": "Picked up"
+    },
+    {
+      "date": "Dec 30, 2024, 02:50 AM",
+      "seller": "teddyfamily",
+      "items": [
+        {
+          "product": "ALL-SEASON ANTI-ALLERGIC QUILT 160X200 SOFT QUILTED",
+          "quantity": 1,
+          "unit_price": 55.0,
+          "total_price": 55.0
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 55.0,
+      "status": "Picked up"
+    },
+    {
+      "date": "Dec 29, 2024, 10:12 PM",
+      "seller": null,
+      "items": [
+        {
+          "product": "LARGE CARRYING CASE FOR META QUEST 3S / QUEST 3 UPGRADED HARD TRAVEL CASE",
+          "quantity": 1,
+          "unit_price": 169.99,
+          "total_price": 169.99
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 169.99,
+      "status": "Picked up"
+    },
+    {
+      "date": "Dec 29, 2024, 10:12 PM",
+      "seller": "skyprojekt",
+      "items": [
+        {
+          "product": "VR goggles Oculus Meta Quest 3 512GB + Batman",
+          "quantity": 1,
+          "unit_price": 2849.0,
+          "total_price": 2849.0
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 2849.0,
+      "status": "Picked up"
+    },
+    {
+      "date": "Dec 27, 2024, 01:43 PM",
+      "seller": "alle-granie",
+      "items": [
+        {
+          "product": "DADA DIAPERS PAMPERS EXTRA CARE 5 JUNIOR 68 pcs",
+          "quantity": 1,
+          "unit_price": 49.99,
+          "total_price": 49.99
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 49.99,
+      "status": "Picked up"
+    },
+    {
+      "date": "Dec 27, 2024, 01:43 PM",
+      "seller": "LeDiplomatePL",
+      "items": [
+        {
+          "product": "Non-alcoholic Pineapple Beer / Pinapple BARBICAN 330ml",
+          "quantity": 6,
+          "unit_price": 7.99,
+          "total_price": 47.94
+        },
+        {
+          "product": "Soft Strawberry Beer / Strawberry BARBICAN 330ml.",
+          "quantity": 6,
+          "unit_price": 7.99,
+          "total_price": 47.94
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 95.88,
+      "status": "Picked up"
+    },
+    {
+      "date": "Dec 23, 2024, 07:14 PM",
+      "seller": "SuperButelki_pl",
+      "items": [
+        {
+          "product": "10pcs glass bottles PERSIÓWKA 100ml for tinctures moonshine vodka wine monkey",
+          "quantity": 1,
+          "unit_price": 15.49,
+          "total_price": 15.49
+        },
+        {
+          "product": "SET 5x SQUARE BOTTLES 1000 ml 1L for tinctures drinks + MECHANICAL CAP",
+          "quantity": 1,
+          "unit_price": 38.99,
+          "total_price": 38.99
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 54.48,
+      "status": "Picked up"
+    },
+    {
+      "date": "Dec 23, 2024, 07:14 PM",
+      "seller": "fol-simp",
+      "items": [
+        {
+          "product": "HD plastic bags on a roll with handles, 22x45",
+          "quantity": 1,
+          "unit_price": 27.3,
+          "total_price": 27.3
+        },
+        {
+          "product": "large ziplock plastic bags 45/50 bags",
+          "quantity": 1,
+          "unit_price": 33.04,
+          "total_price": 33.04
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 60.34,
+      "status": "Picked up"
+    },
+    {
+      "date": "Nov 25, 2024, 09:20 PM",
+      "seller": "SELF-LESSES",
+      "items": [
+        {
+          "product": "SHOE RACK BATHROOM SHELVING UNIT WOODEN BAMBOO TABLE FOR RETRO LIVING ROOM",
+          "quantity": 1,
+          "unit_price": 84.9,
+          "total_price": 84.9
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 84.9,
+      "status": "Picked up"
+    },
+    {
+      "date": "Nov 25, 2024, 09:20 PM",
+      "seller": "LeDiplomatePL",
+      "items": [
+        {
+          "product": "Non-alcoholic Pineapple Beer / Pinapple BARBICAN 330ml",
+          "quantity": 5,
+          "unit_price": 7.99,
+          "total_price": 39.95
+        },
+        {
+          "product": "Soft Strawberry Beer / Strawberry BARBICAN 330ml.",
+          "quantity": 6,
+          "unit_price": 7.99,
+          "total_price": 47.94
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 87.89,
+      "status": "Picked up"
+    },
+    {
+      "date": "Nov 25, 2024, 09:20 PM",
+      "seller": "Allegro",
+      "items": [
+        {
+          "product": "Karcher window cleaner 25 cm WV 1 Plus 16336080",
+          "quantity": 1,
+          "unit_price": 149.0,
+          "total_price": 149.0
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 149.0,
+      "status": "Picked up"
+    },
+    {
+      "date": "Nov 25, 2024, 09:20 PM",
+      "seller": "Cefarm24",
+      "items": [
+        {
+          "product": "Bebilon 3 with Pronutra Advance next milk 1000 g",
+          "quantity": 1,
+          "unit_price": 75.98,
+          "total_price": 75.98
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 75.98,
+      "status": "Picked up"
+    },
+    {
+      "date": "Nov 25, 2024, 09:20 PM",
+      "seller": "Baby-Sklep",
+      "items": [
+        {
+          "product": "AKUKU FRAGRANT BAGS FOR USED NAPPIES 2 PACK",
+          "quantity": 4,
+          "unit_price": 17.98,
+          "total_price": 71.92
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 71.92,
+      "status": "Picked up"
+    },
+    {
+      "date": "Nov 25, 2024, 09:20 PM",
+      "seller": "alle-granie",
+      "items": [
+        {
+          "product": "DADA DIAPERS PAMPERS EXTRA CARE 5 JUNIOR 68 pcs",
+          "quantity": 2,
+          "unit_price": 59.99,
+          "total_price": 119.98
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 119.98,
+      "status": "Picked up"
+    },
+    {
+      "date": "Nov 25, 2024, 09:20 PM",
+      "seller": "Bissell-sma",
+      "items": [
+        {
+          "product": "BISSELL Air 320 (3002N) air purifier",
+          "quantity": 1,
+          "unit_price": 149.0,
+          "total_price": 149.0
+        },
+        {
+          "product": "BISSELL Cordless Handheld Vacuum Cleaner Pet (2278N)",
+          "quantity": 1,
+          "unit_price": 599.0,
+          "total_price": 599.0
+        },
+        {
+          "product": "BISSELL SpotClean Pro washing vacuum cleaner 1558N",
+          "quantity": 1,
+          "unit_price": 699.0,
+          "total_price": 699.0
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 1447.0,
+      "status": "Picked up"
+    },
+    {
+      "date": "Nov 23, 2024, 03:40 AM",
+      "seller": "Rpiorun",
+      "items": [
+        {
+          "product": "A set for planting plants KERAMZYT PERLITE CHIPS",
+          "quantity": 1,
+          "unit_price": 29.99,
+          "total_price": 29.99
+        }
+      ],
+      "delivery_cost": 10.95,
+      "total": 40.94,
+      "status": "Picked up"
+    },
+    {
+      "date": "Nov 22, 2024, 12:28 AM",
+      "seller": "CeraVe",
+      "items": [
+        {
+          "product": "CeraVe Moisturizing Face Cream - For Normal and Dry Skin 52ml",
+          "quantity": 1,
+          "unit_price": 49.99,
+          "total_price": 49.99
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 49.99,
+      "status": "Picked up"
+    },
+    {
+      "date": "Nov 22, 2024, 12:28 AM",
+      "seller": "SMA-THEBODYSHOP",
+      "items": [
+        {
+          "product": "THE BODY SHOP TEA TREE Facial Washing Gel 250ml",
+          "quantity": 1,
+          "unit_price": 38.55,
+          "total_price": 38.55
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 38.55,
+      "status": "Picked up"
+    },
+    {
+      "date": "Nov 11, 2024, 04:48 PM",
+      "seller": "top_komputer",
+      "items": [
+        {
+          "product": "Logitech M705 Marathon 1000DPI wireless laser mouse",
+          "quantity": 1,
+          "unit_price": 128.99,
+          "total_price": 128.99
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 128.99,
+      "status": "Picked up"
+    },
+    {
+      "date": "Nov 10, 2024, 02:26 PM",
+      "seller": "igipp",
+      "items": [
+        {
+          "product": "CORNER COVER, PROTECTION OF FURNITURE CORNERS",
+          "quantity": 1,
+          "unit_price": 1.0,
+          "total_price": 1.0
+        },
+        {
+          "product": "LEASH ANTI-RUNNING BAND FOR A CHILD WRIST VELCRO",
+          "quantity": 1,
+          "unit_price": 29.99,
+          "total_price": 29.99
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 30.99,
+      "status": "Picked up"
+    },
+    {
+      "date": "Nov 8, 2024, 07:58 PM",
+      "seller": "LeDiplomatePL",
+      "items": [
+        {
+          "product": "Non-alcoholic Pineapple Beer / Pinapple BARBICAN 330ml",
+          "quantity": 6,
+          "unit_price": 7.99,
+          "total_price": 47.94
+        },
+        {
+          "product": "Soft Strawberry Beer / Strawberry BARBICAN 330ml.",
+          "quantity": 6,
+          "unit_price": 7.99,
+          "total_price": 47.94
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 95.88,
+      "status": "Picked up"
+    },
+    {
+      "date": "Oct 28, 2024, 01:44 AM",
+      "seller": "Cefarm24",
+      "items": [
+        {
+          "product": "Bebilon 3 with Pronutra Advance next milk 1000 g",
+          "quantity": 1,
+          "unit_price": 75.39,
+          "total_price": 75.39
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 75.39,
+      "status": "Picked up"
+    },
+    {
+      "date": "Oct 28, 2024, 01:44 AM",
+      "seller": null,
+      "items": [
+        {
+          "product": "ELEKTRYCZNA SZCZOTKA DO CZYSZCZENIA MOPÓW OBROTOWYCH 5 W 1",
+          "quantity": 1,
+          "unit_price": 69.0,
+          "total_price": 69.0
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 69.0,
+      "status": "Picked up"
+    },
+    {
+      "date": "Oct 28, 2024, 01:44 AM",
+      "seller": "Baby-Sklep",
+      "items": [
+        {
+          "product": "AKUKU FRAGRANT BAGS FOR USED DIAPERS 100pcs",
+          "quantity": 4,
+          "unit_price": 8.77,
+          "total_price": 35.08
+        },
+        {
+          "product": "ANGELCARE CARTRIDGE FOR NAPPIES BAGS x1",
+          "quantity": 2,
+          "unit_price": 26.87,
+          "total_price": 53.74
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 88.82,
+      "status": "Picked up"
+    },
+    {
+      "date": "Oct 28, 2024, 01:44 AM",
+      "seller": "alle-granie",
+      "items": [
+        {
+          "product": "DADA DIAPERS PAMPERS EXTRA CARE 5 JUNIOR 68 pcs",
+          "quantity": 1,
+          "unit_price": 62.99,
+          "total_price": 62.99
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 62.99,
+      "status": "Picked up"
+    },
+    {
+      "date": "Oct 25, 2024, 01:28 AM",
+      "seller": "KADAX_",
+      "items": [
+        {
+          "product": "3x FLOWER POT 18cm CREAM COVER WITH STAND",
+          "quantity": 1,
+          "unit_price": 29.88,
+          "total_price": 29.88
+        },
+        {
+          "product": "BALCONY BOX, FLOWER POT 60cm + STAND",
+          "quantity": 1,
+          "unit_price": 19.47,
+          "total_price": 19.47
+        },
+        {
+          "product": "CERAMIC FLOWER POT 12cm, WHITE COVER",
+          "quantity": 1,
+          "unit_price": 22.88,
+          "total_price": 22.88
+        },
+        {
+          "product": "ECO POT COVER + GREEN INSERT 25x30CM",
+          "quantity": 1,
+          "unit_price": 27.99,
+          "total_price": 27.99
+        },
+        {
+          "product": "FLOWER POT WITH STAND PLASTIC COVER FLOWER POT 20cm BEIGE FOR FLOWERS KADAX",
+          "quantity": 1,
+          "unit_price": 16.47,
+          "total_price": 16.47
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 116.69,
+      "status": "Picked up"
+    },
+    {
+      "date": "Oct 25, 2024, 01:28 AM",
+      "seller": "xuefafa",
+      "items": [
+        {
+          "product": "3 In1 Mini Ceramic Succulent Plant Pot w.",
+          "quantity": 2,
+          "unit_price": 15.38,
+          "total_price": 30.76
+        }
+      ],
+      "delivery_cost": 67.0,
+      "total": 97.76,
+      "status": "Picked up"
+    },
+    {
+      "date": "Oct 20, 2024, 08:48 PM",
+      "seller": "buduj24",
+      "items": [
+        {
+          "product": "BLUE DOLPHIN Household broom 290mm",
+          "quantity": 1,
+          "unit_price": 6.09,
+          "total_price": 6.09
+        },
+        {
+          "product": "HG CLEAN MIRRORS AND GLASS - LIQUID SPRAY WITHOUT STRAGS 500ML",
+          "quantity": 1,
+          "unit_price": 16.49,
+          "total_price": 16.49
+        },
+        {
+          "product": "HG CLEANING AGENT FOR CURRENT CARE OF KITCHEN HOBS 500ML",
+          "quantity": 1,
+          "unit_price": 24.49,
+          "total_price": 24.49
+        },
+        {
+          "product": "PATTEX WOOD GLUE WATERPROOF D3 250G",
+          "quantity": 1,
+          "unit_price": 21.98,
+          "total_price": 21.98
+        },
+        {
+          "product": "TESA EXTRA POWER REPAIR TAPE BLACK 2.75MX19MM",
+          "quantity": 1,
+          "unit_price": 8.3,
+          "total_price": 8.3
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 77.35,
+      "status": "Picked up"
+    },
+    {
+      "date": "Oct 17, 2024, 01:59 AM",
+      "seller": "alle-granie",
+      "items": [
+        {
+          "product": "DADA DIAPERS PAMPERS EXTRA CARE 5 JUNIOR 68 pcs",
+          "quantity": 1,
+          "unit_price": 59.99,
+          "total_price": 59.99
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 59.99,
+      "status": "Picked up"
+    },
+    {
+      "date": "Oct 8, 2024, 11:47 PM",
+      "seller": "Cefarm24",
+      "items": [
+        {
+          "product": "Bebilon 3 with Pronutra Advance next milk 1000 g",
+          "quantity": 1,
+          "unit_price": 75.39,
+          "total_price": 75.39
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 75.39,
+      "status": "Picked up"
+    },
+    {
+      "date": "Oct 1, 2024, 01:48 PM",
+      "seller": "SmA_Lansinoh",
+      "items": [
+        {
+          "product": "Lansinoh Disposable LACTATION PADS 100 pieces",
+          "quantity": 2,
+          "unit_price": 38.89,
+          "total_price": 77.78
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 77.78,
+      "status": "Picked up"
+    },
+    {
+      "date": "Sep 17, 2024, 04:56 PM",
+      "seller": "alle-granie",
+      "items": [
+        {
+          "product": "Diapers DADA Pampers EXTRA CARE 4 MAXI 82 pcs",
+          "quantity": 1,
+          "unit_price": 47.99,
+          "total_price": 47.99
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 47.99,
+      "status": "Picked up"
+    },
+    {
+      "date": "Sep 12, 2024, 12:13 AM",
+      "seller": "Gites_Market",
+      "items": [
+        {
+          "product": "ELECTRIC MEAT MIXER STAINLESS STEEL",
+          "quantity": 1,
+          "unit_price": 69.99,
+          "total_price": 69.99
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 69.99,
+      "status": "Picked up"
+    },
+    {
+      "date": "Sep 12, 2024, 12:13 AM",
+      "seller": "SOFTIMI",
+      "items": [
+        {
+          "product": "PILLOW 50X70 ANTI-ALLERGIC QUILTED THICK ZIPPER",
+          "quantity": 2,
+          "unit_price": 53.99,
+          "total_price": 107.98
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 107.98,
+      "status": "Picked up"
+    },
+    {
+      "date": "Sep 12, 2024, 12:13 AM",
+      "seller": "bezokularow-pl",
+      "items": [
+        {
+          "product": "2x Oral-B ProBattery Electric Toothbrush Set",
+          "quantity": 1,
+          "unit_price": 86.98,
+          "total_price": 86.98
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 86.98,
+      "status": "Picked up"
+    },
+    {
+      "date": "Sep 11, 2024, 03:40 PM",
+      "seller": "Tefal_Polska",
+      "items": [
+        {
+          "product": "TEFAL Access Steam Force DT8270 2000W ceramic steamer",
+          "quantity": 1,
+          "unit_price": 349.0,
+          "total_price": 349.0
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 1.0,
+      "status": "Picked up"
+    },
+    {
+      "date": "Sep 10, 2024, 11:13 PM",
+      "seller": "Tineco-sklep",
+      "items": [
+        {
+          "product": "3in1 Tineco Floor ONE S3 Extreme iLoop LCD washing vacuum cleaner 35min of operation",
+          "quantity": 1,
+          "unit_price": 1099.0,
+          "total_price": 1099.0
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 99.0,
+      "status": "Picked up"
+    },
+    {
+      "date": "Aug 26, 2024, 02:37 PM",
+      "seller": "asena1",
+      "items": [
+        {
+          "product": "THE BODY SHOP Tea Tree Skin Clearing Foaming Mousse Foam Gel Acne",
+          "quantity": 1,
+          "unit_price": 59.9,
+          "total_price": 59.9
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 59.9,
+      "status": "Picked up"
+    },
+    {
+      "date": "Aug 24, 2024, 06:22 PM",
+      "seller": "Baby-Sklep",
+      "items": [
+        {
+          "product": "10 X CLEANIC TODAY KINDII BABY FLAKES",
+          "quantity": 1,
+          "unit_price": 54.9,
+          "total_price": 54.9
+        },
+        {
+          "product": "AKUKU FRAGRANT BAGS FOR USED DIAPERS 100pcs",
+          "quantity": 1,
+          "unit_price": 8.77,
+          "total_price": 8.77
+        },
+        {
+          "product": "ANGELCARE CARTRIDGES FOR NAPPIES BAGS x3",
+          "quantity": 1,
+          "unit_price": 79.78,
+          "total_price": 79.78
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 143.45,
+      "status": "Picked up"
+    },
+    {
+      "date": "Aug 24, 2024, 06:22 PM",
+      "seller": "alle-granie",
+      "items": [
+        {
+          "product": "Diapers DADA Pampers EXTRA CARE 4 MAXI 82 pcs",
+          "quantity": 1,
+          "unit_price": 59.99,
+          "total_price": 59.99
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 59.99,
+      "status": "Picked up"
+    },
+    {
+      "date": "Aug 24, 2024, 06:22 PM",
+      "seller": "globalus",
+      "items": [
+        {
+          "product": "Bebilon Pronutra Advance Next Modified Milk After 6 Months 2 800g",
+          "quantity": 1,
+          "unit_price": 64.95,
+          "total_price": 64.95
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 64.95,
+      "status": "Picked up"
+    },
+    {
+      "date": "Aug 24, 2024, 06:22 PM",
+      "seller": "PlanetaAgd_pl",
+      "items": [
+        {
+          "product": "The shower water insert filter for the rainfall showerhead softens the water",
+          "quantity": 1,
+          "unit_price": 49.4,
+          "total_price": 49.4
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 49.4,
+      "status": "Picked up"
+    },
+    {
+      "date": "Jun 20, 2024, 12:24 AM",
+      "seller": "Baby-Sklep",
+      "items": [
+        {
+          "product": "10 X CLEANIC TODAY KINDII BABY FLAKES",
+          "quantity": 1,
+          "unit_price": 54.99,
+          "total_price": 54.99
+        },
+        {
+          "product": "AKUKU FRAGRANT BAGS FOR USED DIAPERS 100pcs",
+          "quantity": 2,
+          "unit_price": 9.97,
+          "total_price": 19.94
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 74.93,
+      "status": "Picked up"
+    },
+    {
+      "date": "Jun 20, 2024, 12:24 AM",
+      "seller": "globalus",
+      "items": [
+        {
+          "product": "Bebilon Pronutra Advance Next Modified Milk After 6 Months 2 800g",
+          "quantity": 1,
+          "unit_price": 64.95,
+          "total_price": 64.95
+        }
+      ],
+      "delivery_cost": 11.99,
+      "total": 76.94,
+      "status": "Picked up"
+    },
+    {
+      "date": "Jun 20, 2024, 12:24 AM",
+      "seller": "alle-granie",
+      "items": [
+        {
+          "product": "Diapers DADA Pampers EXTRA CARE 4 MAXI 82 pcs",
+          "quantity": 2,
+          "unit_price": 62.99,
+          "total_price": 125.98
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 125.98,
+      "status": "Picked up"
+    },
+    {
+      "date": "Jun 14, 2024, 01:14 PM",
+      "seller": "NutaCuda",
+      "items": [
+        {
+          "product": "Zara W/END till 3:00 AM EDT men's perfume 100ml",
+          "quantity": 2,
+          "unit_price": 64.9,
+          "total_price": 129.8
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 129.8,
+      "status": "Picked up"
+    },
+    {
+      "date": "Jun 3, 2024, 09:56 PM",
+      "seller": "SmA_Lionelo",
+      "items": [
+        {
+          "product": "LIGHTWEIGHT CHILDREN'S STROLLER QUICK FOLDING LIONELO ELIA",
+          "quantity": 1,
+          "unit_price": 299.99,
+          "total_price": 299.99
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 299.99,
+      "status": "Picked up"
+    },
+    {
+      "date": "Jun 3, 2024, 09:54 PM",
+      "seller": "SmA_Lionelo",
+      "items": [
+        {
+          "product": "LIGHTWEIGHT CHILDREN'S STROLLER QUICK FOLDING LIONELO ELIA",
+          "quantity": 1,
+          "unit_price": 299.99,
+          "total_price": 299.99
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 299.99,
+      "status": "Canceled"
+    },
+    {
+      "date": "Jun 3, 2024, 09:53 PM",
+      "seller": "SmA_Lionelo",
+      "items": [
+        {
+          "product": "LIGHTWEIGHT CHILDREN'S STROLLER QUICK FOLDING LIONELO ELIA",
+          "quantity": 1,
+          "unit_price": 299.99,
+          "total_price": 299.99
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 299.99,
+      "status": "Canceled"
+    },
+    {
+      "date": "May 22, 2024, 12:44 AM",
+      "seller": "Firma_Karwil",
+      "items": [
+        {
+          "product": "FRAGRANCE OILS SET OF OILS FOR HUMIDIFIER AROMATHERAPY 12 pcs",
+          "quantity": 5,
+          "unit_price": 11.99,
+          "total_price": 59.95
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 59.95,
+      "status": "Picked up"
+    },
+    {
+      "date": "May 21, 2024, 03:12 PM",
+      "seller": "SmA-Baseus",
+      "items": [
+        {
+          "product": "BASEUS CAR VACUUM CLEANER BAGLESS CORDLESS 80W 6000PA",
+          "quantity": 1,
+          "unit_price": 161.94,
+          "total_price": 161.94
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 161.94,
+      "status": "Picked up"
+    },
+    {
+      "date": "May 21, 2024, 03:12 PM",
+      "seller": "MeliDeli",
+      "items": [
+        {
+          "product": "Caprice chocolate tubes 115g",
+          "quantity": 1,
+          "unit_price": 16.9,
+          "total_price": 16.9
+        },
+        {
+          "product": "Classic Greek pita 17cm, pack of 10",
+          "quantity": 1,
+          "unit_price": 31.5,
+          "total_price": 31.5
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 48.4,
+      "status": "Picked up"
+    },
+    {
+      "date": "May 20, 2024, 04:49 PM",
+      "seller": "little_india",
+      "items": [
+        {
+          "product": "Cookies with chocolate cream Hide&Seek Fab! Parle 112g",
+          "quantity": 4,
+          "unit_price": 4.39,
+          "total_price": 17.56
+        },
+        {
+          "product": "Hide & Seek Fab! Chocolate Cookies 82.5G Parle",
+          "quantity": 3,
+          "unit_price": 4.39,
+          "total_price": 13.169999999999998
+        },
+        {
+          "product": "Oat flakes QUAKER White Oats 500g",
+          "quantity": 1,
+          "unit_price": 17.25,
+          "total_price": 17.25
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 47.98,
+      "status": "Picked up"
+    },
+    {
+      "date": "May 15, 2024, 04:42 PM",
+      "seller": "coldi_pl",
+      "items": [
+        {
+          "product": "Air humidifier with aromatherapy Ruhhy 22739",
+          "quantity": 1,
+          "unit_price": 121.99,
+          "total_price": 121.99
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 121.99,
+      "status": "Picked up"
+    },
+    {
+      "date": "May 15, 2024, 04:42 PM",
+      "seller": "Firma_Karwil",
+      "items": [
+        {
+          "product": "10x MIĘKKA ŚCIERKA ŚCIERECZKA Z MIKROFIBRY 30x30cm",
+          "quantity": 1,
+          "unit_price": 10.99,
+          "total_price": 10.99
+        },
+        {
+          "product": "FAN USB FAN SOLID SMALL PORTABLE FOR DESK QUIET FUNCTIONAL",
+          "quantity": 2,
+          "unit_price": 14.99,
+          "total_price": 29.98
+        },
+        {
+          "product": "FRAGRANCE OILS SET OF OILS FOR HUMIDIFIER AROMATHERAPY 12 pcs",
+          "quantity": 1,
+          "unit_price": 11.99,
+          "total_price": 11.99
+        },
+        {
+          "product": "PROFESSIONAL METAL EYELASH TWEEZERS FOR PRECISE ADJUSTMENT OF EYEBROW STYLING",
+          "quantity": 3,
+          "unit_price": 1.99,
+          "total_price": 5.97
+        },
+        {
+          "product": "SILICONE SCREW PLUG FOR THE BATH SINK",
+          "quantity": 1,
+          "unit_price": 2.99,
+          "total_price": 2.99
+        },
+        {
+          "product": "SILICONE STRAINER FOR SINK, BATHTUB, WASHBASIN, FILTER, DRAIN",
+          "quantity": 2,
+          "unit_price": 1.99,
+          "total_price": 3.98
+        },
+        {
+          "product": "STRAINER SET OF STRAINERS KITCHEN STEEL STRAINER 3 PCS",
+          "quantity": 1,
+          "unit_price": 8.99,
+          "total_price": 8.99
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 74.89,
+      "status": "Picked up"
+    },
+    {
+      "date": "May 12, 2024, 11:47 PM",
+      "seller": "alle-granie",
+      "items": [
+        {
+          "product": "Diapers DADA PAMPERS EXTRA CARE 3 MIDI 96 pcs",
+          "quantity": 1,
+          "unit_price": 65.99,
+          "total_price": 65.99
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 65.99,
+      "status": "Picked up"
+    },
+    {
+      "date": "May 5, 2024, 11:46 PM",
+      "seller": "Sun-Baby",
+      "items": [
+        {
+          "product": "Interactive baby walker for learning to walk, height adjustable stoppers",
+          "quantity": 1,
+          "unit_price": 139.0,
+          "total_price": 139.0
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 139.0,
+      "status": "Picked up"
+    },
+    {
+      "date": "May 2, 2024, 03:29 AM",
+      "seller": "a_diego",
+      "items": [
+        {
+          "product": "QUICK CHARGE 3.0 USB x4",
+          "quantity": 2,
+          "unit_price": 22.5,
+          "total_price": 45.0
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 45.0,
+      "status": "Picked up"
+    },
+    {
+      "date": "May 2, 2024, 03:29 AM",
+      "seller": null,
+      "items": [
+        {
+          "product": "METAL Tweezers SET 6PCS Tweezers Precision Tweezers Antistatic",
+          "quantity": 1,
+          "unit_price": 19.99,
+          "total_price": 19.99
+        },
+        {
+          "product": "Electric spin mop cleaning brush 5 in 1",
+          "quantity": 1,
+          "unit_price": 109.48,
+          "total_price": 109.48
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 129.47,
+      "status": "Picked up"
+    },
+    {
+      "date": "Apr 17, 2024, 11:32 PM",
+      "seller": "emelissa",
+      "items": [
+        {
+          "product": "SUDOCREM EXPERT Krem barierowy - 400 g",
+          "quantity": 1,
+          "unit_price": 56.75,
+          "total_price": 56.75
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 56.75,
+      "status": "Picked up"
+    },
+    {
+      "date": "Apr 17, 2024, 11:32 PM",
+      "seller": "sma_sodastream",
+      "items": [
+        {
+          "product": "Cylinder with gas Soda Stream cylinder, CO2 cartridge 425g",
+          "quantity": 1,
+          "unit_price": 109.99,
+          "total_price": 109.99
+        },
+        {
+          "product": "Soda Stream Lipton Green Tea syrup 440ML",
+          "quantity": 1,
+          "unit_price": 21.9,
+          "total_price": 21.9
+        },
+        {
+          "product": "SodaStream PEPSI MAX LIME Lime syrup concentrate for water 440 ml",
+          "quantity": 1,
+          "unit_price": 24.99,
+          "total_price": 24.99
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 156.88,
+      "status": "Picked up"
+    },
+    {
+      "date": "Apr 17, 2024, 08:24 PM",
+      "seller": "OKazje_4U",
+      "items": [
+        {
+          "product": "CAPACITY ICE CUBE MAKER SILICONE BUCKET LARGE ICE CONTAINER COOLER",
+          "quantity": 1,
+          "unit_price": 20.99,
+          "total_price": 20.99
+        },
+        {
+          "product": "Pressure pipe pusher, functional unblocker, universal crimper",
+          "quantity": 1,
+          "unit_price": 45.58,
+          "total_price": 45.58
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 66.57,
+      "status": "Picked up"
+    },
+    {
+      "date": "Apr 15, 2024, 02:02 PM",
+      "seller": "www_Vera-Shop_pl",
+      "items": [
+        {
+          "product": "Dr Beckmann SERVICE it PROSZEK Czyszczenie Pralki",
+          "quantity": 4,
+          "unit_price": 16.99,
+          "total_price": 67.96
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 67.96,
+      "status": "Picked up"
+    },
+    {
+      "date": "Apr 15, 2024, 02:02 PM",
+      "seller": "alle-granie",
+      "items": [
+        {
+          "product": "Diapers DADA PAMPERS EXTRA CARE 3 MIDI 96 pcs",
+          "quantity": 1,
+          "unit_price": 69.99,
+          "total_price": 69.99
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 69.99,
+      "status": "Picked up"
+    },
+    {
+      "date": "Apr 7, 2024, 06:42 PM",
+      "seller": "Sold_On",
+      "items": [
+        {
+          "product": "1/27/26, 9:35 PM Allegro | My Allegro",
+          "quantity": 1,
+          "unit_price": 159.0,
+          "total_price": 159.0
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 159.0,
+      "status": "Picked up"
+    },
+    {
+      "date": "Apr 7, 2024, 06:42 PM",
+      "seller": "Allbag",
+      "items": [
+        {
+          "product": "BLACK KITCHEN APRON 220g with GRILL MASTER PRINT",
+          "quantity": 1,
+          "unit_price": 20.5,
+          "total_price": 20.5
+        },
+        {
+          "product": "KITCHEN BRUSH SILICONE MEAT PASTRY BRUSH",
+          "quantity": 2,
+          "unit_price": 4.48,
+          "total_price": 8.96
+        },
+        {
+          "product": "KITCHEN TONGHS FOR GRILL STRONG rotating",
+          "quantity": 1,
+          "unit_price": 7.99,
+          "total_price": 7.99
+        },
+        {
+          "product": "SCRAPER for ceramic induction hobs. SCRAPER for window glass. Dirt",
+          "quantity": 1,
+          "unit_price": 8.91,
+          "total_price": 8.91
+        },
+        {
+          "product": "SILICONE BRUSH WASHER FOR WASHING GLASSES BOTTLES",
+          "quantity": 2,
+          "unit_price": 2.9,
+          "total_price": 5.8
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 52.16,
+      "status": "Picked up"
+    },
+    {
+      "date": "Apr 4, 2024, 04:44 PM",
+      "seller": "Strefa_Braun",
+      "items": [
+        {
+          "product": "BNA",
+          "quantity": 1,
+          "unit_price": 114.89,
+          "total_price": 114.89
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 114.89,
+      "status": "Picked up"
+    },
+    {
+      "date": "Mar 23, 2024, 04:14 AM",
+      "seller": "alle-granie",
+      "items": [
+        {
+          "product": "Diapers DADA PAMPERS EXTRA CARE 3 MIDI 96 pcs",
+          "quantity": 1,
+          "unit_price": 69.99,
+          "total_price": 69.99
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 69.99,
+      "status": "Picked up"
+    },
+    {
+      "date": "Mar 17, 2024, 07:36 PM",
+      "seller": "SmA_Lansinoh",
+      "items": [
+        {
+          "product": "LANSINOH DISPOSABLE Breast Pads 100pcs",
+          "quantity": 1,
+          "unit_price": 37.59,
+          "total_price": 37.59
+        },
+        {
+          "product": "LANSINOH GLASS BOTTLE 240ml with pacifier size M age - 6m+",
+          "quantity": 1,
+          "unit_price": 49.89,
+          "total_price": 49.89
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 87.48,
+      "status": "Picked up"
+    },
+    {
+      "date": "Mar 17, 2024, 07:36 PM",
+      "seller": "Baby-Sklep",
+      "items": [
+        {
+          "product": "10 X CLEANIC TODAY KINDII BABY FLAKES",
+          "quantity": 1,
+          "unit_price": 56.7,
+          "total_price": 56.7
+        },
+        {
+          "product": "BABYONO FRAGRANT BAGS FOR USED DIPPERS 1052",
+          "quantity": 2,
+          "unit_price": 8.97,
+          "total_price": 17.94
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 74.64,
+      "status": "Picked up"
+    },
+    {
+      "date": "Mar 5, 2024, 08:51 AM",
+      "seller": "alle-granie",
+      "items": [
+        {
+          "product": "Diapers DADA PAMPERS EXTRA CARE 3 MIDI 96 pcs",
+          "quantity": 1,
+          "unit_price": 69.99,
+          "total_price": 69.99
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 69.99,
+      "status": "Picked up"
+    },
+    {
+      "date": "Feb 18, 2024, 10:19 PM",
+      "seller": "Premium_Home",
+      "items": [
+        {
+          "product": "KITCHEN KITCHEN SET OF 12 SILICONE BLACK SET",
+          "quantity": 1,
+          "unit_price": 64.95,
+          "total_price": 64.95
+        },
+        {
+          "product": "WOODEN CLOTHES HANGERS SET x9 HALLWARD WARDROBE",
+          "quantity": 1,
+          "unit_price": 32.95,
+          "total_price": 32.95
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 1.0,
+      "status": "Picked up"
+    },
+    {
+      "date": "Feb 18, 2024, 10:19 PM",
+      "seller": "Baby-Sklep",
+      "items": [
+        {
+          "product": "AKUKU FRAGRANT BAGS FOR USED NAPPIES 2 PACK",
+          "quantity": 1,
+          "unit_price": 18.97,
+          "total_price": 18.97
+        },
+        {
+          "product": "ANGELCARE CARTRIDGES FOR NAPPIES BAGS x3",
+          "quantity": 1,
+          "unit_price": 75.57,
+          "total_price": 75.57
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 1.0,
+      "status": "Picked up"
+    },
+    {
+      "date": "Feb 18, 2024, 10:19 PM",
+      "seller": "orionagd_pl",
+      "items": [
+        {
+          "product": "2x OIL DISPENSER VINEGAR bottle for olive oil vinegar",
+          "quantity": 1,
+          "unit_price": 49.99,
+          "total_price": 49.99
+        },
+        {
+          "product": "SILOCON kitchen brush for greasing baking meat dough, 22 cm",
+          "quantity": 2,
+          "unit_price": 11.99,
+          "total_price": 23.98
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 1.0,
+      "status": "Picked up"
+    },
+    {
+      "date": "Feb 18, 2024, 10:19 PM",
+      "seller": "Baseus-Polska",
+      "items": [
+        {
+          "product": "BASEUS LARGE CAPACITY POWER BANK 20000mAh 20W USB USB C FAST POWER BANK",
+          "quantity": 1,
+          "unit_price": 119.0,
+          "total_price": 119.0
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 1.0,
+      "status": "Picked up"
+    },
+    {
+      "date": "Feb 18, 2024, 10:19 PM",
+      "seller": "promejko2",
+      "items": [
+        {
+          "product": "PHILIPS SHAVER FOR BEARD HAIR CORDLESS BEARD TRIMER",
+          "quantity": 1,
+          "unit_price": 129.0,
+          "total_price": 129.0
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 10.41,
+      "status": "Picked up"
+    },
+    {
+      "date": "Feb 12, 2024, 03:11 AM",
+      "seller": "alle-granie",
+      "items": [
+        {
+          "product": "Diapers DADA PAMPERS EXTRA CARE 3 MIDI 96 pcs",
+          "quantity": 1,
+          "unit_price": 69.99,
+          "total_price": 69.99
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 69.99,
+      "status": "Picked up"
+    },
+    {
+      "date": "Feb 5, 2024, 01:50 AM",
+      "seller": "PlanetaAgd_pl",
+      "items": [
+        {
+          "product": "LARGE GLASS BOTTLE OF MOTIVATION FOR WATER BEVERAGES 1l",
+          "quantity": 2,
+          "unit_price": 54.89,
+          "total_price": 109.78
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 9.78,
+      "status": "Picked up"
+    },
+    {
+      "date": "Feb 5, 2024, 01:34 AM",
+      "seller": "sma_sodastream",
+      "items": [
+        {
+          "product": "Set of syrups concentrates SodaStream CLOUDY LEMONADE and others 440ml",
+          "quantity": 1,
+          "unit_price": 77.96,
+          "total_price": 77.96
+        },
+        {
+          "product": "Soda Stream Lipton Green Tea syrup 440ML",
+          "quantity": 1,
+          "unit_price": 24.99,
+          "total_price": 24.99
+        },
+        {
+          "product": "SodaStream Terra water carbonator + bottles",
+          "quantity": 1,
+          "unit_price": 329.0,
+          "total_price": 329.0
+        },
+        {
+          "product": "Syrup concentrate for water SodaStream Pepsi MAX 3x",
+          "quantity": 1,
+          "unit_price": 62.9,
+          "total_price": 62.9
+        },
+        {
+          "product": "Syrup for water Soda Stream Lipton Ice Tea 440ml",
+          "quantity": 1,
+          "unit_price": 24.99,
+          "total_price": 24.99
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 19.84,
+      "status": "Picked up"
+    },
+    {
+      "date": "Jan 29, 2024, 05:05 PM",
+      "seller": "Platet-A",
+      "items": [
+        {
+          "product": "Raspberry PI PICO RP 2040 ARM Cortex KIT",
+          "quantity": 1,
+          "unit_price": 129.0,
+          "total_price": 129.0
+        },
+        {
+          "product": "Wires, cables, jumpers male - male 10pcs 20cm",
+          "quantity": 1,
+          "unit_price": 3.5,
+          "total_price": 3.5
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 32.5,
+      "status": "Picked up"
+    },
+    {
+      "date": "Jan 29, 2024, 02:52 AM",
+      "seller": "_sweet_home_",
+      "items": [
+        {
+          "product": "3 paintings for the living room as part of a gold vase triptych",
+          "quantity": 1,
+          "unit_price": 139.0,
+          "total_price": 139.0
+        },
+        {
+          "product": "Golden Feathers frame wall art for the living room",
+          "quantity": 1,
+          "unit_price": 119.0,
+          "total_price": 119.0
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 8.0,
+      "status": "Picked up"
+    },
+    {
+      "date": "Jan 29, 2024, 02:39 AM",
+      "seller": "RebelElectro",
+      "items": [
+        {
+          "product": "Fast sandwich maker, toast and croutons, 800W Teesa",
+          "quantity": 1,
+          "unit_price": 69.0,
+          "total_price": 69.0
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 69.0,
+      "status": "Picked up"
+    },
+    {
+      "date": "Jan 29, 2024, 02:39 AM",
+      "seller": "memfis_pl",
+      "items": [
+        {
+          "product": "MOBILNY REGAŁ KITCHEN SHELF TABLE ON WHEELS TROLLEY",
+          "quantity": 1,
+          "unit_price": 45.0,
+          "total_price": 45.0
+        }
+      ],
+      "delivery_cost": 11.99,
+      "total": 56.99,
+      "status": "Picked up"
+    },
+    {
+      "date": "Jan 28, 2024, 11:51 PM",
+      "seller": "SmA_BASEUS",
+      "items": [
+        {
+          "product": "BASEUS CABLE ORGANIZER GUIDE MAGNETIC HOLDER DESK CLIP",
+          "quantity": 1,
+          "unit_price": 14.99,
+          "total_price": 14.99
+        },
+        {
+          "product": "BASEUS FAST NETWORK CHARGER DURABLE CUB POWER SUPPLY 2X USB-C + USB, 65W",
+          "quantity": 1,
+          "unit_price": 149.99,
+          "total_price": 149.99
+        },
+        {
+          "product": "BASEUS MAGNETIC WIRELESS POWERBANK INDUCTIVE CHARGING 20W 5000MAH",
+          "quantity": 1,
+          "unit_price": 108.9,
+          "total_price": 108.9
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 23.88,
+      "status": "Picked up"
+    },
+    {
+      "date": "Jan 28, 2024, 09:27 PM",
+      "seller": "kidzmotion_eu",
+      "items": [
+        {
+          "product": "CHAIR FOR FEEDING AMELIA 3IN1 CHAIR WOOD",
+          "quantity": 1,
+          "unit_price": 179.0,
+          "total_price": 179.0
+        },
+        {
+          "product": "XL FOAM MAT PUZZLE LARGE PLAYPEN 150x150x1cm",
+          "quantity": 1,
+          "unit_price": 79.0,
+          "total_price": 79.0
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 8.0,
+      "status": "Picked up"
+    },
+    {
+      "date": "Jan 21, 2024, 10:06 PM",
+      "seller": "alle-granie",
+      "items": [
+        {
+          "product": "Diapers DADA PAMPERS EXTRA CARE 3 MIDI 96 pcs",
+          "quantity": 1,
+          "unit_price": 69.99,
+          "total_price": 69.99
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 69.99,
+      "status": "Picked up"
+    },
+    {
+      "date": "Jan 15, 2024, 01:09 AM",
+      "seller": "INNMARK",
+      "items": [
+        {
+          "product": "VISCOPLAST SLICES 100 PCS SET WATERPROOF 72 * 19",
+          "quantity": 1,
+          "unit_price": 32.53,
+          "total_price": 32.53
+        },
+        {
+          "product": "VISCOPLAST SLICES 100 PCS SET WATERPROOF 72 * 25",
+          "quantity": 1,
+          "unit_price": 39.99,
+          "total_price": 39.99
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 72.52,
+      "status": "Picked up"
+    },
+    {
+      "date": "Jan 12, 2024, 02:58 AM",
+      "seller": "NordaParts",
+      "items": [
+        {
+          "product": "3mk Mag Case For Apple iPhone 12 Pro Max",
+          "quantity": 1,
+          "unit_price": 69.06,
+          "total_price": 69.06
+        },
+        {
+          "product": "3mk NeoGlass Screen Protector for iPhone 12 Pro Max",
+          "quantity": 1,
+          "unit_price": 48.96,
+          "total_price": 48.96
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 118.02,
+      "status": "Picked up"
+    },
+    {
+      "date": "Jan 1, 2024, 05:00 AM",
+      "seller": "Platet-A",
+      "items": [
+        {
+          "product": "Set of electronic components for Arduino, Pi",
+          "quantity": 1,
+          "unit_price": 69.0,
+          "total_price": 69.0
+        },
+        {
+          "product": "Wires, cables, jumpers male - female 40pcs 30cm",
+          "quantity": 1,
+          "unit_price": 17.9,
+          "total_price": 17.9
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 86.9,
+      "status": "Picked up"
+    },
+    {
+      "date": "Dec 27, 2023, 04:00 AM",
+      "seller": "alle-granie",
+      "items": [
+        {
+          "product": "Diapers DADA PAMPERS EXTRA CARE 3 MIDI 96 pcs",
+          "quantity": 1,
+          "unit_price": 69.99,
+          "total_price": 69.99
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 69.99,
+      "status": "Picked up"
+    },
+    {
+      "date": "Dec 14, 2023, 03:16 AM",
+      "seller": "www_xgsm_pl",
+      "items": [
+        {
+          "product": "2x Tempered Glass for iPhone 15 Pro Max ERBORD EasyApp full screen",
+          "quantity": 1,
+          "unit_price": 59.9,
+          "total_price": 59.9
+        },
+        {
+          "product": "Case for iPhone 15 Pro Max, Spigen Optik Magnetic, Cover, Housing",
+          "quantity": 1,
+          "unit_price": 155.0,
+          "total_price": 155.0
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 214.9,
+      "status": "Picked up"
+    },
+    {
+      "date": "Dec 14, 2023, 03:16 AM",
+      "seller": "jameshawk",
+      "items": [
+        {
+          "product": "1/27/26, 9:35 PM Allegro | My Allegro",
+          "quantity": 1,
+          "unit_price": 183.56,
+          "total_price": 183.56
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 183.56,
+      "status": "Picked up"
+    },
+    {
+      "date": "Dec 12, 2023, 03:56 PM",
+      "seller": "Baby-Sklep",
+      "items": [
+        {
+          "product": "10 X CLEANIC TODAY KINDII BABY FLAKES",
+          "quantity": 1,
+          "unit_price": 59.94,
+          "total_price": 59.94
+        },
+        {
+          "product": "8 X CLEANIC KINDII HERE'S FLAKES FOR BABIES",
+          "quantity": 1,
+          "unit_price": 47.16,
+          "total_price": 47.16
+        },
+        {
+          "product": "ANGELCARE CARTRIDGES FOR NAPPIES BAGS x3",
+          "quantity": 1,
+          "unit_price": 75.57,
+          "total_price": 75.57
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 182.67,
+      "status": "Picked up"
+    },
+    {
+      "date": "Nov 14, 2023, 12:32 PM",
+      "seller": "Allegro",
+      "items": [
+        {
+          "product": "TP-LINK Archer C6 router black",
+          "quantity": 1,
+          "unit_price": 119.0,
+          "total_price": 119.0
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 119.0,
+      "status": "Picked up"
+    },
+    {
+      "date": "Nov 11, 2023, 07:28 AM",
+      "seller": "Allegro_Kody",
+      "items": [
+        {
+          "product": "Pyszne.pl gift Pyszne.pl 100 PLN",
+          "quantity": 1,
+          "unit_price": 100.0,
+          "total_price": 100.0
+        },
+        {
+          "product": "Pyszne.pl gift Pyszne.pl 200 PLN",
+          "quantity": 3,
+          "unit_price": 200.0,
+          "total_price": 600.0
+        },
+        {
+          "product": "Pyszne.pl gift card 60 PLN",
+          "quantity": 1,
+          "unit_price": 60.0,
+          "total_price": 60.0
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 6.8,
+      "status": "Email delivery"
+    },
+    {
+      "date": "Nov 6, 2023, 11:35 PM",
+      "seller": "apgo_eu",
+      "items": [
+        {
+          "product": "Strap Silicone Black Universal Loop 22mm",
+          "quantity": 1,
+          "unit_price": 12.0,
+          "total_price": 12.0
+        }
+      ],
+      "delivery_cost": 13.99,
+      "total": 25.99,
+      "status": "Picked up"
+    },
+    {
+      "date": "Nov 6, 2023, 11:35 PM",
+      "seller": "SmA_Lansinoh",
+      "items": [
+        {
+          "product": "LANSINOH DISPOSABLE Breast Pads 100pcs",
+          "quantity": 1,
+          "unit_price": 44.79,
+          "total_price": 44.79
+        }
+      ],
+      "delivery_cost": 11.9,
+      "total": 56.69,
+      "status": "Picked up"
+    },
+    {
+      "date": "Nov 3, 2023, 06:52 PM",
+      "seller": "Sky-is-the-limit",
+      "items": [
+        {
+          "product": "HDMI microHDMI adapter for Raspberry4B",
+          "quantity": 1,
+          "unit_price": 4.99,
+          "total_price": 4.99
+        },
+        {
+          "product": "Kit with Raspberry Pi 4B WiFi 8GB RAM + accessories",
+          "quantity": 1,
+          "unit_price": 549.99,
+          "total_price": 4.99
+        },
+        {
+          "product": "Official Raspberry Pi keyboard with USB Hub",
+          "quantity": 1,
+          "unit_price": 129.99,
+          "total_price": 129.99
+        },
+        {
+          "product": "The official mouse for the Raspberry Pi",
+          "quantity": 1,
+          "unit_price": 59.99,
+          "total_price": 59.99
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 749.95,
+      "status": "Picked up"
+    },
+    {
+      "date": "Oct 28, 2023, 10:32 PM",
+      "seller": "Monia_elektro",
+      "items": [
+        {
+          "product": "Samsung Galaxy Watch 4 R860 40mm Black",
+          "quantity": 1,
+          "unit_price": 599.0,
+          "total_price": 599.0
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 599.0,
+      "status": "Picked up"
+    },
+    {
+      "date": "Oct 5, 2023, 12:46 PM",
+      "seller": "Baby-Sklep",
+      "items": [
+        {
+          "product": "10 X CLEANIC TODAY KINDII BABY FLAKES",
+          "quantity": 1,
+          "unit_price": 63.82,
+          "total_price": 63.82
+        },
+        {
+          "product": "AKUKU FRAGRANT BAGS FOR USED NAPPIES 2 PACK",
+          "quantity": 2,
+          "unit_price": 18.97,
+          "total_price": 37.94
+        },
+        {
+          "product": "ANGELCARE CARTRIDGES FOR NAPPIES BAGS x3",
+          "quantity": 1,
+          "unit_price": 74.97,
+          "total_price": 74.97
+        },
+        {
+          "product": "BABYONO CHANGING PADS 40x60 20pcs 513/20",
+          "quantity": 1,
+          "unit_price": 19.25,
+          "total_price": 19.25
+        },
+        {
+          "product": "BabyOno Brush Set 735 Blue",
+          "quantity": 1,
+          "unit_price": 15.97,
+          "total_price": 15.97
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 211.95,
+      "status": "Picked up"
+    },
+    {
+      "date": "Sep 18, 2023, 10:38 PM",
+      "seller": "opensport-sklep",
+      "items": [
+        {
+          "product": "BIKE LOCK ABUS KEY 3.7X110CM",
+          "quantity": 1,
+          "unit_price": 97.8,
+          "total_price": 97.8
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 1.0,
+      "status": "Picked up"
+    },
+    {
+      "date": "Sep 7, 2023, 11:41 PM",
+      "seller": "4kom-pl",
+      "items": [
+        {
+          "product": "Thermos for coffee tea 1.1l tourist vacuum",
+          "quantity": 1,
+          "unit_price": 79.0,
+          "total_price": 79.0
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 79.0,
+      "status": "Picked up"
+    },
+    {
+      "date": "Aug 21, 2023, 11:43 PM",
+      "seller": "little_india",
+      "items": [
+        {
+          "product": "Basmati Extra Long Rice 5kg Banno",
+          "quantity": 1,
+          "unit_price": 73.0,
+          "total_price": 73.0
+        },
+        {
+          "product": "Black cumin spice grains Natco 100g",
+          "quantity": 1,
+          "unit_price": 10.35,
+          "total_price": 10.35
+        },
+        {
+          "product": "Ghee TRS clarified butter 500g",
+          "quantity": 1,
+          "unit_price": 35.6,
+          "total_price": 35.6
+        },
+        {
+          "product": "Premium black tea Wagh Bakri 1kg",
+          "quantity": 1,
+          "unit_price": 46.0,
+          "total_price": 46.0
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 164.95,
+      "status": "Picked up"
+    },
+    {
+      "date": "Aug 16, 2023, 01:46 PM",
+      "seller": "adler-europe",
+      "items": [
+        {
+          "product": "LARGE ELECTRIC BLANKET HEATING MAT 150x100cm FLEECE",
+          "quantity": 1,
+          "unit_price": 109.0,
+          "total_price": 109.0
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 109.0,
+      "status": "Picked up"
+    },
+    {
+      "date": "Aug 15, 2023, 11:44 PM",
+      "seller": "CzasBobasa",
+      "items": [
+        {
+          "product": "BABYONO CHANGING PADS 40x60x20 adhesive",
+          "quantity": 2,
+          "unit_price": 19.68,
+          "total_price": 39.36
+        },
+        {
+          "product": "Scented BAGS DIAPER BAGS 5 PACK 500 PCS",
+          "quantity": 1,
+          "unit_price": 45.0,
+          "total_price": 45.0
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 84.36,
+      "status": "Picked up"
+    },
+    {
+      "date": "Aug 15, 2023, 11:44 PM",
+      "seller": "babysportive",
+      "items": [
+        {
+          "product": "KAREX MULTIFUNCTIONAL TROLLEY 3IN1 ALLIVIO LEN UMBRELLA",
+          "quantity": 1,
+          "unit_price": 1070.0,
+          "total_price": 1070.0
+        }
+      ],
+      "delivery_cost": 25.0,
+      "total": 1095.0,
+      "status": "Picked up"
+    },
+    {
+      "date": "Aug 10, 2023, 12:09 AM",
+      "seller": "tradum_pl",
+      "items": [
+        {
+          "product": "Glue stick 15g set of 2 STARPAK",
+          "quantity": 1,
+          "unit_price": 5.85,
+          "total_price": 5.85
+        },
+        {
+          "product": "Spray for cleaning TFT/LCD/LED screens 250ml",
+          "quantity": 2,
+          "unit_price": 15.47,
+          "total_price": 30.94
+        },
+        {
+          "product": "Stamp pad No. 2. Black. D.Rect office",
+          "quantity": 1,
+          "unit_price": 7.48,
+          "total_price": 7.48
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 44.27,
+      "status": "Picked up"
+    },
+    {
+      "date": "Aug 9, 2023, 01:57 AM",
+      "seller": "AquAir",
+      "items": [
+        {
+          "product": "Shower pipe Extendable hose 170-220 cm",
+          "quantity": 1,
+          "unit_price": 44.06,
+          "total_price": 44.06
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 44.06,
+      "status": "Picked up"
+    },
+    {
+      "date": "Aug 9, 2023, 01:57 AM",
+      "seller": "Sellgros",
+      "items": [
+        {
+          "product": "3-in-1 KITCHEN KNIFE SHARPENER THREE-PHASE 36",
+          "quantity": 1,
+          "unit_price": 14.8,
+          "total_price": 14.8
+        },
+        {
+          "product": "Standing table fan POWERFUL fan for USB 38",
+          "quantity": 2,
+          "unit_price": 18.8,
+          "total_price": 37.6
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 52.4,
+      "status": "Picked up"
+    },
+    {
+      "date": "Aug 6, 2023, 02:57 AM",
+      "seller": "MultiGrav",
+      "items": [
+        {
+          "product": "Ink pillow Covering 90 x 50 mm 6 colors",
+          "quantity": 1,
+          "unit_price": 18.0,
+          "total_price": 18.0
+        }
+      ],
+      "delivery_cost": 11.99,
+      "total": 29.99,
+      "status": "Picked up"
+    },
+    {
+      "date": "Aug 4, 2023, 04:14 PM",
+      "seller": "toscalito",
+      "items": [
+        {
+          "product": "Grzebień higieniczny gęsty wszy gnidy",
+          "quantity": 1,
+          "unit_price": 4.99,
+          "total_price": 4.99
+        }
+      ],
+      "delivery_cost": 14.0,
+      "total": 18.99,
+      "status": "Picked up"
+    },
+    {
+      "date": "Aug 4, 2023, 04:14 PM",
+      "seller": "loreal_official",
+      "items": [
+        {
+          "product": "Hair dye LOreal Excellence 500 Light Brown",
+          "quantity": 1,
+          "unit_price": 33.49,
+          "total_price": 33.49
+        }
+      ],
+      "delivery_cost": 11.99,
+      "total": 45.48,
+      "status": "Picked up"
+    },
+    {
+      "date": "Aug 3, 2023, 10:45 PM",
+      "seller": "sklepwysylkowy",
+      "items": [
+        {
+          "product": "Bouncer Rocker Cradle, Folded with toys",
+          "quantity": 1,
+          "unit_price": 99.0,
+          "total_price": 99.0
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 99.0,
+      "status": "Picked up"
+    },
+    {
+      "date": "Jul 31, 2023, 03:05 PM",
+      "seller": "MEDYCZNY_24h",
+      "items": [
+        {
+          "product": "Jednorazowe wkładki laktacyjne Lansinoh 100 szt.",
+          "quantity": 1,
+          "unit_price": 36.6,
+          "total_price": 36.6
+        },
+        {
+          "product": "Silicone Breast Pump-Silikonowy laktator Lansinoh",
+          "quantity": 1,
+          "unit_price": 68.0,
+          "total_price": 68.0
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 104.6,
+      "status": "Picked up"
+    },
+    {
+      "date": "Jul 30, 2023, 07:34 PM",
+      "seller": "Partner_marek_PG",
+      "items": [
+        {
+          "product": "Pampers Pieluszki Premium Value Pack S1 72szt",
+          "quantity": 1,
+          "unit_price": 61.99,
+          "total_price": 61.99
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 61.99,
+      "status": "Picked up"
+    },
+    {
+      "date": "Jul 26, 2023, 10:10 PM",
+      "seller": "Baby-Sklep",
+      "items": [
+        {
+          "product": "10 X CLEANIC TODAY KINDII BABY FLAKES",
+          "quantity": 1,
+          "unit_price": 63.83,
+          "total_price": 63.83
+        }
+      ],
+      "delivery_cost": 0,
+      "total": 63.83,
+      "status": "Picked up"
+    }
+  ]
