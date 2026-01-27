@@ -32,7 +32,9 @@ export default function Dashboard({ username, onLogout }: DashboardProps) {
     totalOrders: 0,
     totalSpent: 0,
     averageOrder: 0,
-    freeDeliveryPercent: 0
+    freeDeliveryPercent: 0,
+    avgMonthlySpend: 0,
+    thisMonthSpend: 0
   });
 
   useEffect(() => {
@@ -80,11 +82,34 @@ export default function Dashboard({ username, onLogout }: DashboardProps) {
     const freeDeliveryCount = ordersData.filter(order => order.delivery_cost === 0).length;
     const freeDeliveryPercent = totalOrders > 0 ? (freeDeliveryCount / totalOrders) * 100 : 0;
 
+    // Calculate monthly spending
+    const monthlyMap = new Map<string, number>();
+    const currentMonth = format(new Date(), 'MMM yyyy');
+
+    ordersData.forEach(order => {
+      try {
+        const parsedDate = parse(order.date, 'MMM dd, yyyy, hh:mm a', new Date());
+        const monthKey = format(parsedDate, 'MMM yyyy');
+        const current = monthlyMap.get(monthKey) || 0;
+        monthlyMap.set(monthKey, current + order.total);
+      } catch (error) {
+        console.error('Error parsing date:', order.date);
+      }
+    });
+
+    const avgMonthlySpend = monthlyMap.size > 0
+      ? Array.from(monthlyMap.values()).reduce((sum, val) => sum + val, 0) / monthlyMap.size
+      : 0;
+
+    const thisMonthSpend = monthlyMap.get(currentMonth) || 0;
+
     setStats({
       totalOrders,
       totalSpent,
       averageOrder,
-      freeDeliveryPercent
+      freeDeliveryPercent,
+      avgMonthlySpend,
+      thisMonthSpend
     });
   };
 
@@ -534,7 +559,7 @@ export default function Dashboard({ username, onLogout }: DashboardProps) {
         </div>
 
         {/* Stats Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
           <div className="bg-gray-800 rounded-lg shadow-lg p-6 border border-gray-700">
             <div className="text-sm text-gray-400 uppercase">Total Orders</div>
             <div className="text-3xl font-bold text-blue-400">{stats.totalOrders}</div>
@@ -550,6 +575,14 @@ export default function Dashboard({ username, onLogout }: DashboardProps) {
           <div className="bg-gray-800 rounded-lg shadow-lg p-6 border border-gray-700">
             <div className="text-sm text-gray-400 uppercase">Free Delivery</div>
             <div className="text-3xl font-bold text-indigo-400">{stats.freeDeliveryPercent.toFixed(0)}%</div>
+          </div>
+          <div className="bg-gray-800 rounded-lg shadow-lg p-6 border border-gray-700">
+            <div className="text-sm text-gray-400 uppercase">Avg Monthly Spend</div>
+            <div className="text-3xl font-bold text-yellow-400">{stats.avgMonthlySpend.toFixed(2)} zł</div>
+          </div>
+          <div className="bg-gray-800 rounded-lg shadow-lg p-6 border border-gray-700">
+            <div className="text-sm text-gray-400 uppercase">This Month Spend</div>
+            <div className="text-3xl font-bold text-pink-400">{stats.thisMonthSpend.toFixed(2)} zł</div>
           </div>
         </div>
 
