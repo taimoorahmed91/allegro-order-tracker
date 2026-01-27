@@ -208,7 +208,9 @@ export default function Dashboard() {
       setSelectedOrders(prev => prev.filter(id => !currentPageIds.includes(id)));
     } else {
       // Select all on current page
-      setSelectedOrders(prev => [...new Set([...prev, ...currentPageIds])]);
+      const combined = [...selectedOrders, ...currentPageIds];
+      const uniqueIds = Array.from(new Set(combined));
+      setSelectedOrders(uniqueIds);
     }
   };
 
