@@ -27,7 +27,7 @@ export default function Dashboard({ username, onLogout }: DashboardProps) {
     maxTotal: ''
   });
   const [selectedOrders, setSelectedOrders] = useState<string[]>([]);
-  const itemsPerPage = 10;
+  const [itemsPerPage, setItemsPerPage] = useState(10);
   const [stats, setStats] = useState({
     totalOrders: 0,
     totalSpent: 0,
@@ -671,7 +671,7 @@ export default function Dashboard({ username, onLogout }: DashboardProps) {
                   <option value="all">All Statuses</option>
                   <option value="In preparation">In Preparation</option>
                   <option value="In transit">In Transit</option>
-                  <option value="Delivered">Delivered</option>
+                  <option value="Picked up">Picked up</option>
                   <option value="Cancelled">Cancelled</option>
                 </select>
               </div>
@@ -801,7 +801,7 @@ export default function Dashboard({ username, onLogout }: DashboardProps) {
                     <div className="text-right">
                       <div className="text-2xl font-bold text-green-400">{order.total.toFixed(2)} zł</div>
                       <span className={`inline-block px-3 py-1 rounded-full text-xs font-semibold ${
-                        order.status === 'Delivered' ? 'bg-green-900 text-green-300 border border-green-700' :
+                        order.status === 'Picked up' ? 'bg-green-900 text-green-300 border border-green-700' :
                         order.status === 'In transit' ? 'bg-blue-900 text-blue-300 border border-blue-700' :
                         'bg-yellow-900 text-yellow-300 border border-yellow-700'
                       }`}>
@@ -851,10 +851,28 @@ export default function Dashboard({ username, onLogout }: DashboardProps) {
             ))}
           </div>
 
-          {/* Pagination */}
-          {getTotalPages() > 1 && (
+          {/* Rows per page and Pagination */}
+          {getFilteredAndSortedOrders().length > 0 && (
             <div className="mt-6 pt-6 border-t border-gray-700">
-              <div className="flex items-center justify-center gap-2 mb-3">
+              <div className="flex items-center justify-between mb-3">
+                <div className="flex items-center gap-2">
+                  <label className="text-sm text-gray-400">Rows per page:</label>
+                  <select
+                    value={itemsPerPage}
+                    onChange={(e) => {
+                      setItemsPerPage(parseInt(e.target.value));
+                      setCurrentPage(1);
+                    }}
+                    className="px-3 py-1 bg-gray-700 border border-gray-600 rounded-lg text-white text-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  >
+                    <option value="10">10</option>
+                    <option value="15">15</option>
+                    <option value="20">20</option>
+                    <option value="30">30</option>
+                  </select>
+                </div>
+                {getTotalPages() > 1 && (
+                <div className="flex items-center justify-center gap-2">
                 <button
                   onClick={() => setCurrentPage(prev => Math.max(1, prev - 1))}
                   disabled={currentPage === 1}
@@ -890,10 +908,14 @@ export default function Dashboard({ username, onLogout }: DashboardProps) {
                 >
                   Next
                 </button>
+                </div>
+                )}
               </div>
+              {getTotalPages() > 1 && (
               <div className="text-center text-sm text-gray-400">
                 Showing {((currentPage - 1) * itemsPerPage) + 1} to {Math.min(currentPage * itemsPerPage, getFilteredAndSortedOrders().length)} of {getFilteredAndSortedOrders().length} orders
               </div>
+              )}
             </div>
           )}
         </div>
@@ -974,7 +996,7 @@ export default function Dashboard({ username, onLogout }: DashboardProps) {
                     >
                       <option value="In preparation">In preparation</option>
                       <option value="In transit">In transit</option>
-                      <option value="Delivered">Delivered</option>
+                      <option value="Picked up">Picked up</option>
                       <option value="Cancelled">Cancelled</option>
                     </select>
                   </div>
@@ -1139,7 +1161,7 @@ export default function Dashboard({ username, onLogout }: DashboardProps) {
                     >
                       <option value="In preparation">In preparation</option>
                       <option value="In transit">In transit</option>
-                      <option value="Delivered">Delivered</option>
+                      <option value="Picked up">Picked up</option>
                       <option value="Cancelled">Cancelled</option>
                     </select>
                   </div>

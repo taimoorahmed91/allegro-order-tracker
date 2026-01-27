@@ -13,6 +13,8 @@ export default async function handler(
   try {
     const { username, password } = req.body;
 
+    console.log('Login attempt:', { username, passwordLength: password?.length });
+
     if (!username || !password) {
       return res.status(400).json({ error: 'Username and password are required' });
     }
@@ -24,12 +26,24 @@ export default async function handler(
       .eq('username', username)
       .single();
 
-    if (error || !user) {
+    console.log('User lookup:', { found: !!user, error: error?.message });
+
+    if (error) {
+      console.error('Supabase error:', error);
+      return res.status(401).json({ error: 'Invalid username or password', debug: error.message });
+    }
+
+    if (!user) {
+      console.log('User not found:', username);
       return res.status(401).json({ error: 'Invalid username or password' });
     }
 
+    console.log('User found:', { username: user.username, hasHash: !!user.password_hash });
+
     // Compare password
     const isValidPassword = await bcrypt.compare(password, user.password_hash);
+
+    console.log('Password comparison:', { isValid: isValidPassword });
 
     if (!isValidPassword) {
       return res.status(401).json({ error: 'Invalid username or password' });
@@ -45,6 +59,9 @@ export default async function handler(
     });
   } catch (error) {
     console.error('Login error:', error);
-    return res.status(500).json({ error: 'Internal server error' });
+    return res.status(500).json({
+      error: 'Internal server error',
+      details: error instanceof Error ? error.message : 'Unknown error'
+    });
   }
 }
