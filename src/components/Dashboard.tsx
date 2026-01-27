@@ -29,14 +29,32 @@ export default function Dashboard() {
   const fetchOrders = async () => {
     try {
       const response = await fetch('/api/orders/list');
-      const result = await response.json();
+
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+
+      const text = await response.text();
+      if (!text) {
+        console.log('No data returned from API');
+        setOrders([]);
+        calculateStats([]);
+        return;
+      }
+
+      const result = JSON.parse(text);
 
       if (result.success) {
-        setOrders(result.data);
-        calculateStats(result.data);
+        setOrders(result.data || []);
+        calculateStats(result.data || []);
+      } else {
+        setOrders([]);
+        calculateStats([]);
       }
     } catch (error) {
       console.error('Error fetching orders:', error);
+      setOrders([]);
+      calculateStats([]);
     } finally {
       setLoading(false);
     }
@@ -80,12 +98,13 @@ export default function Dashboard() {
         body: JSON.stringify(jsonData)
       });
 
-      const result = await response.json();
+      const text = await response.text();
+      const result = text ? JSON.parse(text) : {};
 
       if (response.ok || response.status === 207) {
         setUploadMessage({
           type: 'success',
-          text: `Successfully imported ${result.inserted} orders! ${result.failed ? `(${result.failed} failed)` : ''}`
+          text: `Successfully imported ${result.inserted || 0} orders! ${result.failed ? `(${result.failed} failed)` : ''}`
         });
         // Refresh orders list
         fetchOrders();
@@ -111,7 +130,8 @@ export default function Dashboard() {
         method: 'DELETE',
       });
 
-      const result = await response.json();
+      const text = await response.text();
+      const result = text ? JSON.parse(text) : {};
 
       if (response.ok) {
         setUploadMessage({
@@ -143,7 +163,8 @@ export default function Dashboard() {
         body: JSON.stringify(updatedOrder)
       });
 
-      const result = await response.json();
+      const text = await response.text();
+      const result = text ? JSON.parse(text) : {};
 
       if (response.ok) {
         setUploadMessage({
