@@ -494,19 +494,19 @@ export default function Dashboard({ username, onLogout }: DashboardProps) {
   }
 
   return (
-    <div className="min-h-screen bg-gray-900 p-8">
+    <div className="min-h-screen bg-gray-900 p-4 sm:p-6 lg:p-8">
       <div className="max-w-7xl mx-auto">
-        <div className="flex items-center justify-between mb-8">
-          <h1 className="text-4xl font-bold text-white">Order Dashboard</h1>
-          <div className="flex items-center gap-4">
-            <div className="text-gray-300">
+        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-6 sm:mb-8">
+          <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white">Order Dashboard</h1>
+          <div className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-4">
+            <div className="text-sm sm:text-base text-gray-300">
               Welcome, <span className="text-white font-semibold">{username}</span>
             </div>
             <button
               onClick={onLogout}
-              className="flex items-center gap-2 px-4 py-2 bg-gray-700 text-white rounded-lg hover:bg-gray-600 transition-colors"
+              className="flex items-center justify-center gap-2 px-4 py-2 bg-gray-700 text-white rounded-lg hover:bg-gray-600 transition-colors text-sm sm:text-base"
             >
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
               </svg>
               Logout
@@ -515,11 +515,11 @@ export default function Dashboard({ username, onLogout }: DashboardProps) {
         </div>
 
         {/* Upload Section */}
-        <div className="bg-gray-800 rounded-lg shadow-lg p-6 mb-8 border border-gray-700">
-          <h2 className="text-xl font-bold text-white mb-4">Import Orders</h2>
-          <div className="flex items-center gap-4">
-            <label className="flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-500 to-indigo-600 text-white rounded-lg cursor-pointer hover:from-blue-600 hover:to-indigo-700 transition-all shadow-md hover:shadow-lg">
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <div className="bg-gray-800 rounded-lg shadow-lg p-4 sm:p-6 mb-6 sm:mb-8 border border-gray-700">
+          <h2 className="text-lg sm:text-xl font-bold text-white mb-3 sm:mb-4">Import Orders</h2>
+          <div className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-4">
+            <label className="flex items-center justify-center gap-2 px-4 sm:px-6 py-2 sm:py-3 bg-gradient-to-r from-blue-500 to-indigo-600 text-white rounded-lg cursor-pointer hover:from-blue-600 hover:to-indigo-700 transition-all shadow-md hover:shadow-lg text-sm sm:text-base whitespace-nowrap">
+              <svg className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
               </svg>
               {uploading ? 'Uploading...' : 'Choose JSON File'}
@@ -531,7 +531,7 @@ export default function Dashboard({ username, onLogout }: DashboardProps) {
                 className="hidden"
               />
             </label>
-            <span className="text-sm text-gray-400">
+            <span className="text-xs sm:text-sm text-gray-400 text-center sm:text-left">
               Select allegro_purchases.json or data.json to import orders
             </span>
           </div>
@@ -559,99 +559,104 @@ export default function Dashboard({ username, onLogout }: DashboardProps) {
         </div>
 
         {/* Stats Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-          <div className="bg-gray-800 rounded-lg shadow-lg p-6 border border-gray-700">
-            <div className="text-sm text-gray-400 uppercase">Total Orders</div>
-            <div className="text-3xl font-bold text-blue-400">{stats.totalOrders}</div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-4 sm:gap-6 mb-6 sm:mb-8">
+          <div className="bg-gray-800 rounded-lg shadow-lg p-4 sm:p-6 border border-gray-700">
+            <div className="text-xs sm:text-sm text-gray-400 uppercase">Total Orders</div>
+            <div className="text-2xl sm:text-3xl font-bold text-blue-400">{stats.totalOrders}</div>
           </div>
-          <div className="bg-gray-800 rounded-lg shadow-lg p-6 border border-gray-700">
-            <div className="text-sm text-gray-400 uppercase">Total Spent</div>
-            <div className="text-3xl font-bold text-green-400">{stats.totalSpent.toFixed(2)} zł</div>
+          <div className="bg-gray-800 rounded-lg shadow-lg p-4 sm:p-6 border border-gray-700">
+            <div className="text-xs sm:text-sm text-gray-400 uppercase">Total Spent</div>
+            <div className="text-2xl sm:text-3xl font-bold text-green-400">{stats.totalSpent.toFixed(2)} zł</div>
           </div>
-          <div className="bg-gray-800 rounded-lg shadow-lg p-6 border border-gray-700">
-            <div className="text-sm text-gray-400 uppercase">Average Order</div>
-            <div className="text-3xl font-bold text-purple-400">{stats.averageOrder.toFixed(2)} zł</div>
+          <div className="bg-gray-800 rounded-lg shadow-lg p-4 sm:p-6 border border-gray-700">
+            <div className="text-xs sm:text-sm text-gray-400 uppercase">Average Order</div>
+            <div className="text-2xl sm:text-3xl font-bold text-purple-400">{stats.averageOrder.toFixed(2)} zł</div>
           </div>
-          <div className="bg-gray-800 rounded-lg shadow-lg p-6 border border-gray-700">
-            <div className="text-sm text-gray-400 uppercase">Free Delivery</div>
-            <div className="text-3xl font-bold text-indigo-400">{stats.freeDeliveryPercent.toFixed(0)}%</div>
+          <div className="bg-gray-800 rounded-lg shadow-lg p-4 sm:p-6 border border-gray-700">
+            <div className="text-xs sm:text-sm text-gray-400 uppercase">Free Delivery</div>
+            <div className="text-2xl sm:text-3xl font-bold text-indigo-400">{stats.freeDeliveryPercent.toFixed(0)}%</div>
           </div>
-          <div className="bg-gray-800 rounded-lg shadow-lg p-6 border border-gray-700">
-            <div className="text-sm text-gray-400 uppercase">Avg Monthly Spend</div>
-            <div className="text-3xl font-bold text-yellow-400">{stats.avgMonthlySpend.toFixed(2)} zł</div>
+          <div className="bg-gray-800 rounded-lg shadow-lg p-4 sm:p-6 border border-gray-700">
+            <div className="text-xs sm:text-sm text-gray-400 uppercase">Avg Monthly Spend</div>
+            <div className="text-2xl sm:text-3xl font-bold text-yellow-400">{stats.avgMonthlySpend.toFixed(2)} zł</div>
           </div>
-          <div className="bg-gray-800 rounded-lg shadow-lg p-6 border border-gray-700">
-            <div className="text-sm text-gray-400 uppercase">This Month Spend</div>
-            <div className="text-3xl font-bold text-pink-400">{stats.thisMonthSpend.toFixed(2)} zł</div>
+          <div className="bg-gray-800 rounded-lg shadow-lg p-4 sm:p-6 border border-gray-700">
+            <div className="text-xs sm:text-sm text-gray-400 uppercase">This Month Spend</div>
+            <div className="text-2xl sm:text-3xl font-bold text-pink-400">{stats.thisMonthSpend.toFixed(2)} zł</div>
           </div>
         </div>
 
         {/* Monthly Spending Chart */}
-        <div className="bg-gray-800 rounded-lg shadow-lg p-6 mb-8 border border-gray-700">
-          <h2 className="text-2xl font-bold text-white mb-6">Monthly Spending Trends</h2>
-          <ResponsiveContainer width="100%" height={400}>
-            <LineChart data={getMonthlySpending()}>
-              <CartesianGrid strokeDasharray="3 3" stroke="#374151" />
-              <XAxis
-                dataKey="month"
-                angle={-45}
-                textAnchor="end"
-                height={80}
-                stroke="#9CA3AF"
-              />
-              <YAxis stroke="#9CA3AF" />
-              <Tooltip
-                formatter={(value: number) => `${value.toFixed(2)} zł`}
-                contentStyle={{ backgroundColor: '#1F2937', border: '1px solid #374151', color: '#fff' }}
-              />
-              <Legend />
-              <Line
-                type="monotone"
-                dataKey="total"
-                stroke="#60A5FA"
-                strokeWidth={2}
-                name="Total Spending (zł)"
-                dot={{ r: 4 }}
-                activeDot={{ r: 6 }}
-              />
-            </LineChart>
-          </ResponsiveContainer>
+        <div className="bg-gray-800 rounded-lg shadow-lg p-4 sm:p-6 mb-6 sm:mb-8 border border-gray-700">
+          <h2 className="text-lg sm:text-xl lg:text-2xl font-bold text-white mb-4 sm:mb-6">Monthly Spending Trends</h2>
+          <div className="w-full overflow-x-auto">
+            <ResponsiveContainer width="100%" height={300} minWidth={300} className="sm:!h-[350px] lg:!h-[400px]">
+              <LineChart data={getMonthlySpending()}>
+                <CartesianGrid strokeDasharray="3 3" stroke="#374151" />
+                <XAxis
+                  dataKey="month"
+                  angle={-45}
+                  textAnchor="end"
+                  height={80}
+                  stroke="#9CA3AF"
+                  style={{ fontSize: '0.75rem' }}
+                />
+                <YAxis stroke="#9CA3AF" style={{ fontSize: '0.75rem' }} />
+                <Tooltip
+                  formatter={(value: number) => `${value.toFixed(2)} zł`}
+                  contentStyle={{ backgroundColor: '#1F2937', border: '1px solid #374151', color: '#fff', fontSize: '0.875rem' }}
+                />
+                <Legend wrapperStyle={{ fontSize: '0.75rem' }} />
+                <Line
+                  type="monotone"
+                  dataKey="total"
+                  stroke="#60A5FA"
+                  strokeWidth={2}
+                  name="Total Spending (zł)"
+                  dot={{ r: 3 }}
+                  activeDot={{ r: 5 }}
+                />
+              </LineChart>
+            </ResponsiveContainer>
+          </div>
         </div>
 
         {/* Orders List */}
-        <div className="bg-gray-800 rounded-lg shadow-lg p-6 border border-gray-700">
-          <div className="flex items-center justify-between mb-6">
-            <h2 className="text-2xl font-bold text-white">Recent Orders</h2>
-            <div className="flex gap-3">
+        <div className="bg-gray-800 rounded-lg shadow-lg p-4 sm:p-6 border border-gray-700">
+          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-4 sm:mb-6">
+            <h2 className="text-lg sm:text-xl lg:text-2xl font-bold text-white">Recent Orders</h2>
+            <div className="flex flex-wrap gap-2 sm:gap-3">
               <button
                 onClick={() => setShowAddModal(true)}
-                className="flex items-center gap-2 px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors"
+                className="flex items-center justify-center gap-1 sm:gap-2 px-3 sm:px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors text-xs sm:text-sm"
               >
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
                 </svg>
-                Add New Order
+                <span className="hidden sm:inline">Add New Order</span>
+                <span className="sm:hidden">Add Order</span>
               </button>
               {selectedOrders.length > 0 && (
                 <button
                   onClick={() => setDeleteConfirm('bulk')}
-                  className="flex items-center gap-2 px-4 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-colors"
+                  className="flex items-center justify-center gap-1 sm:gap-2 px-3 sm:px-4 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-colors text-xs sm:text-sm"
                 >
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
                   </svg>
-                  Delete {selectedOrders.length} Selected
+                  Delete ({selectedOrders.length})
                 </button>
               )}
               {orders.length > 0 && (
                 <button
                   onClick={() => setDeleteConfirm('all')}
-                  className="flex items-center gap-2 px-4 py-2 bg-red-800 text-white rounded-lg hover:bg-red-900 transition-colors"
+                  className="flex items-center justify-center gap-1 sm:gap-2 px-3 sm:px-4 py-2 bg-red-800 text-white rounded-lg hover:bg-red-900 transition-colors text-xs sm:text-sm"
                 >
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
                   </svg>
-                  Delete All
+                  <span className="hidden sm:inline">Delete All</span>
+                  <span className="sm:hidden">All</span>
                 </button>
               )}
             </div>
@@ -810,30 +815,30 @@ export default function Dashboard({ username, onLogout }: DashboardProps) {
             </div>
           )}
 
-          <div className="space-y-4">
+          <div className="space-y-3 sm:space-y-4">
             {getPaginatedOrders().map((order, index) => (
-              <div key={index} className={`border rounded-lg p-4 transition-all ${
+              <div key={index} className={`border rounded-lg p-3 sm:p-4 transition-all ${
                 selectedOrders.includes(order.id || '')
                   ? 'border-blue-500 bg-blue-900 bg-opacity-20'
                   : 'border-gray-700 bg-gray-750 hover:border-gray-600'
               }`}>
-                <div className="flex justify-between items-start mb-3">
-                  <div className="flex items-start gap-3 flex-1">
+                <div className="flex flex-col sm:flex-row sm:justify-between gap-3 mb-3">
+                  <div className="flex items-start gap-2 sm:gap-3 flex-1">
                     <input
                       type="checkbox"
                       checked={selectedOrders.includes(order.id || '')}
                       onChange={() => toggleOrderSelection(order.id || '')}
-                      className="mt-1 w-4 h-4 rounded border-gray-600 bg-gray-700 text-blue-600 focus:ring-blue-500 focus:ring-offset-gray-800"
+                      className="mt-1 w-4 h-4 rounded border-gray-600 bg-gray-700 text-blue-600 focus:ring-blue-500 focus:ring-offset-gray-800 flex-shrink-0"
                     />
-                    <div className="flex-1">
-                      <div className="text-lg font-semibold text-white">{order.seller}</div>
-                      <div className="text-sm text-gray-400">{order.date}</div>
+                    <div className="flex-1 min-w-0">
+                      <div className="text-base sm:text-lg font-semibold text-white truncate">{order.seller}</div>
+                      <div className="text-xs sm:text-sm text-gray-400">{order.date}</div>
                     </div>
                   </div>
-                  <div className="flex items-start gap-3">
-                    <div className="text-right">
-                      <div className="text-2xl font-bold text-green-400">{order.total.toFixed(2)} zł</div>
-                      <span className={`inline-block px-3 py-1 rounded-full text-xs font-semibold ${
+                  <div className="flex items-start justify-between sm:justify-start gap-3 pl-6 sm:pl-0">
+                    <div className="text-left sm:text-right">
+                      <div className="text-xl sm:text-2xl font-bold text-green-400">{order.total.toFixed(2)} zł</div>
+                      <span className={`inline-block px-2 sm:px-3 py-1 rounded-full text-xs font-semibold mt-1 ${
                         order.status === 'Picked up' ? 'bg-green-900 text-green-300 border border-green-700' :
                         order.status === 'In transit' ? 'bg-blue-900 text-blue-300 border border-blue-700' :
                         'bg-yellow-900 text-yellow-300 border border-yellow-700'
@@ -841,22 +846,22 @@ export default function Dashboard({ username, onLogout }: DashboardProps) {
                         {order.status}
                       </span>
                     </div>
-                    <div className="flex gap-2">
+                    <div className="flex gap-1 sm:gap-2 flex-shrink-0">
                       <button
                         onClick={() => setEditingOrder(order)}
-                        className="p-2 text-blue-400 hover:bg-gray-700 rounded-lg transition-colors"
+                        className="p-1.5 sm:p-2 text-blue-400 hover:bg-gray-700 rounded-lg transition-colors"
                         title="Edit order"
                       >
-                        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
                         </svg>
                       </button>
                       <button
                         onClick={() => setDeleteConfirm(order.id || '')}
-                        className="p-2 text-red-400 hover:bg-gray-700 rounded-lg transition-colors"
+                        className="p-1.5 sm:p-2 text-red-400 hover:bg-gray-700 rounded-lg transition-colors"
                         title="Delete order"
                       >
-                        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
                         </svg>
                       </button>
@@ -864,11 +869,11 @@ export default function Dashboard({ username, onLogout }: DashboardProps) {
                   </div>
                 </div>
 
-                <div className="space-y-2">
+                <div className="space-y-2 pl-0 sm:pl-7">
                   {order.items.map((item, itemIndex) => (
-                    <div key={itemIndex} className="flex justify-between text-sm bg-gray-700 p-2 rounded">
-                      <span className="text-gray-200">{item.product}</span>
-                      <span className="text-gray-300">
+                    <div key={itemIndex} className="flex flex-col sm:flex-row sm:justify-between gap-1 text-xs sm:text-sm bg-gray-700 p-2 rounded">
+                      <span className="text-gray-200 font-medium truncate">{item.product}</span>
+                      <span className="text-gray-300 whitespace-nowrap">
                         {item.quantity} x {item.unit_price} zł = {item.total_price.toFixed(2)} zł
                       </span>
                     </div>
@@ -876,7 +881,7 @@ export default function Dashboard({ username, onLogout }: DashboardProps) {
                 </div>
 
                 {order.delivery_cost > 0 && (
-                  <div className="text-sm text-gray-400 mt-2">
+                  <div className="text-xs sm:text-sm text-gray-400 mt-2 pl-0 sm:pl-7">
                     Delivery Cost: {order.delivery_cost.toFixed(2)} zł
                   </div>
                 )}
@@ -886,17 +891,17 @@ export default function Dashboard({ username, onLogout }: DashboardProps) {
 
           {/* Rows per page and Pagination */}
           {getFilteredAndSortedOrders().length > 0 && (
-            <div className="mt-6 pt-6 border-t border-gray-700">
-              <div className="flex items-center justify-between mb-3">
+            <div className="mt-4 sm:mt-6 pt-4 sm:pt-6 border-t border-gray-700">
+              <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 sm:gap-4 mb-3">
                 <div className="flex items-center gap-2">
-                  <label className="text-sm text-gray-400">Rows per page:</label>
+                  <label className="text-xs sm:text-sm text-gray-400">Rows per page:</label>
                   <select
                     value={itemsPerPage}
                     onChange={(e) => {
                       setItemsPerPage(parseInt(e.target.value));
                       setCurrentPage(1);
                     }}
-                    className="px-3 py-1 bg-gray-700 border border-gray-600 rounded-lg text-white text-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    className="px-2 sm:px-3 py-1 bg-gray-700 border border-gray-600 rounded-lg text-white text-xs sm:text-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                   >
                     <option value="10">10</option>
                     <option value="15">15</option>
@@ -905,25 +910,26 @@ export default function Dashboard({ username, onLogout }: DashboardProps) {
                   </select>
                 </div>
                 {getTotalPages() > 1 && (
-                <div className="flex items-center justify-center gap-2">
+                <div className="flex items-center justify-center gap-1 sm:gap-2 overflow-x-auto">
                 <button
                   onClick={() => setCurrentPage(prev => Math.max(1, prev - 1))}
                   disabled={currentPage === 1}
-                  className="px-4 py-2 bg-gray-700 text-white rounded-lg hover:bg-gray-600 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+                  className="px-2 sm:px-4 py-2 bg-gray-700 text-white rounded-lg hover:bg-gray-600 disabled:opacity-50 disabled:cursor-not-allowed transition-colors text-xs sm:text-sm whitespace-nowrap"
                 >
-                  Previous
+                  <span className="hidden sm:inline">Previous</span>
+                  <span className="sm:hidden">Prev</span>
                 </button>
                 <div className="flex gap-1">
                   {getPageNumbers().map((page, index) => (
                     page === '...' ? (
-                      <span key={`ellipsis-${index}`} className="px-3 py-2 text-gray-400">
+                      <span key={`ellipsis-${index}`} className="px-2 sm:px-3 py-2 text-gray-400 text-xs sm:text-sm">
                         ...
                       </span>
                     ) : (
                       <button
                         key={page}
                         onClick={() => setCurrentPage(page as number)}
-                        className={`px-3 py-2 rounded-lg transition-colors min-w-[40px] ${
+                        className={`px-2 sm:px-3 py-2 rounded-lg transition-colors min-w-[32px] sm:min-w-[40px] text-xs sm:text-sm ${
                           currentPage === page
                             ? 'bg-blue-600 text-white'
                             : 'bg-gray-700 text-gray-300 hover:bg-gray-600'
@@ -937,7 +943,7 @@ export default function Dashboard({ username, onLogout }: DashboardProps) {
                 <button
                   onClick={() => setCurrentPage(prev => Math.min(getTotalPages(), prev + 1))}
                   disabled={currentPage === getTotalPages()}
-                  className="px-4 py-2 bg-gray-700 text-white rounded-lg hover:bg-gray-600 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+                  className="px-2 sm:px-4 py-2 bg-gray-700 text-white rounded-lg hover:bg-gray-600 disabled:opacity-50 disabled:cursor-not-allowed transition-colors text-xs sm:text-sm whitespace-nowrap"
                 >
                   Next
                 </button>
@@ -945,7 +951,7 @@ export default function Dashboard({ username, onLogout }: DashboardProps) {
                 )}
               </div>
               {getTotalPages() > 1 && (
-              <div className="text-center text-sm text-gray-400">
+              <div className="text-center text-xs sm:text-sm text-gray-400">
                 Showing {((currentPage - 1) * itemsPerPage) + 1} to {Math.min(currentPage * itemsPerPage, getFilteredAndSortedOrders().length)} of {getFilteredAndSortedOrders().length} orders
               </div>
               )}
@@ -955,20 +961,20 @@ export default function Dashboard({ username, onLogout }: DashboardProps) {
 
         {/* Delete Confirmation Modal */}
         {deleteConfirm && (
-          <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50" onClick={() => setDeleteConfirm(null)}>
-            <div className="bg-gray-800 border border-gray-700 rounded-lg p-6 max-w-md w-full mx-4" onClick={(e) => e.stopPropagation()}>
-              <h3 className="text-xl font-bold text-white mb-4">Confirm Delete</h3>
-              <p className="text-gray-300 mb-6">
+          <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4" onClick={() => setDeleteConfirm(null)}>
+            <div className="bg-gray-800 border border-gray-700 rounded-lg p-4 sm:p-6 max-w-md w-full" onClick={(e) => e.stopPropagation()}>
+              <h3 className="text-lg sm:text-xl font-bold text-white mb-3 sm:mb-4">Confirm Delete</h3>
+              <p className="text-sm sm:text-base text-gray-300 mb-4 sm:mb-6">
                 {deleteConfirm === 'bulk'
                   ? `Are you sure you want to delete ${selectedOrders.length} selected order(s)? This action cannot be undone.`
                   : deleteConfirm === 'all'
                   ? `Are you sure you want to delete ALL ${orders.length} order(s)? This action cannot be undone.`
                   : 'Are you sure you want to delete this order? This action cannot be undone.'}
               </p>
-              <div className="flex gap-3 justify-end">
+              <div className="flex flex-col sm:flex-row gap-2 sm:gap-3 sm:justify-end">
                 <button
                   onClick={() => setDeleteConfirm(null)}
-                  className="px-4 py-2 text-gray-300 bg-gray-700 rounded-lg hover:bg-gray-600 transition-colors"
+                  className="px-4 py-2 text-gray-300 bg-gray-700 rounded-lg hover:bg-gray-600 transition-colors text-sm sm:text-base order-2 sm:order-1"
                 >
                   Cancel
                 </button>
@@ -978,7 +984,7 @@ export default function Dashboard({ username, onLogout }: DashboardProps) {
                     deleteConfirm === 'all' ? handleDeleteAll() :
                     handleDelete(deleteConfirm)
                   }
-                  className="px-4 py-2 text-white bg-red-600 rounded-lg hover:bg-red-700 transition-colors"
+                  className="px-4 py-2 text-white bg-red-600 rounded-lg hover:bg-red-700 transition-colors text-sm sm:text-base order-1 sm:order-2"
                 >
                   Delete {deleteConfirm === 'bulk' ? `${selectedOrders.length}` : deleteConfirm === 'all' ? 'All' : ''}
                 </button>
@@ -990,41 +996,41 @@ export default function Dashboard({ username, onLogout }: DashboardProps) {
         {/* Edit Order Modal */}
         {editingOrder && (
           <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4 overflow-y-auto" onClick={() => setEditingOrder(null)}>
-            <div className="bg-gray-800 border border-gray-700 rounded-lg p-6 max-w-2xl w-full my-8" onClick={(e) => e.stopPropagation()}>
-              <h3 className="text-xl font-bold text-white mb-4">Edit Order</h3>
+            <div className="bg-gray-800 border border-gray-700 rounded-lg p-4 sm:p-6 max-w-2xl w-full my-4 sm:my-8" onClick={(e) => e.stopPropagation()}>
+              <h3 className="text-lg sm:text-xl font-bold text-white mb-3 sm:mb-4">Edit Order</h3>
               <form onSubmit={(e) => {
                 e.preventDefault();
                 handleUpdate(editingOrder);
               }}>
-                <div className="space-y-4">
+                <div className="space-y-3 sm:space-y-4">
                   <div>
-                    <label className="block text-sm font-medium text-gray-300 mb-1">Seller</label>
+                    <label className="block text-xs sm:text-sm font-medium text-gray-300 mb-1">Seller</label>
                     <input
                       type="text"
                       value={editingOrder.seller}
                       onChange={(e) => setEditingOrder({...editingOrder, seller: e.target.value})}
-                      className="w-full px-3 py-2 bg-gray-700 border border-gray-600 text-white rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                      className="w-full px-3 py-2 bg-gray-700 border border-gray-600 text-white rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-sm sm:text-base"
                       required
                     />
                   </div>
 
                   <div>
-                    <label className="block text-sm font-medium text-gray-300 mb-1">Date</label>
+                    <label className="block text-xs sm:text-sm font-medium text-gray-300 mb-1">Date</label>
                     <input
                       type="text"
                       value={editingOrder.date}
                       onChange={(e) => setEditingOrder({...editingOrder, date: e.target.value})}
-                      className="w-full px-3 py-2 bg-gray-700 border border-gray-600 text-white rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                      className="w-full px-3 py-2 bg-gray-700 border border-gray-600 text-white rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-sm sm:text-base"
                       required
                     />
                   </div>
 
                   <div>
-                    <label className="block text-sm font-medium text-gray-300 mb-1">Status</label>
+                    <label className="block text-xs sm:text-sm font-medium text-gray-300 mb-1">Status</label>
                     <select
                       value={editingOrder.status}
                       onChange={(e) => setEditingOrder({...editingOrder, status: e.target.value})}
-                      className="w-full px-3 py-2 bg-gray-700 border border-gray-600 text-white rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                      className="w-full px-3 py-2 bg-gray-700 border border-gray-600 text-white rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-sm sm:text-base"
                       required
                     >
                       <option value="In preparation">In preparation</option>
@@ -1034,36 +1040,36 @@ export default function Dashboard({ username, onLogout }: DashboardProps) {
                     </select>
                   </div>
 
-                  <div className="grid grid-cols-2 gap-4">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
                     <div>
-                      <label className="block text-sm font-medium text-gray-300 mb-1">Delivery Cost (zł)</label>
+                      <label className="block text-xs sm:text-sm font-medium text-gray-300 mb-1">Delivery Cost (zł)</label>
                       <input
                         type="number"
                         step="0.01"
                         value={editingOrder.delivery_cost}
                         onChange={(e) => setEditingOrder({...editingOrder, delivery_cost: parseFloat(e.target.value)})}
-                        className="w-full px-3 py-2 bg-gray-700 border border-gray-600 text-white rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                        className="w-full px-3 py-2 bg-gray-700 border border-gray-600 text-white rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-sm sm:text-base"
                         required
                       />
                     </div>
                     <div>
-                      <label className="block text-sm font-medium text-gray-300 mb-1">Total (zł)</label>
+                      <label className="block text-xs sm:text-sm font-medium text-gray-300 mb-1">Total (zł)</label>
                       <input
                         type="number"
                         step="0.01"
                         value={editingOrder.total}
                         onChange={(e) => setEditingOrder({...editingOrder, total: parseFloat(e.target.value)})}
-                        className="w-full px-3 py-2 bg-gray-700 border border-gray-600 text-white rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                        className="w-full px-3 py-2 bg-gray-700 border border-gray-600 text-white rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-sm sm:text-base"
                         required
                       />
                     </div>
                   </div>
 
                   <div>
-                    <label className="block text-sm font-medium text-gray-300 mb-2">Items</label>
+                    <label className="block text-xs sm:text-sm font-medium text-gray-300 mb-2">Items</label>
                     <div className="space-y-2 max-h-60 overflow-y-auto">
                       {editingOrder.items.map((item, idx) => (
-                        <div key={idx} className="bg-gray-700 p-3 rounded-lg border border-gray-600">
+                        <div key={idx} className="bg-gray-700 p-2 sm:p-3 rounded-lg border border-gray-600">
                           <input
                             type="text"
                             value={item.product}
@@ -1072,7 +1078,7 @@ export default function Dashboard({ username, onLogout }: DashboardProps) {
                               newItems[idx].product = e.target.value;
                               setEditingOrder({...editingOrder, items: newItems});
                             }}
-                            className="w-full px-2 py-1 mb-2 bg-gray-600 border border-gray-500 text-white rounded text-sm"
+                            className="w-full px-2 py-1 mb-2 bg-gray-600 border border-gray-500 text-white rounded text-xs sm:text-sm"
                             placeholder="Product name"
                           />
                           <div className="grid grid-cols-3 gap-2">
@@ -1084,7 +1090,7 @@ export default function Dashboard({ username, onLogout }: DashboardProps) {
                                 newItems[idx].quantity = parseInt(e.target.value);
                                 setEditingOrder({...editingOrder, items: newItems});
                               }}
-                              className="px-2 py-1 bg-gray-600 border border-gray-500 text-white rounded text-sm"
+                              className="px-2 py-1 bg-gray-600 border border-gray-500 text-white rounded text-xs sm:text-sm"
                               placeholder="Qty"
                             />
                             <input
@@ -1096,8 +1102,8 @@ export default function Dashboard({ username, onLogout }: DashboardProps) {
                                 newItems[idx].unit_price = parseFloat(e.target.value);
                                 setEditingOrder({...editingOrder, items: newItems});
                               }}
-                              className="px-2 py-1 bg-gray-600 border border-gray-500 text-white rounded text-sm"
-                              placeholder="Price (zł)"
+                              className="px-2 py-1 bg-gray-600 border border-gray-500 text-white rounded text-xs sm:text-sm"
+                              placeholder="Price"
                             />
                             <input
                               type="number"
@@ -1108,8 +1114,8 @@ export default function Dashboard({ username, onLogout }: DashboardProps) {
                                 newItems[idx].total_price = parseFloat(e.target.value);
                                 setEditingOrder({...editingOrder, items: newItems});
                               }}
-                              className="px-2 py-1 bg-gray-600 border border-gray-500 text-white rounded text-sm"
-                              placeholder="Total (zł)"
+                              className="px-2 py-1 bg-gray-600 border border-gray-500 text-white rounded text-xs sm:text-sm"
+                              placeholder="Total"
                             />
                           </div>
                         </div>
@@ -1118,17 +1124,17 @@ export default function Dashboard({ username, onLogout }: DashboardProps) {
                   </div>
                 </div>
 
-                <div className="flex gap-3 justify-end mt-6">
+                <div className="flex flex-col sm:flex-row gap-2 sm:gap-3 sm:justify-end mt-4 sm:mt-6">
                   <button
                     type="button"
                     onClick={() => setEditingOrder(null)}
-                    className="px-4 py-2 text-gray-300 bg-gray-700 rounded-lg hover:bg-gray-600 transition-colors"
+                    className="px-4 py-2 text-gray-300 bg-gray-700 rounded-lg hover:bg-gray-600 transition-colors text-sm sm:text-base order-2 sm:order-1"
                   >
                     Cancel
                   </button>
                   <button
                     type="submit"
-                    className="px-4 py-2 text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition-colors"
+                    className="px-4 py-2 text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition-colors text-sm sm:text-base order-1 sm:order-2"
                   >
                     Save Changes
                   </button>
@@ -1141,8 +1147,8 @@ export default function Dashboard({ username, onLogout }: DashboardProps) {
         {/* Add Order Modal */}
         {showAddModal && (
           <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4 overflow-y-auto" onClick={() => setShowAddModal(false)}>
-            <div className="bg-gray-800 border border-gray-700 rounded-lg p-6 max-w-2xl w-full my-8" onClick={(e) => e.stopPropagation()}>
-              <h3 className="text-xl font-bold text-white mb-4">Add New Order</h3>
+            <div className="bg-gray-800 border border-gray-700 rounded-lg p-4 sm:p-6 max-w-2xl w-full my-4 sm:my-8" onClick={(e) => e.stopPropagation()}>
+              <h3 className="text-lg sm:text-xl font-bold text-white mb-3 sm:mb-4">Add New Order</h3>
               <form onSubmit={(e) => {
                 e.preventDefault();
                 const formData = new FormData(e.currentTarget);
@@ -1161,35 +1167,35 @@ export default function Dashboard({ username, onLogout }: DashboardProps) {
                 };
                 handleAddOrder(newOrder);
               }}>
-                <div className="space-y-4">
+                <div className="space-y-3 sm:space-y-4">
                   <div>
-                    <label className="block text-sm font-medium text-gray-300 mb-1">Seller</label>
+                    <label className="block text-xs sm:text-sm font-medium text-gray-300 mb-1">Seller</label>
                     <input
                       type="text"
                       name="seller"
                       placeholder="Seller name"
-                      className="w-full px-3 py-2 bg-gray-700 border border-gray-600 text-white rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                      className="w-full px-3 py-2 bg-gray-700 border border-gray-600 text-white rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-sm sm:text-base"
                       required
                     />
                   </div>
 
                   <div>
-                    <label className="block text-sm font-medium text-gray-300 mb-1">Date</label>
+                    <label className="block text-xs sm:text-sm font-medium text-gray-300 mb-1">Date</label>
                     <input
                       type="text"
                       name="date"
                       placeholder="Jan 27, 2026, 11:45 AM"
                       defaultValue={new Date().toLocaleString('en-US', { month: 'short', day: '2-digit', year: 'numeric', hour: '2-digit', minute: '2-digit' })}
-                      className="w-full px-3 py-2 bg-gray-700 border border-gray-600 text-white rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                      className="w-full px-3 py-2 bg-gray-700 border border-gray-600 text-white rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-sm sm:text-base"
                       required
                     />
                   </div>
 
                   <div>
-                    <label className="block text-sm font-medium text-gray-300 mb-1">Status</label>
+                    <label className="block text-xs sm:text-sm font-medium text-gray-300 mb-1">Status</label>
                     <select
                       name="status"
-                      className="w-full px-3 py-2 bg-gray-700 border border-gray-600 text-white rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                      className="w-full px-3 py-2 bg-gray-700 border border-gray-600 text-white rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-sm sm:text-base"
                       required
                     >
                       <option value="In preparation">In preparation</option>
@@ -1199,22 +1205,22 @@ export default function Dashboard({ username, onLogout }: DashboardProps) {
                     </select>
                   </div>
 
-                  <div className="border-t border-gray-700 pt-4">
-                    <h4 className="text-sm font-medium text-gray-300 mb-3">Item Details</h4>
+                  <div className="border-t border-gray-700 pt-3 sm:pt-4">
+                    <h4 className="text-xs sm:text-sm font-medium text-gray-300 mb-2 sm:mb-3">Item Details</h4>
 
-                    <div className="space-y-3">
+                    <div className="space-y-2 sm:space-y-3">
                       <div>
                         <label className="block text-xs text-gray-400 mb-1">Product Name</label>
                         <input
                           type="text"
                           name="product"
                           placeholder="Product name"
-                          className="w-full px-3 py-2 bg-gray-700 border border-gray-600 text-white rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-sm"
+                          className="w-full px-3 py-2 bg-gray-700 border border-gray-600 text-white rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-xs sm:text-sm"
                           required
                         />
                       </div>
 
-                      <div className="grid grid-cols-3 gap-3">
+                      <div className="grid grid-cols-3 gap-2 sm:gap-3">
                         <div>
                           <label className="block text-xs text-gray-400 mb-1">Quantity</label>
                           <input
@@ -1223,31 +1229,31 @@ export default function Dashboard({ username, onLogout }: DashboardProps) {
                             placeholder="1"
                             min="1"
                             defaultValue="1"
-                            className="w-full px-3 py-2 bg-gray-700 border border-gray-600 text-white rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-sm"
+                            className="w-full px-2 sm:px-3 py-2 bg-gray-700 border border-gray-600 text-white rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-xs sm:text-sm"
                             required
                           />
                         </div>
                         <div>
-                          <label className="block text-xs text-gray-400 mb-1">Unit Price (zł)</label>
+                          <label className="block text-xs text-gray-400 mb-1">Unit Price</label>
                           <input
                             type="number"
                             name="unit_price"
                             placeholder="0.00"
                             step="0.01"
                             min="0"
-                            className="w-full px-3 py-2 bg-gray-700 border border-gray-600 text-white rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-sm"
+                            className="w-full px-2 sm:px-3 py-2 bg-gray-700 border border-gray-600 text-white rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-xs sm:text-sm"
                             required
                           />
                         </div>
                         <div>
-                          <label className="block text-xs text-gray-400 mb-1">Item Total (zł)</label>
+                          <label className="block text-xs text-gray-400 mb-1">Item Total</label>
                           <input
                             type="number"
                             name="item_total"
                             placeholder="0.00"
                             step="0.01"
                             min="0"
-                            className="w-full px-3 py-2 bg-gray-700 border border-gray-600 text-white rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-sm"
+                            className="w-full px-2 sm:px-3 py-2 bg-gray-700 border border-gray-600 text-white rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-xs sm:text-sm"
                             required
                           />
                         </div>
@@ -1255,9 +1261,9 @@ export default function Dashboard({ username, onLogout }: DashboardProps) {
                     </div>
                   </div>
 
-                  <div className="grid grid-cols-2 gap-4 pt-3">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 pt-2 sm:pt-3">
                     <div>
-                      <label className="block text-sm font-medium text-gray-300 mb-1">Delivery Cost (zł)</label>
+                      <label className="block text-xs sm:text-sm font-medium text-gray-300 mb-1">Delivery Cost (zł)</label>
                       <input
                         type="number"
                         name="delivery_cost"
@@ -1265,36 +1271,36 @@ export default function Dashboard({ username, onLogout }: DashboardProps) {
                         step="0.01"
                         min="0"
                         defaultValue="0"
-                        className="w-full px-3 py-2 bg-gray-700 border border-gray-600 text-white rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                        className="w-full px-3 py-2 bg-gray-700 border border-gray-600 text-white rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-sm sm:text-base"
                         required
                       />
                     </div>
                     <div>
-                      <label className="block text-sm font-medium text-gray-300 mb-1">Order Total (zł)</label>
+                      <label className="block text-xs sm:text-sm font-medium text-gray-300 mb-1">Order Total (zł)</label>
                       <input
                         type="number"
                         name="total"
                         placeholder="0.00"
                         step="0.01"
                         min="0"
-                        className="w-full px-3 py-2 bg-gray-700 border border-gray-600 text-white rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                        className="w-full px-3 py-2 bg-gray-700 border border-gray-600 text-white rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-sm sm:text-base"
                         required
                       />
                     </div>
                   </div>
                 </div>
 
-                <div className="flex gap-3 justify-end mt-6">
+                <div className="flex flex-col sm:flex-row gap-2 sm:gap-3 sm:justify-end mt-4 sm:mt-6">
                   <button
                     type="button"
                     onClick={() => setShowAddModal(false)}
-                    className="px-4 py-2 text-gray-300 bg-gray-700 rounded-lg hover:bg-gray-600 transition-colors"
+                    className="px-4 py-2 text-gray-300 bg-gray-700 rounded-lg hover:bg-gray-600 transition-colors text-sm sm:text-base order-2 sm:order-1"
                   >
                     Cancel
                   </button>
                   <button
                     type="submit"
-                    className="px-4 py-2 text-white bg-green-600 rounded-lg hover:bg-green-700 transition-colors"
+                    className="px-4 py-2 text-white bg-green-600 rounded-lg hover:bg-green-700 transition-colors text-sm sm:text-base order-1 sm:order-2"
                   >
                     Add Order
                   </button>
