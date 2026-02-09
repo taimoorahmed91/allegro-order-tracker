@@ -1,6 +1,17 @@
 import type { AppProps } from 'next/app';
+import Head from 'next/head';
 import '../styles/globals.css';
 
 export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />;
+  return (
+    <>
+      <Head>
+        <title>Allegro Expenses</title>
+        <meta name="description" content="Track and analyze your Allegro purchases" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      <Component {...pageProps} />
+    </>
+  );
 }
