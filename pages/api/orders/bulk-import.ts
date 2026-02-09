@@ -28,46 +28,100 @@ export default async function handler(
 
     console.log(`Starting bulk import of ${purchases.length} orders...`);
 
-    // Insert all orders in batches of 100 to avoid timeout issues
-    const batchSize = 100;
-    const batches = [];
+    // Fetch all existing orders to check for duplicates
+    const { data: existingOrders, error: fetchError } = await supabase
+      .from('orders')
+      .select('*');
 
-    for (let i = 0; i < purchases.length; i += batchSize) {
-      const batch = purchases.slice(i, i + batchSize);
-      batches.push(batch);
+    if (fetchError) {
+      console.error('Error fetching existing orders:', fetchError);
+      return res.status(500).json({
+        error: 'Failed to fetch existing orders',
+        details: fetchError.message
+      });
     }
 
     let totalInserted = 0;
+    let totalUpdated = 0;
     const errors = [];
 
-    for (let i = 0; i < batches.length; i++) {
-      const batch = batches[i];
-      console.log(`Processing batch ${i + 1} of ${batches.length} (${batch.length} orders)`);
+    // Process each order individually to handle upsert logic
+    for (let i = 0; i < purchases.length; i++) {
+      const newOrder = purchases[i];
 
-      const { data, error } = await supabase
-        .from('orders')
-        .insert(batch)
-        .select();
+      // Find matching existing order (same seller, date, items, total)
+      const matchingOrder = existingOrders?.find(existing => {
+        return (
+          existing.seller === newOrder.seller &&
+          existing.date === newOrder.date &&
+          existing.total === newOrder.total &&
+          JSON.stringify(existing.items) === JSON.stringify(newOrder.items)
+        );
+      });
 
-      if (error) {
-        console.error(`Error in batch ${i + 1}:`, error);
+      try {
+        if (matchingOrder) {
+          // Order exists - update it if status is different
+          if (matchingOrder.status !== newOrder.status ||
+              matchingOrder.delivery_cost !== newOrder.delivery_cost) {
+            const { error: updateError } = await supabase
+              .from('orders')
+              .update({
+                status: newOrder.status,
+                delivery_cost: newOrder.delivery_cost,
+                total: newOrder.total
+              })
+              .eq('id', matchingOrder.id);
+
+            if (updateError) {
+              console.error(`Error updating order ${i + 1}:`, updateError);
+              errors.push({
+                order: i + 1,
+                action: 'update',
+                error: updateError.message
+              });
+            } else {
+              totalUpdated++;
+              console.log(`Order ${i + 1} updated (was: ${matchingOrder.status}, now: ${newOrder.status})`);
+            }
+          } else {
+            console.log(`Order ${i + 1} unchanged, skipping`);
+          }
+        } else {
+          // Order doesn't exist - insert it
+          const { error: insertError } = await supabase
+            .from('orders')
+            .insert([newOrder]);
+
+          if (insertError) {
+            console.error(`Error inserting order ${i + 1}:`, insertError);
+            errors.push({
+              order: i + 1,
+              action: 'insert',
+              error: insertError.message
+            });
+          } else {
+            totalInserted++;
+            console.log(`Order ${i + 1} inserted`);
+          }
+        }
+      } catch (orderError) {
+        console.error(`Error processing order ${i + 1}:`, orderError);
         errors.push({
-          batch: i + 1,
-          error: error.message
+          order: i + 1,
+          error: orderError instanceof Error ? orderError.message : 'Unknown error'
         });
-      } else {
-        totalInserted += data.length;
-        console.log(`Batch ${i + 1} completed: ${data.length} orders inserted`);
       }
     }
 
     if (errors.length > 0) {
       return res.status(207).json({
         success: false,
-        message: 'Bulk import completed with errors',
+        message: 'Bulk import completed with some errors',
         totalOrders: purchases.length,
         inserted: totalInserted,
-        failed: purchases.length - totalInserted,
+        updated: totalUpdated,
+        failed: errors.length,
         errors
       });
     }
@@ -76,7 +130,8 @@ export default async function handler(
       success: true,
       message: 'Bulk import completed successfully',
       totalOrders: purchases.length,
-      inserted: totalInserted
+      inserted: totalInserted,
+      updated: totalUpdated
     });
 
   } catch (error) {

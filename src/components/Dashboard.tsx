@@ -140,9 +140,28 @@ export default function Dashboard({ username, onLogout }: DashboardProps) {
       const result = text ? JSON.parse(text) : {};
 
       if (response.ok || response.status === 207) {
+        const insertedCount = result.inserted || 0;
+        const updatedCount = result.updated || 0;
+        const failedCount = result.failed || 0;
+
+        let message = '';
+        if (insertedCount > 0 && updatedCount > 0) {
+          message = `Successfully imported ${insertedCount} new orders and updated ${updatedCount} existing orders!`;
+        } else if (insertedCount > 0) {
+          message = `Successfully imported ${insertedCount} new orders!`;
+        } else if (updatedCount > 0) {
+          message = `Successfully updated ${updatedCount} existing orders!`;
+        } else {
+          message = 'All orders are already up to date!';
+        }
+
+        if (failedCount > 0) {
+          message += ` (${failedCount} failed)`;
+        }
+
         setUploadMessage({
           type: 'success',
-          text: `Successfully imported ${result.inserted || 0} orders! ${result.failed ? `(${result.failed} failed)` : ''}`
+          text: message
         });
         // Refresh orders list
         fetchOrders();
