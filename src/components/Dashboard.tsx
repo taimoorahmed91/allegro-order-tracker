@@ -12,7 +12,7 @@ export default function Dashboard({ username, onLogout }: DashboardProps) {
   const [orders, setOrders] = useState<Order[]>([]);
   const [loading, setLoading] = useState(true);
   const [uploading, setUploading] = useState(false);
-  const [uploadMessage, setUploadMessage] = useState<{ type: 'success' | 'error', text: string } | null>(null);
+  const [uploadMessage, setUploadMessage] = useState<{ type: 'success' | 'error', text: string, orderResults?: any[] } | null>(null);
   const [editingOrder, setEditingOrder] = useState<Order | null>(null);
   const [deleteConfirm, setDeleteConfirm] = useState<string | null>(null);
   const [showAddModal, setShowAddModal] = useState(false);
@@ -161,7 +161,8 @@ export default function Dashboard({ username, onLogout }: DashboardProps) {
 
         setUploadMessage({
           type: 'success',
-          text: message
+          text: message,
+          orderResults: result.orderResults || []
         });
         // Refresh orders list
         fetchOrders();
@@ -563,16 +564,64 @@ export default function Dashboard({ username, onLogout }: DashboardProps) {
             }`}>
               <div className="flex items-center gap-2">
                 {uploadMessage.type === 'success' ? (
-                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                  <svg className="w-5 h-5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
                 ) : (
-                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                  <svg className="w-5 h-5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clipRule="evenodd" />
                   </svg>
                 )}
                 <span className="font-semibold">{uploadMessage.text}</span>
               </div>
+
+              {uploadMessage.orderResults && uploadMessage.orderResults.length > 0 && (
+                <details className="mt-3">
+                  <summary className="cursor-pointer text-sm font-medium opacity-80 hover:opacity-100">
+                    📋 View per-order breakdown ({uploadMessage.orderResults.length} orders)
+                  </summary>
+                  <div className="mt-3 overflow-x-auto">
+                    <table className="w-full text-xs border-collapse">
+                      <thead>
+                        <tr className="opacity-60">
+                          <th className="text-left p-2 font-medium">#</th>
+                          <th className="text-left p-2 font-medium">Order</th>
+                          <th className="text-left p-2 font-medium">Result</th>
+                          <th className="text-left p-2 font-medium">Detail</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {uploadMessage.orderResults.map((r: any) => {
+                          const badges: Record<string, string> = {
+                            inserted:  'bg-green-700 text-green-100',
+                            updated:   'bg-blue-700 text-blue-100',
+                            duplicate: 'bg-gray-600 text-gray-200',
+                            failed:    'bg-red-700 text-red-100',
+                          };
+                          const labels: Record<string, string> = {
+                            inserted:  '✅ Inserted',
+                            updated:   '🔄 Updated',
+                            duplicate: '⏭️ Duplicate',
+                            failed:    '❌ Failed',
+                          };
+                          return (
+                            <tr key={r.index} className="border-t border-white border-opacity-10">
+                              <td className="p-2 opacity-50">{r.index}</td>
+                              <td className="p-2 max-w-xs truncate">{r.order}</td>
+                              <td className="p-2">
+                                <span className={`px-2 py-0.5 rounded-full text-xs font-semibold ${badges[r.result] || 'bg-gray-600 text-gray-200'}`}>
+                                  {labels[r.result] || r.result}
+                                </span>
+                              </td>
+                              <td className="p-2 opacity-60">{r.detail || r.error || ''}</td>
+                            </tr>
+                          );
+                        })}
+                      </tbody>
+                    </table>
+                  </div>
+                </details>
+              )}
             </div>
           )}
         </div>
