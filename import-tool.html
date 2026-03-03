@@ -361,7 +361,7 @@
                 progressFill.style.width = '100%';
 
                 if (response.ok || response.status === 207) {
-                    // Success or partial success
+                    // Build summary stats
                     const statsHtml = `
                         <div class="stats">
                             <div class="stats-item">
@@ -369,24 +369,76 @@
                                 <span>${result.totalOrders || jsonData.length}</span>
                             </div>
                             <div class="stats-item">
-                                <span class="stats-label">Successfully Imported:</span>
-                                <span style="color: #28a745; font-weight: bold;">${result.inserted}</span>
+                                <span class="stats-label">✅ Inserted:</span>
+                                <span style="color: #28a745; font-weight: bold;">${result.inserted || 0}</span>
+                            </div>
+                            <div class="stats-item">
+                                <span class="stats-label">🔄 Updated:</span>
+                                <span style="color: #007bff; font-weight: bold;">${result.updated || 0}</span>
+                            </div>
+                            <div class="stats-item">
+                                <span class="stats-label">⏭️ Duplicates:</span>
+                                <span style="color: #6c757d; font-weight: bold;">${result.duplicates || 0}</span>
                             </div>
                             ${result.failed ? `
                                 <div class="stats-item">
-                                    <span class="stats-label">Failed:</span>
+                                    <span class="stats-label">❌ Failed:</span>
                                     <span style="color: #dc3545; font-weight: bold;">${result.failed}</span>
                                 </div>
                             ` : ''}
                         </div>
                     `;
 
+                    // Build per-order breakdown table
+                    let tableHtml = '';
+                    if (result.orderResults && result.orderResults.length > 0) {
+                        const resultColors = {
+                            inserted:  { bg: '#d4edda', text: '#155724', label: '✅ Inserted' },
+                            updated:   { bg: '#cce5ff', text: '#004085', label: '🔄 Updated' },
+                            duplicate: { bg: '#e2e3e5', text: '#383d41', label: '⏭️ Duplicate' },
+                            failed:    { bg: '#f8d7da', text: '#721c24', label: '❌ Failed' }
+                        };
+
+                        const rows = result.orderResults.map(r => {
+                            const style = resultColors[r.result] || { bg: '#fff', text: '#000', label: r.result };
+                            const detail = r.detail || r.error || '';
+                            return `<tr>
+                                <td style="padding:6px 10px; border-bottom:1px solid #eee; color:#666; font-size:12px;">#${r.index}</td>
+                                <td style="padding:6px 10px; border-bottom:1px solid #eee; font-size:12px;">${r.order}</td>
+                                <td style="padding:6px 10px; border-bottom:1px solid #eee;">
+                                    <span style="background:${style.bg}; color:${style.text}; padding:2px 8px; border-radius:12px; font-size:12px; font-weight:600;">${style.label}</span>
+                                </td>
+                                <td style="padding:6px 10px; border-bottom:1px solid #eee; font-size:11px; color:#888;">${detail}</td>
+                            </tr>`;
+                        }).join('');
+
+                        tableHtml = `
+                            <details style="margin-top:16px;">
+                                <summary style="cursor:pointer; font-weight:600; color:#555; font-size:13px; padding:8px 0;">
+                                    📋 View per-order breakdown (${result.orderResults.length} orders)
+                                </summary>
+                                <div style="overflow-x:auto; margin-top:10px;">
+                                    <table style="width:100%; border-collapse:collapse; font-family:inherit;">
+                                        <thead>
+                                            <tr style="background:#f8f9fa;">
+                                                <th style="padding:8px 10px; text-align:left; font-size:12px; color:#666;">#</th>
+                                                <th style="padding:8px 10px; text-align:left; font-size:12px; color:#666;">Order</th>
+                                                <th style="padding:8px 10px; text-align:left; font-size:12px; color:#666;">Result</th>
+                                                <th style="padding:8px 10px; text-align:left; font-size:12px; color:#666;">Detail</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>${rows}</tbody>
+                                    </table>
+                                </div>
+                            </details>`;
+                    }
+
                     if (result.success) {
                         showMessage('success', '✅ Import Completed!',
-                            `All orders have been successfully imported to your database.${statsHtml}`);
+                            `All orders processed successfully.${statsHtml}${tableHtml}`);
                     } else {
                         showMessage('success', '⚠️ Import Partially Completed',
-                            `${result.message || 'Some orders were imported successfully.'}${statsHtml}`);
+                            `${result.message || 'Some orders were imported successfully.'}${statsHtml}${tableHtml}`);
                     }
                 } else {
                     throw new Error(result.error || 'Import failed');

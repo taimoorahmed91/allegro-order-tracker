@@ -43,11 +43,13 @@ export default async function handler(
 
     let totalInserted = 0;
     let totalUpdated = 0;
-    const errors = [];
+    let totalDuplicates = 0;
+    const orderResults = [];
 
     // Process each order individually to handle upsert logic
     for (let i = 0; i < purchases.length; i++) {
       const newOrder = purchases[i];
+      const orderLabel = `${newOrder.date} | ${newOrder.seller || 'Unknown'} | PLN ${newOrder.total}`;
 
       // Find matching existing order (same seller, date, items, total)
       const matchingOrder = existingOrders?.find(existing => {
@@ -61,7 +63,7 @@ export default async function handler(
 
       try {
         if (matchingOrder) {
-          // Order exists - update it if status is different
+          // Order exists - update it if status or delivery_cost changed
           if (matchingOrder.status !== newOrder.status ||
               matchingOrder.delivery_cost !== newOrder.delivery_cost) {
             const { error: updateError } = await supabase
@@ -75,17 +77,32 @@ export default async function handler(
 
             if (updateError) {
               console.error(`Error updating order ${i + 1}:`, updateError);
-              errors.push({
-                order: i + 1,
+              orderResults.push({
+                index: i + 1,
+                order: orderLabel,
+                result: 'failed',
                 action: 'update',
                 error: updateError.message
               });
             } else {
               totalUpdated++;
               console.log(`Order ${i + 1} updated (was: ${matchingOrder.status}, now: ${newOrder.status})`);
+              orderResults.push({
+                index: i + 1,
+                order: orderLabel,
+                result: 'updated',
+                detail: `Status: ${matchingOrder.status} → ${newOrder.status}`
+              });
             }
           } else {
+            // Exact duplicate — no changes needed
+            totalDuplicates++;
             console.log(`Order ${i + 1} unchanged, skipping`);
+            orderResults.push({
+              index: i + 1,
+              order: orderLabel,
+              result: 'duplicate'
+            });
           }
         } else {
           // Order doesn't exist - insert it
@@ -95,34 +112,46 @@ export default async function handler(
 
           if (insertError) {
             console.error(`Error inserting order ${i + 1}:`, insertError);
-            errors.push({
-              order: i + 1,
+            orderResults.push({
+              index: i + 1,
+              order: orderLabel,
+              result: 'failed',
               action: 'insert',
               error: insertError.message
             });
           } else {
             totalInserted++;
             console.log(`Order ${i + 1} inserted`);
+            orderResults.push({
+              index: i + 1,
+              order: orderLabel,
+              result: 'inserted'
+            });
           }
         }
       } catch (orderError) {
         console.error(`Error processing order ${i + 1}:`, orderError);
-        errors.push({
-          order: i + 1,
+        orderResults.push({
+          index: i + 1,
+          order: orderLabel,
+          result: 'failed',
           error: orderError instanceof Error ? orderError.message : 'Unknown error'
         });
       }
     }
 
-    if (errors.length > 0) {
+    const totalFailed = orderResults.filter(r => r.result === 'failed').length;
+
+    if (totalFailed > 0) {
       return res.status(207).json({
         success: false,
         message: 'Bulk import completed with some errors',
         totalOrders: purchases.length,
         inserted: totalInserted,
         updated: totalUpdated,
-        failed: errors.length,
-        errors
+        duplicates: totalDuplicates,
+        failed: totalFailed,
+        orderResults
       });
     }
 
@@ -131,7 +160,10 @@ export default async function handler(
       message: 'Bulk import completed successfully',
       totalOrders: purchases.length,
       inserted: totalInserted,
-      updated: totalUpdated
+      updated: totalUpdated,
+      duplicates: totalDuplicates,
+      failed: 0,
+      orderResults
     });
 
   } catch (error) {

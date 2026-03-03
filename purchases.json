@@ -1,0 +1,554 @@
+[
+  {
+    "date": "Mar 3, 2026, 12:48 AM",
+    "seller": "Organicznawioska",
+    "items": [
+      {
+        "product": "CHILI flakes crushed spicy Extra spicy Indian 100g TRS Filipino Food",
+        "quantity": 1,
+        "unit_price": 12.99,
+        "total_price": 12.99
+      },
+      {
+        "product": "Thai Spring Rolls Lumpia Shanghai Spring Rolls Cake 550g Filipino Food",
+        "quantity": 1,
+        "unit_price": 30.99,
+        "total_price": 30.99
+      }
+    ],
+    "delivery_cost": 10.49,
+    "total": 54.47,
+    "status": "In preparation"
+  },
+  {
+    "date": "Mar 3, 2026, 12:27 AM",
+    "seller": "sindibad_sklep",
+    "items": [
+      {
+        "product": "AROMATIC SEASONING FOR SHOARMA SHAWARMA 150 g SINDIBAD SHOARMA",
+        "quantity": 1,
+        "unit_price": 14.99,
+        "total_price": 14.99
+      },
+      {
+        "product": "DATES KHALAS IN CHOCOLATE STUFFED WITH ALMONDS 250 g DATE CROWN",
+        "quantity": 1,
+        "unit_price": 31.99,
+        "total_price": 31.99
+      },
+      {
+        "product": "Dried dates Ajwa 400g | Siafa",
+        "quantity": 1,
+        "unit_price": 38.0,
+        "total_price": 38.0
+      }
+    ],
+    "delivery_cost": 0.0,
+    "total": 84.98,
+    "status": "In transit"
+  },
+  {
+    "date": "Mar 2, 2026, 12:52 PM",
+    "seller": "C4CEu",
+    "items": [
+      {
+        "product": "ADBL Double Mini Twisted Towel 1400GSM 40x40cm Double Sided Towel for Dryer",
+        "quantity": 4,
+        "unit_price": 27.23,
+        "total_price": 108.92
+      }
+    ],
+    "delivery_cost": 0.0,
+    "total": 108.92,
+    "status": null
+  },
+  {
+    "date": "Mar 2, 2026, 02:18 AM",
+    "seller": "mrcleaner_pl",
+    "items": [
+      {
+        "product": "Monster Shine Twist Drying Towel 90x60 cm 1100gsm",
+        "quantity": 1,
+        "unit_price": 64.90131,
+        "total_price": 64.90131
+      }
+    ],
+    "delivery_cost": 0.0,
+    "total": 64.9,
+    "status": "Delayed delivery"
+  },
+  {
+    "date": "Mar 2, 2026, 02:18 AM",
+    "seller": "sklep_motogo",
+    "items": [
+      {
+        "product": "BLEND BROTHERS PLUSHIE ENDLESS MICROFIBER 40x40cm 5pcs seamless microfiber",
+        "quantity": 2,
+        "unit_price": 64.99,
+        "total_price": 129.98
+      }
+    ],
+    "delivery_cost": 0.0,
+    "total": 129.98,
+    "status": "Ready for pickup"
+  },
+  {
+    "date": "Feb 26, 2026, 06:19 PM",
+    "seller": "DooSell",
+    "items": [
+      {
+        "product": "BUBBLE GUN BUBBLE MACHINE BATTERY OPERATED + LIQUID + 4pcs BATTERIES Pink",
+        "quantity": 1,
+        "unit_price": 35.0,
+        "total_price": 35.0
+      },
+      {
+        "product": "COSMETIC CASE MAKEUP SET FOR PAINTING MAKEUP AND NAILS XXL",
+        "quantity": 1,
+        "unit_price": 85.0,
+        "total_price": 85.0
+      }
+    ],
+    "delivery_cost": 0.0,
+    "total": 120.0,
+    "status": "Picked up"
+  },
+  {
+    "date": "Feb 25, 2026, 08:57 PM",
+    "seller": "Etuiko 1 3 1",
+    "items": [
+      {
+        "product": "9H Tempered Glass Fast Screen Protector for Apple iPhone 16",
+        "quantity": 1,
+        "unit_price": 15.02,
+        "total_price": 15.02
+      },
+      {
+        "product": "Backs for iPhone 16 case silicone case BURGUNDY",
+        "quantity": 1,
+        "unit_price": 29.98,
+        "total_price": 29.98
+      }
+    ],
+    "delivery_cost": 0.0,
+    "total": 45.0,
+    "status": "Picked up"
+  },
+  {
+    "date": "Feb 25, 2026, 01:58 PM",
+    "seller": "eduguercetti",
+    "items": [
+      {
+        "product": "AQUAFRESH SPLASH Children's Toothpaste WITH FLUORIDE 50 ml 3-8 years",
+        "quantity": 2,
+        "unit_price": 8.79,
+        "total_price": 17.58
+      },
+      {
+        "product": "CIF CLEANBOOST universal degreaser 750 ml",
+        "quantity": 1,
+        "unit_price": 19.9,
+        "total_price": 19.9
+      },
+      {
+        "product": "Cif Perfect spray for cleaning the oven and stove DEGREASE 435 ml",
+        "quantity": 1,
+        "unit_price": 21.9,
+        "total_price": 21.9
+      },
+      {
+        "product": "VILEDA PET PRO Flat mop insert MICROFIBRE UNIVERSAL 616",
+        "quantity": 1,
+        "unit_price": 19.99,
+        "total_price": 19.99
+      }
+    ],
+    "delivery_cost": 0.0,
+    "total": 79.37,
+    "status": "Picked up"
+  },
+  {
+    "date": "Feb 25, 2026, 12:06 AM",
+    "seller": "FestaItalia_com",
+    "items": [
+      {
+        "product": "SET OF PORCELAIN CUPS WITH SAUCERS 2 PCS FOR COFFEE TEA 250 ML",
+        "quantity": 1,
+        "unit_price": 45.0,
+        "total_price": 45.0
+      }
+    ],
+    "delivery_cost": 0.0,
+    "total": 45.0,
+    "status": "Picked up"
+  },
+  {
+    "date": "Feb 24, 2026, 11:55 PM",
+    "seller": "panzabawek",
+    "items": [
+      {
+        "product": "BILLIARDS TABLE MINI BILLIARDS TOY SET FOR CHILDREN",
+        "quantity": 1,
+        "unit_price": 52.01,
+        "total_price": 52.01
+      }
+    ],
+    "delivery_cost": 0.0,
+    "total": 52.01,
+    "status": "Picked up"
+  },
+  {
+    "date": "Feb 24, 2026, 11:54 PM",
+    "seller": "panzabawek",
+    "items": [
+      {
+        "product": "BILLIARDS TABLE MINI BILLIARDS TOY SET FOR CHILDREN",
+        "quantity": 1,
+        "unit_price": 52.01,
+        "total_price": 52.01
+      }
+    ],
+    "delivery_cost": 0.0,
+    "total": 52.01,
+    "status": null
+  },
+  {
+    "date": "Feb 24, 2026, 11:46 PM",
+    "seller": "MARTI_SKLEP",
+    "items": [
+      {
+        "product": "GIRLS' WATCH WITH STRAP + JEWELRY INCLUDED BUTTERFLY 1242",
+        "quantity": 1,
+        "unit_price": 69.0,
+        "total_price": 69.0
+      }
+    ],
+    "delivery_cost": 0.0,
+    "total": 69.0,
+    "status": "Picked up"
+  },
+  {
+    "date": "Feb 16, 2026, 07:03 AM",
+    "seller": "sklepkawa",
+    "items": [
+      {
+        "product": "LAVAZZA QUALITA ORO ARABICA ground coffee 0.25 kg + FREEBIE videobook",
+        "quantity": 4,
+        "unit_price": 28.9,
+        "total_price": 115.6
+      }
+    ],
+    "delivery_cost": 0.0,
+    "total": 115.6,
+    "status": "Picked up"
+  },
+  {
+    "date": "Feb 16, 2026, 07:03 AM",
+    "seller": "epewex_com",
+    "items": [
+      {
+        "product": "Salads Plastic Cups FOR SOUP FOR CHILDREN 12CM 350ML SET 6 PCS SG",
+        "quantity": 1,
+        "unit_price": 16.96,
+        "total_price": 16.96
+      },
+      {
+        "product": "TEASPOON DESSERT 13,5cm CLASSIC CUTLERY SET OF 6 PCS (H)",
+        "quantity": 4,
+        "unit_price": 8.19,
+        "total_price": 32.76
+      }
+    ],
+    "delivery_cost": 0.0,
+    "total": 49.72,
+    "status": "Picked up"
+  },
+  {
+    "date": "Feb 10, 2026, 03:09 PM",
+    "seller": "Antek_i_Maja_pl",
+    "items": [
+      {
+        "product": "Sorter Educational Puzzle Montessori Toy for Kids 12 Eggs",
+        "quantity": 1,
+        "unit_price": 27.77,
+        "total_price": 27.77
+      },
+      {
+        "product": "Wooden Tools Box DIY Workshop Set in DIY Box",
+        "quantity": 1,
+        "unit_price": 45.0,
+        "total_price": 45.0
+      }
+    ],
+    "delivery_cost": 0.0,
+    "total": 72.77,
+    "status": "Picked up"
+  },
+  {
+    "date": "Feb 10, 2026, 08:31 AM",
+    "seller": "alle-granie",
+    "items": [
+      {
+        "product": "DIAPERS DADA EXTRA CARE 6 XL PAMPERS 16+kg 3x34 102 pieces",
+        "quantity": 1,
+        "unit_price": 78.93,
+        "total_price": 78.93
+      }
+    ],
+    "delivery_cost": 0.0,
+    "total": 78.93,
+    "status": "Picked up"
+  },
+  {
+    "date": "Feb 9, 2026, 01:42 PM",
+    "seller": "Auto_Delta",
+    "items": [
+      {
+        "product": "ADBL Snowball Car Wash Shampoo 1L",
+        "quantity": 1,
+        "unit_price": 24.23,
+        "total_price": 24.23
+      },
+      {
+        "product": "ADBL Vampire Liquid Rim Cleaner 1L",
+        "quantity": 1,
+        "unit_price": 43.85,
+        "total_price": 43.85
+      },
+      {
+        "product": "ADBL Wheel Dagger Rim Wash Brush",
+        "quantity": 1,
+        "unit_price": 29.89,
+        "total_price": 29.89
+      }
+    ],
+    "delivery_cost": 0.0,
+    "total": 97.97,
+    "status": "Picked up"
+  },
+  {
+    "date": "Feb 8, 2026, 12:22 AM",
+    "seller": "Energy_Shop",
+    "items": [
+      {
+        "product": "Olimp Protein supplement protein blend powder 700 g vanilla flavour",
+        "quantity": 1,
+        "unit_price": 69.9,
+        "total_price": 69.9
+      }
+    ],
+    "delivery_cost": 0.0,
+    "total": 69.9,
+    "status": "Picked up"
+  },
+  {
+    "date": "Feb 8, 2026, 12:22 AM",
+    "seller": "bes-pol",
+    "items": [
+      {
+        "product": "BATHROOM MAT QUICK DRYING ABSORBENT RUG NON-SLIP GREY",
+        "quantity": 1,
+        "unit_price": 11.54,
+        "total_price": 11.54
+      },
+      {
+        "product": "SCRAPER FOR INDUCTION HOB GLASS CERAMIC MIRROR GLASS",
+        "quantity": 3,
+        "unit_price": 10.69,
+        "total_price": 32.07
+      },
+      {
+        "product": "STRONG WHITE BATHROOM HANGER FOR CLOTHES TOWELS HANGERS RADIATOR",
+        "quantity": 2,
+        "unit_price": 4.75,
+        "total_price": 9.5
+      }
+    ],
+    "delivery_cost": 0.0,
+    "total": 53.11,
+    "status": "Picked up"
+  },
+  {
+    "date": "Feb 6, 2026, 04:36 PM",
+    "seller": "JUSTSPORT_",
+    "items": [
+      {
+        "product": "18x PROTEIN BOMB protein shake 35g protein low fat drink",
+        "quantity": 1,
+        "unit_price": 122.9,
+        "total_price": 122.9
+      }
+    ],
+    "delivery_cost": 0.0,
+    "total": 122.9,
+    "status": "Picked up"
+  },
+  {
+    "date": "Feb 6, 2026, 04:36 PM",
+    "seller": "SMA-OLIMP_SPORT",
+    "items": [
+      {
+        "product": "OLIMP WHEY PROTEIN COMPLEX 700g PROTEIN SUPPLEMENT WPC ISOLATE",
+        "quantity": 1,
+        "unit_price": 85.0,
+        "total_price": 85.0
+      }
+    ],
+    "delivery_cost": 0.0,
+    "total": 85.0,
+    "status": "Picked up"
+  },
+  {
+    "date": "Jan 28, 2026, 01:28 AM",
+    "seller": "EdiSmart",
+    "items": [
+      {
+        "product": "Set of safety pins silver sewing safety pins 50 pieces small 28 mm steel",
+        "quantity": 1,
+        "unit_price": 10.91,
+        "total_price": 10.91
+      },
+      {
+        "product": "Stickers set with kittens for children roll for gifts motivational 500 pcs",
+        "quantity": 1,
+        "unit_price": 9.99,
+        "total_price": 9.99
+      }
+    ],
+    "delivery_cost": 12.49,
+    "total": 33.39,
+    "status": "Picked up"
+  },
+  {
+    "date": "Jan 27, 2026, 11:45 AM",
+    "seller": "Duet_Dwa",
+    "items": [
+      {
+        "product": "Cinnamon sticks 50 g Targroch",
+        "quantity": 1,
+        "unit_price": 7.5,
+        "total_price": 7.5
+      },
+      {
+        "product": "Everywhere",
+        "quantity": 1,
+        "unit_price": 44.97,
+        "total_price": 44.97
+      }
+    ],
+    "delivery_cost": 0.0,
+    "total": 52.47,
+    "status": "Picked up"
+  },
+  {
+    "date": "Jan 26, 2026, 12:30 PM",
+    "seller": "zdrowydyskont_pl",
+    "items": [
+      {
+        "product": "Vicks BabyRub Relaxing Ointment for Children 25 ml comfort for babies",
+        "quantity": 2,
+        "unit_price": 39.99,
+        "total_price": 79.98
+      }
+    ],
+    "delivery_cost": 0.0,
+    "total": 79.98,
+    "status": "Picked up"
+  },
+  {
+    "date": "Jan 25, 2026, 12:57 PM",
+    "seller": "MikroKlimat_pl",
+    "items": [
+      {
+        "product": "Alocasia Allocasia Jacklyn unique beauty DØ6cm unique leaf shape",
+        "quantity": 1,
+        "unit_price": 26.99,
+        "total_price": 26.99
+      }
+    ],
+    "delivery_cost": 10.49,
+    "total": 37.48,
+    "status": "Picked up"
+  },
+  {
+    "date": "Jan 25, 2026, 12:57 PM",
+    "seller": "FabricaPlants 1 3 1",
+    "items": [
+      {
+        "product": "Monster MINIMA VARIEGATA - beautifully colored + winter protection",
+        "quantity": 1,
+        "unit_price": 59.0,
+        "total_price": 59.0
+      }
+    ],
+    "delivery_cost": 0.0,
+    "total": 59.0,
+    "status": "Picked up"
+  },
+  {
+    "date": "Jan 23, 2026, 02:04 PM",
+    "seller": "Allegro Warehouse",
+    "items": [
+      {
+        "product": "Unicorn Toy Set, Plush Toys, 22-Piece",
+        "quantity": 1,
+        "unit_price": 79.99,
+        "total_price": 79.99
+      }
+    ],
+    "delivery_cost": 0.0,
+    "total": 79.99,
+    "status": "Picked up"
+  },
+  {
+    "date": "Jan 23, 2026, 11:41 AM",
+    "seller": "SwiatNiskichCen_",
+    "items": [
+      {
+        "product": "3x Men's wool socks MERINO WOOL pressure-free highlander winter 39-42",
+        "quantity": 3,
+        "unit_price": 18.98,
+        "total_price": 56.94
+      }
+    ],
+    "delivery_cost": 0.0,
+    "total": 56.94,
+    "status": "Picked up"
+  },
+  {
+    "date": "Jan 22, 2026, 06:48 PM",
+    "seller": "MarketJasmin",
+    "items": [
+      {
+        "product": "Black Dried Lemons 150g Zine",
+        "quantity": 1,
+        "unit_price": 12.0,
+        "total_price": 12.0
+      },
+      {
+        "product": "Hot sauce with peppers 100ml WOUND",
+        "quantity": 1,
+        "unit_price": 5.0,
+        "total_price": 5.0
+      }
+    ],
+    "delivery_cost": 14.99,
+    "total": 31.99,
+    "status": "Picked up"
+  },
+  {
+    "date": "Jan 19, 2026, 02:20 PM",
+    "seller": "avans__pl",
+    "items": [
+      {
+        "product": "SANDISK Ultra Dual Go 128GB",
+        "quantity": 1,
+        "unit_price": 69.99,
+        "total_price": 69.99
+      }
+    ],
+    "delivery_cost": 0.0,
+    "total": 69.99,
+    "status": "Picked up"
+  }
+]
